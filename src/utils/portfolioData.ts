@@ -8,6 +8,7 @@ import type {
   Profile,
   ProjectItem,
   SkillCategory,
+  SkillsData,
 } from '../types/cv'
 
 // EN
@@ -18,6 +19,8 @@ import enExperiences from '../data/en/experiences.json'
 import enProfile from '../data/en/profile.json'
 import enProjects from '../data/en/projects.json'
 import enSkills from '../data/en/skills.json'
+import baseProfileCommon from '../data/common/base_profile.json'
+import baseSkillsCommon from '../data/common/base_skills.json'
 
 // VI
 import viArchitectureHighlights from '../data/vi/architectureHighlights.json'
@@ -35,17 +38,39 @@ const ensureArray = <T>(value: T[], label: string): T[] => {
   return value
 }
 
+type SharedProfileFields = Pick<Profile, 'links' | 'socialLinks'>
+type LocalizedSkillsFields = Pick<SkillsData, 'competencies'> &
+  Partial<Pick<SkillsData, 'techStack'>>
+type SharedSkillsFields = Pick<SkillsData, 'techStack'>
+
+const sharedProfileFields = baseProfileCommon as SharedProfileFields
+const sharedSkillsFields = baseSkillsCommon as SharedSkillsFields
+
+const composeProfile = (localizedProfile: Profile): Profile => ({
+  ...localizedProfile,
+  links: localizedProfile.links ?? sharedProfileFields.links,
+  socialLinks: localizedProfile.socialLinks ?? sharedProfileFields.socialLinks,
+})
+
+const composeSkills = (localizedSkills: LocalizedSkillsFields): SkillsData => ({
+  ...localizedSkills,
+  techStack: localizedSkills.techStack ?? sharedSkillsFields.techStack,
+})
+
 export const getPortfolioData = (lang: string): PortfolioData => {
   const isVi = lang === 'vi'
+  const localizedSkills = composeSkills(
+    (isVi ? viSkills : enSkills) as LocalizedSkillsFields,
+  )
 
   return {
-    profile: (isVi ? viProfile : enProfile) as Profile,
+    profile: composeProfile((isVi ? viProfile : enProfile) as Profile),
     competencies: ensureArray(
-      (isVi ? viSkills : enSkills).competencies as Competency[],
+      localizedSkills.competencies as Competency[],
       'skills.competencies',
     ),
     techStack: ensureArray(
-      (isVi ? viSkills : enSkills).techStack as SkillCategory[],
+      localizedSkills.techStack as SkillCategory[],
       'skills.techStack'
     ),
     experiences: ensureArray(
@@ -71,7 +96,7 @@ export const getPortfolioData = (lang: string): PortfolioData => {
   }
 }
 
-export const getNavigationItems = (t: any) => [
+export const getNavigationItems = (t: (key: string) => string) => [
   { label: t('nav.about'), href: '#about' },
   { label: t('nav.skills'), href: '#skills' },
   { label: t('nav.experience'), href: '#experience' },

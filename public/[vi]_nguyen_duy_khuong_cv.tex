@@ -1,0 +1,301 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nguyễn Duy Khương} \\ \vspace{1pt}
+    \small 0902637745 $|$ nguyenromio@gmail.com $|$ github.com/khuongnd60493 $|$ www.linkedin.com/in/romio-nguyen
+\end{center}
+
+\section{Hoc van}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thạc sĩ Công nghệ Thông tin (Kế hoạch)}{2026 - Dự kiến 2028}
+      {Đại học Công nghệ Thông tin, ĐHQG-HCM (UIT)}{}
+      \resumeItemListStart
+        \resumeItem{Kế hoạch theo học chương trình Thạc sĩ chuyên ngành Công nghệ Thông tin. Mục tiêu học tập sẽ tập trung chuyên sâu vào các thuật toán nâng cao, hệ thống phân tán và đặc biệt là xử lý dữ liệu lớn (Big Data) nhằm thiết kế và tối ưu hóa các kiến trúc dữ liệu quy mô doanh nghiệp.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cử nhân Công nghệ Thông tin (Loại Giỏi)}{}
+      {Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)}{}
+      \resumeItemListStart
+        \resumeItem{Tốt nghiệp loại Giỏi tại Khoa Công nghệ Thông tin - một trong những chương trình đào tạo Khoa học Máy tính danh giá và khắt khe nhất Việt Nam. Chương trình học cung cấp nền tảng lý thuyết vững chắc về Cấu trúc Dữ liệu, Thuật toán Nâng cao và Kiến trúc Hệ thống. Các môn chuyên ngành tập trung vào Phát triển Phần mềm Doanh nghiệp, Cơ sở Dữ liệu Phân tán và Trí tuệ Nhân tạo, rèn luyện tư duy kỹ sư nhạy bén để thiết kế và xây dựng các hệ thống mở rộng, hiệu suất cao.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Chung chi}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \resumeItem{VSTEP B2 (Bậc 4) - Đại học Văn Lang (2026)}
+        \resumeItem{Developing Web Application with Spring Framework - FPT Nanoversity HCM (2017)}
+        \resumeItem{Web Developer: MVC 5 (Chứng chỉ Microsoft) - Nhất Nghệ Centre (2016)}
+        \resumeItem{Web Developer: C\#, ASP.Net, SQL Server (Chứng chỉ Microsoft) - Nhất Nghệ Centre (2016)}
+  }}
+\end{itemize}
+
+\section{Kinh nghiem}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Leader / Senior Fullstack Developer}{05/2025 - Hiện tại}
+      {Dcorp Vietnam}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Thiết kế kiến trúc backend mạnh mẽ bằng .NET Core và Java, đảm bảo khả năng xử lý lượng request khổng lồ và giao dịch POS liên tục mỗi ngày.}
+        \resumeItem{Quản lý phát triển các ứng dụng Web và Mobile đi kèm, mang lại trải nghiệm vận hành liền mạch cho khách hàng.}
+        \resumeItem{Giải quyết các bài toán về dữ liệu lớn (Big Data), tối ưu hóa cơ sở dữ liệu và truy vấn để tổng hợp và xử lý dữ liệu doanh nghiệp một cách nhanh chóng.}
+        \resumeItem{Đưa ra các quyết định kiến trúc để kết nối đồng bộ giữa các trạm On-premise và hệ thống Cloud Microservices, đảm bảo tính nhất quán và tính sẵn sàng cao.}
+        \resumeItem{Đảm bảo hệ thống vận hành ổn định và giữ nguyên tốc độ phản hồi ngay cả trong những khung giờ cao điểm với lượng tải cực lớn từ các chuỗi nhà hàng toàn quốc.}
+        \resumeItem{Chuẩn hóa luồng đồng bộ dữ liệu giữa máy POS offline và hệ thống đám mây, làm nền tảng vững chắc cho việc phân tích dữ liệu lớn.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Architecture}{03/2023 - 04/2025}
+      {MEDIASTEP}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Phát triển các giải pháp kỹ thuật chiến lược cho F\&B, đồng bộ với yêu cầu của Product Owner và khách hàng.}
+        \resumeItem{Dẫn dắt nhóm R\&D (6 thành viên) khám phá và ứng dụng các công nghệ mới.}
+        \resumeItem{Trực tiếp quản lý và điều phối đội ngũ >40 thành viên (kỹ sư, QA, BA) để đạt được các cột mốc dự án và đảm bảo chất lượng phát hành.}
+        \resumeItem{Thực hiện các buổi đào tạo nâng cao kỹ năng nhóm và dẫn dắt đánh giá mã nguồn (code review).}
+        \resumeItem{Ứng dụng thành công công nghệ mới giúp tăng cường hiệu suất và độ tin cậy.}
+        \resumeItem{Nâng chất lượng phát hành thông qua quy trình review kỹ thuật và kiểm soát chất lượng liên phòng ban.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Leader / Senior Fullstack Developer}{10/2021 - 03/2023}
+      {ALTSOURCE VIETNAM}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Đóng vai trò Trưởng nhóm và Kỹ sư Fullstack Senior cho hàng loạt dự án khách hàng (Brighter Path, My Fertility Health, Arcadia Drilling, Trimet, Pacific Architectural Wood Products).}
+        \resumeItem{Thiết kế và triển khai giải pháp Fullstack sử dụng .NET Core, và React/Vue.}
+        \resumeItem{Xây dựng và bàn giao hệ thống giáo dục Brighter Path cho phụ nữ dân tộc thiểu số.}
+        \resumeItem{Triển khai thành công bản nâng cấp hệ thống camera giám sát tàu điện ngầm (Trimet).}
+        \resumeItem{Xây dựng và mở rộng hệ thống quản lý quy trình sản xuất cửa gỗ (Pacific).}
+        \resumeItem{Tối ưu hiệu năng truy vấn và xử lý dữ liệu giúp hệ thống ổn định khi mở rộng người dùng.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Leader / Senior Fullstack Developer}{09/2018 - 10/2021}
+      {HANBIRO VIETNAM}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Lãnh đạo các nhóm phát triển từ 2 đến 7 thành viên thực hiện nhiều dự án khác nhau.}
+        \resumeItem{Quản lý quá trình chuyển đổi website công ty từ Java (jsp-servlet) sang Vuex.}
+        \resumeItem{Xây dựng các hệ thống Hanbiro HR, Groupware, và quản lý chuỗi cung ứng CRM.}
+        \resumeItem{Xây dựng hệ thống Hanbiro CRM Call, trung tâm quản lý cuộc gọi sử dụng Electron và Reactjs.}
+        \resumeItem{Đóng góp chuyển đổi nền tảng từ công nghệ cũ sang stack hiện đại, cải thiện khả năng bảo trì.}
+        \resumeItem{Bàn giao thành công nhiều hệ thống nội bộ trọng yếu như HR, Groupware và CRM Supply Chain.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Fullstack Developer}{01/2018 - 09/2018}
+      {FPT SOFTWARE}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Xây dựng dự án ứng dụng di động 'Học tiếng Trung cho người Nhật'.}
+        \resumeItem{Phát triển ứng dụng y tế hỗ trợ đặt lịch hẹn và nhắc nhở uống thuốc.}
+        \resumeItem{Hoàn thiện và bàn giao ứng dụng học tiếng Trung cho người Nhật đúng tiến độ và chất lượng.}
+        \resumeItem{Xây dựng ứng dụng y tế giúp người dùng đặt lịch và quản lý nhắc nhở điều trị thuận tiện hơn.}
+        \resumeItem{Phối hợp hiệu quả với team đa vai trò để đảm bảo release ổn định trên nền tảng mobile.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Leader / Senior Fullstack Developer}{02/2015 - 12/2017}
+      {VINHDANH COMPANY}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Quản lý nhóm 10 thành viên phục vụ mục tiêu số hóa giảng dạy và học tập tiếng Anh cho người Việt.}
+        \resumeItem{Dẫn dắt đội 10 thành viên triển khai sản phẩm Riolish phục vụ thị trường giáo dục tiếng Anh.}
+        \resumeItem{Xây dựng nền tảng web admin và mobile app đồng bộ cho vận hành và học tập.}
+        \resumeItem{Góp phần mở rộng khả năng phục vụ người dùng thông qua các phiên bản cải tiến liên tục.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Fullstack Developer}{02/2014 - 02/2015}
+      {FPT SOFTWARE}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Đóng vai trò lập trình viên trong việc xây dựng phần mềm đọc sách.}
+        \resumeItem{Hoàn thành tốt vai trò thực tập sinh trong dự án đọc sách Toshiba với tinh thần chủ động cao.}
+        \resumeItem{Đóng góp vào quá trình xây dựng tính năng cốt lõi của phần mềm đọc sách.}
+        \resumeItem{Rèn luyện nền tảng quy trình phát triển phần mềm và phối hợp nhóm trong môi trường doanh nghiệp.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Fullstack Developer}{03/2012 - 02/2014}
+      {DATASA.NET}{Thành phố Hồ Chí Minh}
+      \resumeItemListStart
+        \resumeItem{Xây dựng website thương mại điện tử chuyên cung cấp thiết bị máy tính và di động, bao gồm cả trang mua hàng và trang quản trị.}
+        \resumeItem{Xây dựng thành công website thương mại điện tử với đầy đủ luồng mua hàng và quản trị.}
+        \resumeItem{Đáp ứng yêu cầu nghiệp vụ cho sản phẩm bán hàng thiết bị máy tính và di động.}
+        \resumeItem{Đặt nền tảng kinh nghiệm fullstack thực chiến từ giai đoạn đầu sự nghiệp.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Du an}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hệ sinh thái Quản lý Doanh nghiệp Dcorp F\&B} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Hệ sinh thái quản lý nhà hàng và POS theo mô hình lai (On-premise \& Cloud Microservices) phục vụ các chuỗi F\&B lớn như Highland Coffee, Golden Gate; bao phủ vòng đời đơn hàng, định giá, khuyến mãi, loyalty và báo cáo vận hành tập trung.}
+            \resumeItem{Thiết kế kiến trúc backend mạnh mẽ bằng .NET Core và Java nhằm xử lý lượng lớn giao dịch mỗi ngày.}
+            \resumeItem{Xây dựng pipeline xử lý dữ liệu lớn (Big Data) và đồng bộ hóa dữ liệu giữa hệ thống POS offline và Cloud.}
+            \resumeItem{Thiết kế cơ sở hạ tầng có tính sẵn sàng cao, sử dụng Redis và Kafka để tối ưu hóa hàng đợi cho lượng request khổng lồ.}
+            \resumeItem{Tại Dcorp Vietnam, nền tảng này đảm bảo vận hành liên tục và báo cáo thời gian thực cho các chuỗi nhà hàng quy mô lớn trên toàn quốc. Kiến trúc ổn định giúp giảm rủi ro downtime, rút ngắn thời gian phát hành tính năng cho hệ thống nhượng quyền và tăng khả năng quan sát vận hành cho cả cấp cửa hàng lẫn head office.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hệ sinh thái Go Food and Beverage (GoF\&B)} $|$ \emph{Technical Architecture}}{}
+          \resumeItemListStart
+            \resumeItem{Giải pháp kỹ thuật chiến lược toàn diện cho ngành F\&B, quản lý đơn hàng, POS, luồng vận hành bếp và điều phối đa chi nhánh.}
+            \resumeItem{Dẫn dắt R\&D khám phá và ứng dụng công nghệ mới}
+            \resumeItem{Thiết kế kiến trúc backend mở rộng cao}
+            \resumeItem{Quản lý đội ngũ phát triển hơn 40 thành viên}
+            \resumeItem{Tại MEDIASTEP, hệ sinh thái GoF\&B giúp nâng hiệu năng xử lý giao dịch lớn và cải thiện độ tin cậy của toàn hệ thống. Kiến trúc mới giúp bộ phận kinh doanh triển khai chương trình khuyến mãi nhanh hơn, quản lý tồn kho nhất quán trên nhiều cửa hàng và giảm rủi ro release trong các giai đoạn cao điểm.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Brighter Path} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Nền tảng giáo dục được thiết kế để hỗ trợ phụ nữ dân tộc thiểu số qua lộ trình học tập có cấu trúc, trải nghiệm web dễ tiếp cận và theo dõi tiến độ học.}
+            \resumeItem{Phát triển cổng thông tin học tập đáp ứng đa thiết bị}
+            \resumeItem{Tích hợp quản lý người dùng và theo dõi tiến độ học tập bảo mật}
+            \resumeItem{Xây dựng các module nội dung và đăng ký khóa học theo hướng mở rộng theo giai đoạn.}
+            \resumeItem{Tại ALTSOURCE VIETNAM, nền tảng này mở rộng khả năng tiếp cận giáo dục số cho phụ nữ dân tộc thiểu số ở khu vực khó tiếp cận. Tính sẵn sàng cao và trải nghiệm người dùng tốt giúp tăng mức độ tương tác, đồng thời dữ liệu học tập giúp các bên liên quan đánh giá hiệu quả chương trình để tiếp tục mở rộng.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hệ thống Camera Giám sát Tàu điện ngầm Trimet} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Dự án nâng cấp hệ thống giám sát camera tàu điện ngầm, tập trung vào độ ổn định luồng stream, năng lực quan sát vận hành và phản ứng sự cố.}
+            \resumeItem{Tối ưu hóa pipeline phát trực tuyến video và xuất bản dữ liệu}
+            \resumeItem{Tăng cường khả năng bảo mật và giám sát hệ thống}
+            \resumeItem{Bổ sung telemetry theo hướng vận hành để đội hỗ trợ theo dõi và xử lý sự cố chủ động hơn.}
+            \resumeItem{Tại ALTSOURCE VIETNAM, dự án cung cấp công cụ giám sát thời gian thực ổn định cho vận hành tàu điện ngầm với mức độ an toàn cao hơn. Việc tối ưu pipeline video giúp giảm hiện tượng giật/đứt luồng, cải thiện tốc độ phản ứng vận hành và tăng độ tin cậy cho đội điều hành.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hanbiro CRM \& HR} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Bộ ứng dụng doanh nghiệp cho HR và supply chain (Web/App), hỗ trợ chấm công, tính lương, vận hành cuộc gọi và quản trị quy trình nội bộ.}
+            \resumeItem{Chuyển đổi hệ thống cũ sang kiến trúc SPA hiện đại}
+            \resumeItem{Xây dựng lớp API GraphQL thống nhất}
+            \resumeItem{Phát triển ứng dụng di động đa nền tảng cho hệ thống Nhân sự}
+            \resumeItem{Tại HANBIRO VIETNAM, bộ sản phẩm này giúp tự động hóa các nghiệp vụ chấm công, tính lương và quản lý chuỗi cung ứng cho doanh nghiệp. Hệ thống mới giảm đáng kể thao tác thủ công, tăng khả năng theo dõi dữ liệu theo thời gian thực và hỗ trợ mở rộng nhanh các module nội bộ mới.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Learning Chinese for Japanese} $|$ \emph{Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Ứng dụng học ngôn ngữ trên mobile hỗ trợ người Nhật cải thiện tiếng Trung qua nội dung tương tác, lộ trình luyện tập có cấu trúc và theo dõi tiến bộ.}
+            \resumeItem{Phát triển giao diện di động đa nền tảng bằng React-Native}
+            \resumeItem{Tích hợp các bài tập ngôn ngữ tương tác qua hệ thống API .NET Core}
+            \resumeItem{Tham gia thiết kế luồng phân phối nội dung và theo dõi tiến độ học để tăng tần suất quay lại.}
+            \resumeItem{Tại FPT SOFTWARE, ứng dụng này cung cấp trải nghiệm học ngôn ngữ chuyên biệt cho nhóm người dùng mục tiêu và duy trì tần suất sử dụng tốt nhờ nội dung tương tác. Dự án góp phần xác thực mô hình giáo dục mobile-first cho thị trường ngách quốc tế.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Ky nang ky thuat}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend}{: .NET Core, ASP.NET Core, Java, Spring Boot, PHP, Laravel, Node.js} \\
+     \textbf{Frontend}{: ReactJS, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Angular} \\
+     \textbf{Mobile}{: React Native, Android, iOS Basics} \\
+     \textbf{Database}{: MySQL, PostgreSQL, SQL Server, MongoDB, Redis} \\
+     \textbf{Messaging}{: Kafka, RabbitMQ} \\
+     \textbf{Monitoring}{: Grafana, Prometheus, ELK, OpenTelemetry}
+    }}
+ \end{itemize}
+
+\end{document}

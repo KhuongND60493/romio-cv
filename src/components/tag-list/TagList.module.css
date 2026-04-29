@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compact {
+  gap: 0.55rem;
+}
+
+.tag {
+  position: relative;
+  padding: 0.56rem 0.94rem;
+  border: 1px solid rgba(220, 38, 38, 0.32);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(220, 38, 38, 0.14), rgba(220, 38, 38, 0.04)),
+    var(--surface);
+  color: var(--title);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  border-color: rgba(220, 38, 38, 0.54);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 10px 24px rgba(220, 38, 38, 0.35);
+}
+

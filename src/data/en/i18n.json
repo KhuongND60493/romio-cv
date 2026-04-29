@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "architecture": "Architecture",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "systemStatus": "System Status: Online // Portfolio v2.0",
+    "downloadCv": "Download CV"
+  },
+  "footer": {
+    "builtWith": "Built with Github-Pages, React, TypeScript, and Vite.",
+    "rights": "© {{year}} Romio Nguyen"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "architecture": "Architecture Focus",
+    "education": "Education",
+    "competencies": "Core Competencies",
+    "techStack": "Tech Stack",
+    "contact": "Contact"
+  },
+  "skills": {
+    "competenciesTitle": "A fullstack architecture mindset across product, platform, and delivery.",
+    "competenciesDescription": "Each competency combines system thinking with practical implementation experience."
+  }
+}

@@ -1,6 +1,6 @@
 # Romio CV / Portfolio
 
-A premium, data-driven CV/portfolio website for a Technical Architect / Fullstack Engineer. The site is built with Vite, React, TypeScript, CSS Modules, Vitest, and React Testing Library, and is ready to deploy on GitHub Pages.
+A premium, data-driven CV/portfolio website for a Technical Architect / Fullstack Engineer. The site is built with Vite, React, TypeScript, and CSS Modules, and is ready to deploy on GitHub Pages.
 
 ## Tech Stack
 
@@ -8,8 +8,6 @@ A premium, data-driven CV/portfolio website for a Technical Architect / Fullstac
 - React
 - TypeScript with strict mode
 - CSS Modules
-- Vitest
-- React Testing Library
 - JSON-driven content in `src/data`
 - GitHub Pages deployment via GitHub Actions
 
@@ -21,7 +19,6 @@ A premium, data-driven CV/portfolio website for a Technical Architect / Fullstac
 - Independent sections for hero, about, skills, experience, projects, architecture, education, contact, and footer
 - Responsive layout for desktop, tablet, and mobile
 - Client-side contact form validation with success toast
-- Basic automated tests for critical UI sections
 
 ## Project Structure
 
@@ -31,7 +28,6 @@ src/
   data/            JSON content for the portfolio
   sections/        Page-level sections
   styles/          Global theme tokens
-  test/            Test setup and helpers
   types/           TypeScript models
   utils/           Data loading and validation helpers
 ```
@@ -42,8 +38,6 @@ src/
 npm run dev
 npm run build
 npm run preview
-npm run test
-npm run test:ui
 npm run lint
 ```
 
@@ -55,18 +49,6 @@ npm run dev
 ```
 
 Open the local URL shown by Vite in your browser.
-
-## Run Tests
-
-```bash
-npm run test
-```
-
-If you want the interactive Vitest UI:
-
-```bash
-npm run test:ui
-```
 
 ## Update CV Content
 
@@ -115,4 +97,4 @@ base: '/your-repo-name/'
 - TypeScript strict mode is enabled.
 - Content is not hard-coded in UI components.
 - Accessibility basics are included: labels, aria-labels, semantic headings, and form labels.
-- The build, lint, and test scripts are intended to pass before deployment.
+- The build and lint scripts are intended to pass before deployment.

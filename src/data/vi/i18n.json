@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "architecture": "Kiến trúc",
+    "education": "Học vấn",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "systemStatus": "Trạng thái hệ thống: Trực tuyến // Portfolio v2.0",
+    "downloadCv": "Tải CV"
+  },
+  "footer": {
+    "builtWith": "Được xây dựng với Github-Pages, React, TypeScript, và Vite.",
+    "rights": "© {{year}} Romio Nguyen"
+  },
+  "sections": {
+    "about": "Giới thiệu",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "architecture": "Trọng tâm Kiến trúc",
+    "education": "Học vấn",
+    "competencies": "Năng lực cốt lõi",
+    "techStack": "Công nghệ",
+    "contact": "Liên hệ"
+  },
+  "skills": {
+    "competenciesTitle": "Tư duy kiến trúc toàn diện trên mọi khía cạnh: sản phẩm, nền tảng và triển khai.",
+    "competenciesDescription": "Mỗi năng lực đều kết hợp tư duy hệ thống với kinh nghiệm thực tiễn trong việc triển khai."
+  }
+}

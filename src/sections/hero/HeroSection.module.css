@@ -1,0 +1,247 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.copy {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.kicker {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-strong);
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.copy h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--title);
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
+  animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  opacity: 0;
+}
+
+.title {
+  margin-top: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: var(--title);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+  opacity: 0;
+}
+
+.title span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tagline {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 600px;
+  animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+  opacity: 0;
+}
+
+.summary {
+  display: none;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+  opacity: 0;
+}
+
+.primary,
+.secondary,
+.ghost {
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.primary {
+  background: transparent;
+  color: var(--title);
+  border: 1px solid var(--accent);
+  box-shadow:
+    0 0 15px rgba(220, 38, 38, 0.2),
+    inset 0 0 10px rgba(220, 38, 38, 0.1);
+}
+
+.primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.primary:hover::before {
+  left: 0;
+}
+
+.primary:hover {
+  box-shadow:
+    0 0 30px rgba(220, 38, 38, 0.6),
+    inset 0 0 20px rgba(220, 38, 38, 0.4);
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  border: 1px solid transparent;
+  color: var(--text-muted);
+}
+
+.ghost:hover {
+  color: var(--accent);
+}
+
+.panel {
+  display: none;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hudElement {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid rgba(220, 38, 38, 0.1);
+  pointer-events: none;
+  z-index: 0;
+  animation: rotateSlow 40s linear infinite;
+}
+
+.hudElement::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--accent);
+}
+
+.hudElement2 {
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px dashed rgba(220, 38, 38, 0.2);
+  pointer-events: none;
+  z-index: 0;
+  animation: rotateSlowReverse 60s linear infinite;
+}
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSlowReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hudElement {
+    width: 300px;
+    height: 300px;
+    right: -10%;
+  }
+
+  .hudElement2 {
+    display: none;
+  }
+}
