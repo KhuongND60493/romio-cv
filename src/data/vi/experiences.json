@@ -1,7 +1,7 @@
 [
   {
     "company": "Dcorp Vietnam",
-    "role": "Team Leader / Kỹ sư Fullstack Senior",
+    "role": "Team Leader / Senior Fullstack Developer",
     "duration": "05/2025 - Hiện tại",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Dẫn dắt đội ngũ kỹ sư phát triển hệ sinh thái phần mềm quản lý doanh nghiệp theo mô hình lai (On-premise kết hợp Cloud Microservices), phục vụ các chuỗi F&B lớn như Highland Coffee, Golden Gate.",
@@ -31,7 +31,7 @@
   },
   {
     "company": "MEDIASTEP",
-    "role": "Kiến trúc sư Kỹ thuật / Technical Leader",
+    "role": "Technical Architecture",
     "duration": "03/2023 - 04/2025",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Dẫn dắt kiến trúc kỹ thuật và bộ phận R&D cho hệ sinh thái Go Food and Beverage (GoF&B), trực tiếp quản lý và điều hành đội ngũ kỹ thuật quy mô lớn >40 kỹ sư.",
@@ -58,7 +58,7 @@
   },
   {
     "company": "ALTSOURCE VIETNAM",
-    "role": "Kỹ sư Fullstack Senior / Leader",
+    "role": "Team Leader / Senior Fullstack Developer",
     "duration": "10/2021 - 03/2023",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Dẫn dắt và phát triển nhiều hệ thống doanh nghiệp bao gồm nền tảng giáo dục, quản lý phòng khám, và hệ thống quản lý quy trình.",
@@ -84,7 +84,7 @@
   },
   {
     "company": "HANBIRO VIETNAM",
-    "role": "Kỹ sư Fullstack Senior / Team Leader",
+    "role": "Team Leader / Senior Fullstack Developer",
     "duration": "09/2018 - 10/2021",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Phát triển trang web quản lý doanh nghiệp, phần mềm nhân sự, và hệ thống CRM.",
@@ -114,7 +114,7 @@
   },
   {
     "company": "FPT SOFTWARE",
-    "role": "Kỹ sư Fullstack Middle",
+    "role": "Senior Fullstack Developer",
     "duration": "01/2018 - 09/2018",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Phát triển ứng dụng di động về học thuật và quản lý thông tin y tế.",
@@ -139,7 +139,7 @@
   },
   {
     "company": "VINHDANH COMPANY",
-    "role": "Kỹ sư Fullstack Middle / Team Leader",
+    "role": "Team Leader / Senior Fullstack Developer",
     "duration": "02/2015 - 12/2017",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Dẫn dắt phát triển Riolish, ứng dụng di động và web quản trị hỗ trợ giảng dạy tiếng Anh.",
@@ -160,7 +160,7 @@
   },
   {
     "company": "FPT SOFTWARE",
-    "role": "Thực tập sinh Fullstack",
+    "role": "Senior Fullstack Developer",
     "duration": "02/2014 - 02/2015",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Cộng tác trong dự án ứng dụng đọc sách của Toshiba.",
@@ -180,7 +180,7 @@
   },
   {
     "company": "DATASA.NET",
-    "role": "Kỹ sư Fullstack",
+    "role": "Senior Fullstack Developer",
     "duration": "03/2012 - 02/2014",
     "location": "Thành phố Hồ Chí Minh",
     "summary": "Thiết kế và xây dựng website thương mại điện tử.",

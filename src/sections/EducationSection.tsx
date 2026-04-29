@@ -48,10 +48,21 @@ export const EducationSection = ({
       <div className={styles.column}>
         <h3>Certifications</h3>
         {certifications.map((item) => (
-          <article key={item.name} className={styles.card}>
-            <h4>{item.name}</h4>
-            <p>{item.issuer}</p>
-            <span>{item.year}</span>
+          <article key={item.name} className={`${styles.card} ${styles.certCard}`}>
+            <div className={styles.cardHeader}>
+              {item.logoUrl ? (
+                <img
+                  src={`${import.meta.env.BASE_URL}${item.logoUrl}`}
+                  alt={item.issuer}
+                  className={styles.logo}
+                />
+              ) : null}
+              <div>
+                <h4>{item.name}</h4>
+                <p>{item.issuer}</p>
+              </div>
+            </div>
+            <span className={styles.yearBadge}>{item.year}</span>
           </article>
         ))}
       </div>

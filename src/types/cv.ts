@@ -99,6 +99,7 @@ export interface CertificationItem {
   name: string
   issuer: string
   year: string
+  logoUrl?: string
 }
 
 export interface PortfolioData {

@@ -56,7 +56,7 @@
   {
     "name": "Brighter Path",
     "description": "An educational platform designed to empower ethnic women through structured learning paths, accessible web UX, and progress tracking for community-driven training programs.",
-    "role": "Senior Fullstack Developer",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Developed a responsive learning portal",
       "Integrated secure user management and progress tracking",
@@ -79,7 +79,7 @@
   {
     "name": "Trimet Subway Camera Surveillance",
     "description": "A modernization project for subway camera surveillance publishing and monitoring, focused on stream stability, visibility, and operational responsiveness.",
-    "role": "Senior Fullstack Developer",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Optimized video streaming and data publishing pipelines",
       "Enhanced system security and monitoring capabilities",
@@ -100,7 +100,7 @@
   {
     "name": "Hanbiro CRM & HR",
     "description": "Enterprise-level supply chain and HR applications (Web/App) supporting timekeeping, payroll, call workflows, and operational management for growing business units.",
-    "role": "Team Leader / Senior Fullstack",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Migrated legacy systems to modern SPA architecture",
       "Built a unified GraphQL API layer",

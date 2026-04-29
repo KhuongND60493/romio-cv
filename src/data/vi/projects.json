@@ -2,7 +2,7 @@
   {
     "name": "Hệ sinh thái Quản lý Doanh nghiệp Dcorp F&B",
     "description": "Hệ sinh thái quản lý nhà hàng và POS theo mô hình lai (On-premise & Cloud Microservices) phục vụ các chuỗi F&B lớn như Highland Coffee, Golden Gate; bao phủ vòng đời đơn hàng, định giá, khuyến mãi, loyalty và báo cáo vận hành tập trung.",
-    "role": "Team Leader / Kỹ sư Fullstack Senior",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Thiết kế kiến trúc backend mạnh mẽ bằng .NET Core và Java nhằm xử lý lượng lớn giao dịch mỗi ngày.",
       "Xây dựng pipeline xử lý dữ liệu lớn (Big Data) và đồng bộ hóa dữ liệu giữa hệ thống POS offline và Cloud.",
@@ -30,7 +30,7 @@
   {
     "name": "Hệ sinh thái Go Food and Beverage (GoF&B)",
     "description": "Giải pháp kỹ thuật chiến lược toàn diện cho ngành F&B, quản lý đơn hàng, POS, luồng vận hành bếp và điều phối đa chi nhánh.",
-    "role": "Trưởng nhóm Kiến trúc Kỹ thuật",
+    "role": "Technical Architecture",
     "architectureHighlights": [
       "Dẫn dắt R&D khám phá và ứng dụng công nghệ mới",
       "Thiết kế kiến trúc backend mở rộng cao",
@@ -56,7 +56,7 @@
   {
     "name": "Brighter Path",
     "description": "Nền tảng giáo dục được thiết kế để hỗ trợ phụ nữ dân tộc thiểu số qua lộ trình học tập có cấu trúc, trải nghiệm web dễ tiếp cận và theo dõi tiến độ học.",
-    "role": "Kỹ sư Fullstack Senior",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Phát triển cổng thông tin học tập đáp ứng đa thiết bị",
       "Tích hợp quản lý người dùng và theo dõi tiến độ học tập bảo mật",
@@ -79,7 +79,7 @@
   {
     "name": "Hệ thống Camera Giám sát Tàu điện ngầm Trimet",
     "description": "Dự án nâng cấp hệ thống giám sát camera tàu điện ngầm, tập trung vào độ ổn định luồng stream, năng lực quan sát vận hành và phản ứng sự cố.",
-    "role": "Kỹ sư Fullstack Senior",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Tối ưu hóa pipeline phát trực tuyến video và xuất bản dữ liệu",
       "Tăng cường khả năng bảo mật và giám sát hệ thống",
@@ -100,7 +100,7 @@
   {
     "name": "Hanbiro CRM & HR",
     "description": "Bộ ứng dụng doanh nghiệp cho HR và supply chain (Web/App), hỗ trợ chấm công, tính lương, vận hành cuộc gọi và quản trị quy trình nội bộ.",
-    "role": "Team Leader / Kỹ sư Fullstack",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Chuyển đổi hệ thống cũ sang kiến trúc SPA hiện đại",
       "Xây dựng lớp API GraphQL thống nhất",
@@ -125,7 +125,7 @@
   {
     "name": "Learning Chinese for Japanese",
     "description": "Ứng dụng học ngôn ngữ trên mobile hỗ trợ người Nhật cải thiện tiếng Trung qua nội dung tương tác, lộ trình luyện tập có cấu trúc và theo dõi tiến bộ.",
-    "role": "Kỹ sư Fullstack",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
       "Phát triển giao diện di động đa nền tảng bằng React-Native",
       "Tích hợp các bài tập ngôn ngữ tương tác qua hệ thống API .NET Core",
@@ -148,7 +148,7 @@
   {
     "name": "Medical Information Management",
     "description": "Ứng dụng y tế trên mobile cho phép người dùng đặt lịch khám, nhận nhắc lịch dùng thuốc và theo dõi tương tác tái khám theo luồng chăm sóc.",
-    "role": "Kỹ sư Fullstack",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
       "Thiết kế backend bảo mật cao để quản lý hồ sơ bệnh án nhạy cảm",
       "Triển khai hệ thống thông báo đẩy (push notifications) theo thời gian thực",
@@ -171,7 +171,7 @@
   {
     "name": "Ứng dụng di động Riolish",
     "description": "Nền tảng học tiếng Anh gồm web admin và mobile app, hỗ trợ vận hành đào tạo, phân phối nội dung và tương tác người học.",
-    "role": "Trưởng nhóm",
+    "role": "Team Leader",
     "architectureHighlights": [
       "Phát triển API mạnh mẽ để phân phối nội dung",
       "Xây dựng trải nghiệm học tập di động đa nền tảng",
@@ -193,7 +193,7 @@
   {
     "name": "Ứng dụng Đọc sách Toshiba",
     "description": "Tham gia phân tích và lập trình ứng dụng đọc sách số cho Toshiba, tập trung vào luồng tài liệu, khả năng đọc và độ ổn định trải nghiệm người dùng.",
-    "role": "Thực tập sinh Fullstack",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
       "Phân tích yêu cầu và thiết kế phần mềm bằng StartUML",
       "Phối hợp với nhóm phát triển để tối ưu hóa luồng hiển thị tài liệu",
@@ -215,7 +215,7 @@
   {
     "name": "Nền tảng Thương mại Điện tử Datasa",
     "description": "Nền tảng thương mại điện tử bán sản phẩm máy tính và di động, bao gồm storefront cho khách hàng và admin portal cho quản trị vận hành.",
-    "role": "Kỹ sư Fullstack",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
       "Xây dựng giỏ hàng và quy trình thanh toán an toàn với ASP.NET MVC",
       "Thiết kế hệ thống cơ sở dữ liệu quan hệ tối ưu bằng Microsoft SQL",

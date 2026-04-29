@@ -18,6 +18,16 @@
   transition: all 0.3s ease;
 }
 
+.certCard {
+  position: relative;
+  background: transparent;
+}
+
+.certCard:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: transparent;
+}
+
 .card:hover {
   border-color: var(--accent);
   background: rgba(220, 38, 38, 0.02);
@@ -36,12 +46,28 @@
   background-color: var(--bg-soft);
   border-radius: 8px;
   padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .note {
   margin-top: 1rem;
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.yearBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--title);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--surface);
 }
 
 .header {
