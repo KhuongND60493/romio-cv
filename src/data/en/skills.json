@@ -44,39 +44,95 @@
   "techStack": [
     {
       "category": "Backend",
-      "items": [".NET Core", "ASP.NET Core", "Java", "Spring Boot", "PHP", "Laravel", "Node.js"]
+      "items": [
+        ".NET Core",
+        "ASP.NET Core",
+        "Java",
+        "Spring Boot",
+        "PHP",
+        "Laravel",
+        "Node.js"
+      ]
     },
     {
       "category": "Frontend",
-      "items": ["ReactJS", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3"]
+      "items": [
+        "ReactJS",
+        "Vue.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Angular"
+      ]
     },
     {
       "category": "Mobile",
-      "items": ["React Native", "Android", "iOS Basics"]
+      "items": [
+        "React Native",
+        "Android",
+        "iOS Basics"
+      ]
     },
     {
       "category": "Database",
-      "items": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis"]
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "MongoDB",
+        "Redis"
+      ]
     },
     {
       "category": "Messaging",
-      "items": ["Kafka", "RabbitMQ"]
+      "items": [
+        "Kafka",
+        "RabbitMQ"
+      ]
     },
     {
       "category": "DevOps",
-      "items": ["Docker", "Kubernetes", "GitHub Actions", "GitLab CI/CD", "Nginx"]
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Nginx"
+      ]
     },
     {
       "category": "Cloud / Infra",
-      "items": ["AWS", "Azure", "Cloud Networking", "Object Storage", "Load Balancing"]
+      "items": [
+        "AWS",
+        "Azure",
+        "Cloud Networking",
+        "Object Storage",
+        "Load Balancing"
+      ]
     },
     {
       "category": "Monitoring",
-      "items": ["Grafana", "Prometheus", "ELK", "OpenTelemetry"]
+      "items": [
+        "Grafana",
+        "Prometheus",
+        "ELK",
+        "OpenTelemetry"
+      ]
     },
     {
       "category": "Tools",
-      "items": ["Git", "Jira", "Postman", "Swagger", "Cursor", "VS Code"]
+      "items": [
+        "Git",
+        "Jira",
+        "Postman",
+        "Swagger",
+        "Cursor",
+        "VS Code",
+        "Figma",
+        "Photoshop",
+        "XD"
+      ]
     }
   ]
 }

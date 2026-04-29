@@ -23,6 +23,27 @@
   background: rgba(220, 38, 38, 0.02);
 }
 
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.note {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .header {
   display: flex;
   flex-direction: column;

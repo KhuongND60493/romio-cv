@@ -1,56 +1,173 @@
 [
   {
-    "company": "Nova Retail Solutions",
-    "role": "Technical Architect",
-    "duration": "2022 - Present",
-    "location": "Ho Chi Minh City / Remote",
-    "summary": "Leading architecture for a multi-tenant commerce platform serving regional retail and distribution operations.",
+    "company": "Dcorp Vietnam",
+    "role": "Team Leader / Kỹ sư Fullstack Senior",
+    "duration": "05/2025 - Hiện tại",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Dẫn dắt đội ngũ kỹ sư phát triển hệ sinh thái phần mềm quản lý doanh nghiệp theo mô hình lai (On-premise kết hợp Cloud Microservices), phục vụ các chuỗi F&B lớn như Highland Coffee, Golden Gate.",
     "responsibilities": [
-      "Defined service boundaries, API standards, and event contracts across order, pricing, loyalty, and reporting domains.",
-      "Partnered with product and engineering managers to break architectural roadmap into delivery milestones.",
-      "Standardized observability, deployment strategy, and performance guardrails across microservices."
+      "Thiết kế kiến trúc backend mạnh mẽ bằng .NET Core và Java, đảm bảo khả năng xử lý lượng request khổng lồ và giao dịch POS liên tục mỗi ngày.",
+      "Quản lý phát triển các ứng dụng Web và Mobile đi kèm, mang lại trải nghiệm vận hành liền mạch cho khách hàng.",
+      "Giải quyết các bài toán về dữ liệu lớn (Big Data), tối ưu hóa cơ sở dữ liệu và truy vấn để tổng hợp và xử lý dữ liệu doanh nghiệp một cách nhanh chóng.",
+      "Đưa ra các quyết định kiến trúc để kết nối đồng bộ giữa các trạm On-premise và hệ thống Cloud Microservices, đảm bảo tính nhất quán và tính sẵn sàng cao."
     ],
     "achievements": [
-      "Reduced release lead time by 45% with CI/CD standardization and deployment automation.",
-      "Improved peak order throughput by 3x through caching, queue-based processing, and query optimization.",
-      "Introduced architecture review process that aligned four squads on shared platform conventions."
+      "Đảm bảo hệ thống vận hành ổn định và giữ nguyên tốc độ phản hồi ngay cả trong những khung giờ cao điểm với lượng tải cực lớn từ các chuỗi nhà hàng toàn quốc.",
+      "Chuẩn hóa luồng đồng bộ dữ liệu giữa máy POS offline và hệ thống đám mây, làm nền tảng vững chắc cho việc phân tích dữ liệu lớn."
     ],
-    "techStack": ["ASP.NET Core", "ReactJS", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "Grafana"]
+    "techStack": [
+      ".NET Core",
+      "Java",
+      "Spring Boot",
+      "ReactJS",
+      "React-Native",
+      "MS SQL",
+      "Redis",
+      "Kafka"
+    ]
   },
   {
-    "company": "Bright Loyalty Tech",
-    "role": "Senior Fullstack Engineer",
-    "duration": "2019 - 2022",
-    "location": "Singapore / Remote",
-    "summary": "Built and evolved CRM and loyalty products for enterprise clients with both customer-facing and admin experiences.",
+    "company": "MEDIASTEP",
+    "role": "Kiến trúc sư Kỹ thuật / Technical Leader",
+    "duration": "03/2023 - 04/2025",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Dẫn dắt kiến trúc kỹ thuật và bộ phận R&D cho hệ sinh thái Go Food and Beverage (GoF&B), trực tiếp quản lý và điều hành đội ngũ kỹ thuật quy mô lớn >40 kỹ sư.",
     "responsibilities": [
-      "Developed backend services, frontend modules, and mobile integrations for campaign and reward orchestration.",
-      "Collaborated with solution architects to design integration patterns for POS, ERP, and payment gateways.",
-      "Mentored developers on code quality, domain modeling, and cross-functional delivery."
+      "Phát triển các giải pháp kỹ thuật chiến lược cho F&B, đồng bộ với yêu cầu của Product Owner và khách hàng.",
+      "Dẫn dắt nhóm R&D (6 thành viên) khám phá và ứng dụng các công nghệ mới.",
+      "Trực tiếp quản lý và điều phối đội ngũ >40 thành viên (kỹ sư, QA, BA) để đạt được các cột mốc dự án và đảm bảo chất lượng phát hành.",
+      "Thực hiện các buổi đào tạo nâng cao kỹ năng nhóm và dẫn dắt đánh giá mã nguồn (code review)."
     ],
     "achievements": [
-      "Launched reusable frontend platform that shortened new client onboarding projects by 30%.",
-      "Delivered event-driven synchronization flows that minimized manual reconciliation work.",
-      "Improved application stability with structured logging, alerts, and incident review practices."
+      "Ứng dụng thành công công nghệ mới giúp tăng cường hiệu suất và độ tin cậy."
     ],
-    "techStack": ["Java", "Spring Boot", "Vue.js", "React Native", "RabbitMQ", "MongoDB", "MySQL", "ELK"]
+    "techStack": [
+      "Reactjs",
+      "React-Native",
+      ".NET Core",
+      "Nodejs",
+      "Android (Java)",
+      "IOS (Swift)"
+    ]
   },
   {
-    "company": "Blue Ocean Digital",
-    "role": "Fullstack Engineer",
-    "duration": "2016 - 2019",
-    "location": "Ho Chi Minh City, Vietnam",
-    "summary": "Delivered web and mobile products for logistics, inventory, and field operations across SMEs and enterprise clients.",
+    "company": "ALTSOURCE VIETNAM",
+    "role": "Kỹ sư Fullstack Senior / Leader",
+    "duration": "10/2021 - 03/2023",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Dẫn dắt và phát triển nhiều hệ thống doanh nghiệp bao gồm nền tảng giáo dục, quản lý phòng khám, và hệ thống quản lý quy trình.",
     "responsibilities": [
-      "Implemented business workflows spanning dashboards, inventory movement, and field reporting.",
-      "Built APIs and admin interfaces while collaborating closely with QA and stakeholders.",
-      "Contributed to deployment setup, production troubleshooting, and optimization efforts."
+      "Đóng vai trò Trưởng nhóm và Kỹ sư Fullstack Senior cho hàng loạt dự án khách hàng (Brighter Path, My Fertility Health, Arcadia Drilling, Trimet, Pacific Architectural Wood Products).",
+      "Thiết kế và triển khai giải pháp Fullstack sử dụng .NET Core, và React/Vue."
     ],
     "achievements": [
-      "Reduced reporting generation time from hours to minutes through batch processing redesign.",
-      "Introduced reusable UI patterns that improved consistency and maintainability across projects.",
-      "Supported multiple successful go-lives with strong post-launch reliability."
+      "Xây dựng và bàn giao hệ thống giáo dục Brighter Path cho phụ nữ dân tộc thiểu số.",
+      "Triển khai thành công bản nâng cấp hệ thống camera giám sát tàu điện ngầm (Trimet).",
+      "Xây dựng và mở rộng hệ thống quản lý quy trình sản xuất cửa gỗ (Pacific)."
     ],
-    "techStack": ["PHP", "Laravel", "ReactJS", "SQL Server", "Redis", "Nginx", "GitLab CI/CD"]
+    "techStack": [
+      ".NET Core",
+      "Reactjs",
+      "VueX",
+      "MS SQL",
+      "Azure",
+      "Angular"
+    ]
+  },
+  {
+    "company": "HANBIRO VIETNAM",
+    "role": "Kỹ sư Fullstack Senior / Team Leader",
+    "duration": "09/2018 - 10/2021",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Phát triển trang web quản lý doanh nghiệp, phần mềm nhân sự, và hệ thống CRM.",
+    "responsibilities": [
+      "Lãnh đạo các nhóm phát triển từ 2 đến 7 thành viên thực hiện nhiều dự án khác nhau.",
+      "Quản lý quá trình chuyển đổi website công ty từ Java (jsp-servlet) sang Vuex.",
+      "Xây dựng các hệ thống Hanbiro HR, Groupware, và quản lý chuỗi cung ứng CRM."
+    ],
+    "achievements": [
+      "Xây dựng hệ thống Hanbiro CRM Call, trung tâm quản lý cuộc gọi sử dụng Electron và Reactjs."
+    ],
+    "techStack": [
+      "Reactjs",
+      "Vuex",
+      "Angularjs",
+      "React-Native",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "GraphQL",
+      "Electron",
+      "Linux"
+    ]
+  },
+  {
+    "company": "FPT SOFTWARE",
+    "role": "Kỹ sư Fullstack Middle",
+    "duration": "01/2018 - 09/2018",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Phát triển ứng dụng di động về học thuật và quản lý thông tin y tế.",
+    "responsibilities": [
+      "Xây dựng dự án ứng dụng di động 'Học tiếng Trung cho người Nhật'.",
+      "Phát triển ứng dụng y tế hỗ trợ đặt lịch hẹn và nhắc nhở uống thuốc."
+    ],
+    "achievements": [],
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "Microsoft SQL",
+      "Figma",
+      "XD",
+      "Cordova"
+    ]
+  },
+  {
+    "company": "VINHDANH COMPANY",
+    "role": "Kỹ sư Fullstack Middle / Team Leader",
+    "duration": "02/2015 - 12/2017",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Dẫn dắt phát triển Riolish, ứng dụng di động và web quản trị hỗ trợ giảng dạy tiếng Anh.",
+    "responsibilities": [
+      "Quản lý nhóm 10 thành viên phục vụ mục tiêu số hóa giảng dạy và học tập tiếng Anh cho người Việt."
+    ],
+    "achievements": [],
+    "techStack": [
+      "React-Native",
+      ".NET Core",
+      "ASP.NET MVC",
+      "Microsoft SQL"
+    ]
+  },
+  {
+    "company": "FPT SOFTWARE",
+    "role": "Thực tập sinh Fullstack",
+    "duration": "02/2014 - 02/2015",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Cộng tác trong dự án ứng dụng đọc sách của Toshiba.",
+    "responsibilities": [
+      "Đóng vai trò lập trình viên trong việc xây dựng phần mềm đọc sách."
+    ],
+    "achievements": [],
+    "techStack": [
+      "Word",
+      "Excel",
+      "StartUML"
+    ]
+  },
+  {
+    "company": "DATASA.NET",
+    "role": "Kỹ sư Fullstack",
+    "duration": "03/2012 - 02/2014",
+    "location": "Thành phố Hồ Chí Minh",
+    "summary": "Thiết kế và xây dựng website thương mại điện tử.",
+    "responsibilities": [
+      "Xây dựng website thương mại điện tử chuyên cung cấp thiết bị máy tính và di động, bao gồm cả trang mua hàng và trang quản trị."
+    ],
+    "achievements": [],
+    "techStack": [
+      "ASP.NET MVC",
+      "Microsoft SQL"
+    ]
   }
 ]

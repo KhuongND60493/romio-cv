@@ -1,6 +1,8 @@
 import type { SocialLink } from '../types/cv'
 import { ThemeToggle } from './ThemeToggle'
 import { LangToggle } from './LangToggle'
+import { useScrollSpy } from '../hooks/useScrollSpy'
+import { useMemo } from 'react'
 import styles from './Header.module.css'
 
 interface HeaderProps {
@@ -15,18 +17,28 @@ export const Header = ({
   socialLinks,
   theme,
   onToggleTheme,
-}: HeaderProps) => (
-  <header className={styles.header}>
-    <div className={styles.container}>
-      <a className={styles.logo} href="#hero" aria-label="Go to hero section">
-        ROMIO<span>_NGUYEN</span>
-      </a>
+}: HeaderProps) => {
+  const sectionIds = useMemo(() => navigationItems.map(item => item.href.replace('#', '')), [navigationItems])
+  const activeId = useScrollSpy(sectionIds, 150)
 
-      <nav className={styles.nav} aria-label="Primary">
-        {navigationItems.map((item) => (
-          <a key={item.href} href={item.href}>{item.label}</a>
-        ))}
-      </nav>
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <a className={styles.logo} href="#hero" aria-label="Go to hero section">
+          ROMIO<span>_NGUYEN</span>
+        </a>
+
+        <nav className={styles.nav} aria-label="Primary">
+          {navigationItems.map((item) => (
+            <a 
+              key={item.href} 
+              href={item.href}
+              data-active={activeId === item.href.replace('#', '')}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
 
       <div className={styles.actions}>
         <div className={styles.social}>
@@ -50,4 +62,5 @@ export const Header = ({
       </div>
     </div>
   </header>
-)
+  )
+}

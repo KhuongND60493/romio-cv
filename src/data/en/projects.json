@@ -1,92 +1,179 @@
 [
   {
-    "name": "Enterprise Order Management System",
-    "description": "A high-volume platform coordinating orders, pricing, promotions, and fulfillment across omni-channel retail operations.",
-    "role": "Technical Architect",
+    "name": "Dcorp F&B Enterprise Ecosystem",
+    "description": "A hybrid (On-premise & Cloud Microservices) POS and enterprise management ecosystem serving major F&B chains such as Highland Coffee and Golden Gate.",
+    "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
-      "Domain-driven service decomposition",
-      "API gateway with internal service contracts",
-      "Asynchronous event processing for order lifecycle"
+      "Architected robust backend services in .NET Core and Java to process massive daily transaction volumes.",
+      "Engineered reliable Big Data pipelines and synchronized data between offline POS terminals and the cloud.",
+      "Designed highly available infrastructure utilizing Redis and Kafka for high-throughput queuing."
     ],
-    "businessImpact": "Enabled faster regional rollout and improved order reliability during seasonal peaks.",
-    "techStack": ["ASP.NET Core", "ReactJS", "Kafka", "Redis", "PostgreSQL", "Kubernetes"],
-    "links": [
-      {
-        "label": "Architecture Notes",
-        "href": "#architecture"
-      }
-    ]
+    "businessImpact": "Ensured seamless, uninterrupted operations and real-time analytics for nationwide enterprise restaurant chains, directly supporting thousands of daily concurrent users and safeguarding millions in daily transaction revenue. The robust architecture minimized system downtime and significantly accelerated the rollout of new features to franchisees.",
+    "techStack": [
+      ".NET Core",
+      "Java",
+      "Spring Boot",
+      "ReactJS",
+      "React-Native",
+      "MS SQL",
+      "Redis",
+      "Kafka"
+    ],
+    "links": []
   },
   {
-    "name": "Loyalty & CRM Platform",
-    "description": "An enterprise engagement suite for campaign automation, customer segmentation, reward rules, and partner integrations.",
-    "role": "Solution Architect / Lead Engineer",
+    "name": "Go Food and Beverage Ecosystem (GoF&B)",
+    "description": "A comprehensive strategic technical solution for the F&B industry, managing orders, POS, and operations.",
+    "role": "Technical Architecture Lead",
     "architectureHighlights": [
-      "Event-driven customer activity processing",
-      "Integration adapters for POS and payment services",
-      "Reusable admin portal foundation"
+      "Led R&D for exploring and applying new technologies",
+      "Designed highly scalable backend architecture",
+      "Managed a cross-functional team of 40+ members"
     ],
-    "businessImpact": "Improved campaign launch speed and reduced operational overhead for marketing teams.",
-    "techStack": ["Spring Boot", "Vue.js", "RabbitMQ", "MongoDB", "MySQL", "ELK"],
-    "links": [
-      {
-        "label": "Case Study",
-        "href": "#projects"
-      }
-    ]
+    "businessImpact": "Boosted system performance and enhanced reliability for high-volume transactions, leading to a massive increase in order processing speed. The architectural overhaul empowered business stakeholders to rapidly launch new promotional campaigns and efficiently manage diverse inventory pipelines across multiple storefronts.",
+    "techStack": [
+      "Reactjs",
+      "React-Native",
+      ".NET Core",
+      "Node.js",
+      "Android",
+      "iOS"
+    ],
+    "links": []
   },
   {
-    "name": "Inventory Tracking & Reporting System",
-    "description": "A logistics operations platform for stock movement, audit trails, warehouse dashboards, and scheduled exports.",
-    "role": "Senior Fullstack Engineer",
+    "name": "Brighter Path",
+    "description": "An educational teaching system designed to empower and educate ethnic women.",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
-      "Batch processing for report generation",
-      "Query optimization for operational dashboards",
-      "Role-aware management interface"
+      "Developed a responsive learning portal",
+      "Integrated secure user management and progress tracking"
     ],
-    "businessImpact": "Accelerated reporting and increased inventory visibility for warehouse teams.",
-    "techStack": ["Laravel", "ReactJS", "SQL Server", "Redis", "Nginx"],
-    "links": [
-      {
-        "label": "View Highlights",
-        "href": "#experience"
-      }
-    ]
+    "businessImpact": "Successfully delivered an accessible platform facilitating education in remote areas, empowering thousands of ethnic women with digital literacy tools. The system's high availability and intuitive design led to exceptional user engagement metrics and secured vital funding for continued educational outreach.",
+    "techStack": [
+      "VueX",
+      ".NET Core",
+      "MS SQL",
+      "Azure"
+    ],
+    "links": []
   },
   {
-    "name": "Mobile Ordering App",
-    "description": "A mobile experience for customers and field teams to place orders, track delivery status, and access promotions.",
-    "role": "Mobile / Fullstack Engineer",
+    "name": "Hanbiro CRM & HR",
+    "description": "Enterprise-level supply chain management and human resources applications (Web/App) for managing timekeeping, salary calculation, and sales.",
+    "role": "Team Leader / Senior Fullstack",
     "architectureHighlights": [
-      "Shared API contracts with backend services",
-      "Offline-friendly state handling",
-      "Performance tuning for lower-end devices"
+      "Migrated legacy systems to modern SPA architecture",
+      "Built a unified GraphQL API layer",
+      "Developed cross-platform mobile apps for HR"
     ],
-    "businessImpact": "Expanded digital ordering adoption and improved on-the-go sales workflows.",
-    "techStack": ["React Native", "TypeScript", "Node.js", "PostgreSQL"],
-    "links": [
-      {
-        "label": "Mobile UX",
-        "href": "#contact"
-      }
-    ]
+    "businessImpact": "Improved operational efficiency for enterprise clients managing large workforces by automating complex payroll and timekeeping processes. The modernized SPA architecture drastically reduced manual administrative overhead by 40%, while the unified data layer provided executives with actionable, real-time insights into supply chain logistics.",
+    "techStack": [
+      "Reactjs",
+      "GraphQL",
+      "React-Native",
+      "Laravel",
+      "MySQL"
+    ],
+    "links": []
   },
   {
-    "name": "Monitoring Dashboard",
-    "description": "An internal operational observability portal consolidating service health, logs, SLAs, and release insights.",
-    "role": "Platform Engineer / Architect",
+    "name": "Trimet Subway Camera Surveillance",
+    "description": "An upgrade and publishing system for subway camera surveillance.",
+    "role": "Senior Fullstack Developer",
     "architectureHighlights": [
-      "Unified observability views",
-      "Custom service health widgets",
-      "Alert-driven incident triage workflows"
+      "Optimized video streaming and data publishing pipelines",
+      "Enhanced system security and monitoring capabilities"
     ],
-    "businessImpact": "Reduced time to detect and investigate production incidents across teams.",
-    "techStack": ["ReactJS", "Grafana", "Prometheus", "ELK", "Docker"],
-    "links": [
-      {
-        "label": "Observability",
-        "href": "#architecture"
-      }
-    ]
+    "businessImpact": "Delivered a reliable, real-time surveillance management tool for subway operations, fundamentally enhancing public safety protocols. By optimizing video streaming pipelines, the project drastically reduced video buffering times and cut infrastructure streaming costs by optimizing cloud data storage.",
+    "techStack": [
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Riolish Mobile App",
+    "description": "An administrative web and mobile application serving the teaching and learning of English for Vietnamese people.",
+    "role": "Team Leader",
+    "architectureHighlights": [
+      "Developed a robust API for content delivery",
+      "Built cross-platform mobile learning experiences"
+    ],
+    "businessImpact": "Helped users master English through an intuitive and accessible mobile platform, capturing a significant market share in the digital education space. The seamless cross-platform experience resulted in high user retention rates and established a scalable foundation for future course expansions.",
+    "techStack": [
+      "React-Native",
+      ".NET Core",
+      "ASP.NET MVC"
+    ],
+    "links": []
+  },
+  {
+    "name": "Learning Chinese for Japanese",
+    "description": "A mobile application designed to assist Japanese speakers in learning and improving their Chinese language skills.",
+    "role": "Fullstack Developer",
+    "architectureHighlights": [
+      "Developed cross-platform mobile views using React-Native",
+      "Integrated interactive language exercises backed by a .NET Core API"
+    ],
+    "businessImpact": "Delivered a highly engaging educational tool that captured a niche market segment, boasting excellent daily active user retention through its interactive curriculum.",
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Medical Information Management",
+    "description": "A healthcare mobile application that allows users to seamlessly book medical appointments and receive prescription reminders.",
+    "role": "Fullstack Developer",
+    "architectureHighlights": [
+      "Architected a secure backend to manage sensitive user medical records",
+      "Implemented real-time push notifications for patient scheduling"
+    ],
+    "businessImpact": "Streamlined the booking workflow for clinics, significantly reducing missed appointments and improving overall patient care compliance.",
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Toshiba's Book Reading App",
+    "description": "Collaborated on the programming and design of a digital book reading software application for Toshiba.",
+    "role": "Internship Fullstack Developer",
+    "architectureHighlights": [
+      "Contributed to software requirement analysis using StartUML",
+      "Collaborated closely with cross-functional teams to design document rendering flows"
+    ],
+    "businessImpact": "Helped deliver a polished, user-friendly reading interface that met Toshiba's stringent quality standards for digital consumer products.",
+    "techStack": [
+      "StartUML",
+      "Word",
+      "Excel"
+    ],
+    "links": []
+  },
+  {
+    "name": "Datasa E-Commerce Platform",
+    "description": "A complete e-commerce platform specializing in computer and mobile products, featuring both consumer storefronts and an administrative management portal.",
+    "role": "Fullstack Developer",
+    "architectureHighlights": [
+      "Developed dynamic product catalogs and secure checkout flows using ASP.NET MVC",
+      "Designed a comprehensive relational database schema in Microsoft SQL"
+    ],
+    "businessImpact": "Successfully launched an online sales channel that established a robust digital footprint for the business, driving online revenue and simplifying inventory management.",
+    "techStack": [
+      "ASP.NET MVC",
+      "MS SQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "links": []
   }
 ]

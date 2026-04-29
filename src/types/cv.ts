@@ -90,8 +90,9 @@ export interface ArchitectureHighlight {
 export interface EducationItem {
   degree: string
   institution: string
-  duration: string
+  duration?: string
   note: string
+  logoUrl?: string
 }
 
 export interface CertificationItem {

@@ -1,92 +1,179 @@
 [
   {
-    "name": "Enterprise Order Management System",
-    "description": "A high-volume platform coordinating orders, pricing, promotions, and fulfillment across omni-channel retail operations.",
-    "role": "Technical Architect",
+    "name": "Hệ sinh thái Quản lý Doanh nghiệp Dcorp F&B",
+    "description": "Hệ sinh thái quản lý nhà hàng và POS theo mô hình lai (On-premise & Cloud Microservices) phục vụ các chuỗi F&B lớn như Highland Coffee, Golden Gate.",
+    "role": "Team Leader / Kỹ sư Fullstack Senior",
     "architectureHighlights": [
-      "Domain-driven service decomposition",
-      "API gateway with internal service contracts",
-      "Asynchronous event processing for order lifecycle"
+      "Thiết kế kiến trúc backend mạnh mẽ bằng .NET Core và Java nhằm xử lý lượng lớn giao dịch mỗi ngày.",
+      "Xây dựng pipeline xử lý dữ liệu lớn (Big Data) và đồng bộ hóa dữ liệu giữa hệ thống POS offline và Cloud.",
+      "Thiết kế cơ sở hạ tầng có tính sẵn sàng cao, sử dụng Redis và Kafka để tối ưu hóa hàng đợi cho lượng request khổng lồ."
     ],
-    "businessImpact": "Enabled faster regional rollout and improved order reliability during seasonal peaks.",
-    "techStack": ["ASP.NET Core", "ReactJS", "Kafka", "Redis", "PostgreSQL", "Kubernetes"],
-    "links": [
-      {
-        "label": "Architecture Notes",
-        "href": "#architecture"
-      }
-    ]
+    "businessImpact": "Đảm bảo quá trình vận hành liên tục, không gián đoạn và cung cấp báo cáo phân tích theo thời gian thực cho các chuỗi nhà hàng doanh nghiệp trên toàn quốc. Hệ thống hỗ trợ trực tiếp hàng ngàn người dùng đồng thời, bảo vệ hàng triệu giao dịch mỗi ngày. Kiến trúc vững chắc giúp giảm thiểu tối đa thời gian downtime và đẩy nhanh tốc độ triển khai tính năng mới cho các chuỗi nhượng quyền.",
+    "techStack": [
+      ".NET Core",
+      "Java",
+      "Spring Boot",
+      "ReactJS",
+      "React-Native",
+      "MS SQL",
+      "Redis",
+      "Kafka"
+    ],
+    "links": []
   },
   {
-    "name": "Loyalty & CRM Platform",
-    "description": "An enterprise engagement suite for campaign automation, customer segmentation, reward rules, and partner integrations.",
-    "role": "Solution Architect / Lead Engineer",
+    "name": "Hệ sinh thái Go Food and Beverage (GoF&B)",
+    "description": "Giải pháp kỹ thuật chiến lược toàn diện cho ngành F&B, quản lý đơn hàng, POS và vận hành cửa hàng.",
+    "role": "Trưởng nhóm Kiến trúc Kỹ thuật",
     "architectureHighlights": [
-      "Event-driven customer activity processing",
-      "Integration adapters for POS and payment services",
-      "Reusable admin portal foundation"
+      "Dẫn dắt R&D khám phá và ứng dụng công nghệ mới",
+      "Thiết kế kiến trúc backend mở rộng cao",
+      "Quản lý đội ngũ phát triển hơn 40 thành viên"
     ],
-    "businessImpact": "Improved campaign launch speed and reduced operational overhead for marketing teams.",
-    "techStack": ["Spring Boot", "Vue.js", "RabbitMQ", "MongoDB", "MySQL", "ELK"],
-    "links": [
-      {
-        "label": "Case Study",
-        "href": "#projects"
-      }
-    ]
+    "businessImpact": "Tăng cường hiệu năng và độ tin cậy của hệ thống khi xử lý khối lượng giao dịch lớn, giúp cải thiện đáng kể tốc độ xử lý đơn hàng. Việc tối ưu hóa kiến trúc tổng thể đã tạo điều kiện cho các phòng ban kinh doanh tung ra các chiến dịch khuyến mãi mới một cách nhanh chóng và quản lý hàng tồn kho hiệu quả trên nhiều mặt bằng cửa hàng.",
+    "techStack": [
+      "Reactjs",
+      "React-Native",
+      ".NET Core",
+      "Node.js",
+      "Android",
+      "iOS"
+    ],
+    "links": []
   },
   {
-    "name": "Inventory Tracking & Reporting System",
-    "description": "A logistics operations platform for stock movement, audit trails, warehouse dashboards, and scheduled exports.",
-    "role": "Senior Fullstack Engineer",
+    "name": "Brighter Path",
+    "description": "Hệ thống giáo dục được thiết kế để giảng dạy và hỗ trợ phụ nữ dân tộc thiểu số.",
+    "role": "Kỹ sư Fullstack Senior",
     "architectureHighlights": [
-      "Batch processing for report generation",
-      "Query optimization for operational dashboards",
-      "Role-aware management interface"
+      "Phát triển cổng thông tin học tập đáp ứng đa thiết bị",
+      "Tích hợp quản lý người dùng và theo dõi tiến độ học tập bảo mật"
     ],
-    "businessImpact": "Accelerated reporting and increased inventory visibility for warehouse teams.",
-    "techStack": ["Laravel", "ReactJS", "SQL Server", "Redis", "Nginx"],
-    "links": [
-      {
-        "label": "View Highlights",
-        "href": "#experience"
-      }
-    ]
+    "businessImpact": "Bàn giao thành công nền tảng giáo dục dễ tiếp cận cho khu vực vùng sâu vùng xa, mang lại cơ hội tiếp cận kỹ thuật số cho hàng ngàn phụ nữ dân tộc thiểu số. Thiết kế trực quan và tính sẵn sàng cao của hệ thống đã đem lại chỉ số tương tác người dùng xuất sắc, góp phần quan trọng trong việc thu hút tài trợ cho các dự án giáo dục.",
+    "techStack": [
+      "VueX",
+      ".NET Core",
+      "MS SQL",
+      "Azure"
+    ],
+    "links": []
   },
   {
-    "name": "Mobile Ordering App",
-    "description": "A mobile experience for customers and field teams to place orders, track delivery status, and access promotions.",
-    "role": "Mobile / Fullstack Engineer",
+    "name": "Hanbiro CRM & HR",
+    "description": "Các ứng dụng quản lý nhân sự và chuỗi cung ứng cấp doanh nghiệp (Web/App) để quản lý chấm công, tính lương và bán hàng.",
+    "role": "Team Leader / Kỹ sư Fullstack",
     "architectureHighlights": [
-      "Shared API contracts with backend services",
-      "Offline-friendly state handling",
-      "Performance tuning for lower-end devices"
+      "Chuyển đổi hệ thống cũ sang kiến trúc SPA hiện đại",
+      "Xây dựng lớp API GraphQL thống nhất",
+      "Phát triển ứng dụng di động đa nền tảng cho hệ thống Nhân sự"
     ],
-    "businessImpact": "Expanded digital ordering adoption and improved on-the-go sales workflows.",
-    "techStack": ["React Native", "TypeScript", "Node.js", "PostgreSQL"],
-    "links": [
-      {
-        "label": "Mobile UX",
-        "href": "#contact"
-      }
-    ]
+    "businessImpact": "Cải thiện hiệu suất vận hành cho các khách hàng doanh nghiệp quản lý lực lượng lao động lớn thông qua việc tự động hóa các quy trình tính lương và chấm công phức tạp. Kiến trúc SPA hiện đại giúp giảm 40% khối lượng công việc hành chính thủ công, đồng thời cung cấp cho ban lãnh đạo cái nhìn toàn diện và theo thời gian thực về chuỗi cung ứng.",
+    "techStack": [
+      "Reactjs",
+      "GraphQL",
+      "React-Native",
+      "Laravel",
+      "MySQL"
+    ],
+    "links": []
   },
   {
-    "name": "Monitoring Dashboard",
-    "description": "An internal operational observability portal consolidating service health, logs, SLAs, and release insights.",
-    "role": "Platform Engineer / Architect",
+    "name": "Hệ thống Camera Giám sát Tàu điện ngầm Trimet",
+    "description": "Nâng cấp và phát hành hệ thống quản lý camera giám sát cho tàu điện ngầm.",
+    "role": "Kỹ sư Fullstack Senior",
     "architectureHighlights": [
-      "Unified observability views",
-      "Custom service health widgets",
-      "Alert-driven incident triage workflows"
+      "Tối ưu hóa pipeline phát trực tuyến video và xuất bản dữ liệu",
+      "Tăng cường khả năng bảo mật và giám sát hệ thống"
     ],
-    "businessImpact": "Reduced time to detect and investigate production incidents across teams.",
-    "techStack": ["ReactJS", "Grafana", "Prometheus", "ELK", "Docker"],
-    "links": [
-      {
-        "label": "Observability",
-        "href": "#architecture"
-      }
-    ]
+    "businessImpact": "Cung cấp một công cụ giám sát thời gian thực đáng tin cậy cho hoạt động của tàu điện ngầm, giúp nâng cao các giao thức an toàn công cộng. Nhờ tối ưu hóa luồng phát video (streaming pipeline), dự án đã giảm thiểu đáng kể thời gian gián đoạn video và tiết kiệm chi phí băng thông dữ liệu đám mây.",
+    "techStack": [
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Ứng dụng di động Riolish",
+    "description": "Ứng dụng quản trị web và di động phục vụ việc giảng dạy và học tiếng Anh cho người Việt.",
+    "role": "Trưởng nhóm",
+    "architectureHighlights": [
+      "Phát triển API mạnh mẽ để phân phối nội dung",
+      "Xây dựng trải nghiệm học tập di động đa nền tảng"
+    ],
+    "businessImpact": "Hỗ trợ người dùng thành thạo tiếng Anh thông qua nền tảng di động trực quan và dễ tiếp cận, chiếm lĩnh thị phần đáng kể trong không gian giáo dục số. Trải nghiệm xuyên suốt trên đa nền tảng mang lại tỷ lệ giữ chân người dùng cao và tạo nền móng vững chắc để mở rộng các khóa học trong tương lai.",
+    "techStack": [
+      "React-Native",
+      ".NET Core",
+      "ASP.NET MVC"
+    ],
+    "links": []
+  },
+  {
+    "name": "Learning Chinese for Japanese",
+    "description": "Dự án ứng dụng di động hỗ trợ người Nhật Bản cải thiện và học tiếng Trung Quốc một cách hiệu quả.",
+    "role": "Kỹ sư Fullstack",
+    "architectureHighlights": [
+      "Phát triển giao diện di động đa nền tảng bằng React-Native",
+      "Tích hợp các bài tập ngôn ngữ tương tác qua hệ thống API .NET Core"
+    ],
+    "businessImpact": "Mang đến một công cụ giáo dục mang tính tương tác cao, thu hút lượng lớn người dùng học ngoại ngữ mỗi ngày và giữ chân người dùng cực kỳ hiệu quả.",
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Medical Information Management",
+    "description": "Ứng dụng y tế trên điện thoại cho phép người dùng đặt lịch khám bệnh trực tuyến và nhắc nhở uống thuốc/tái khám.",
+    "role": "Kỹ sư Fullstack",
+    "architectureHighlights": [
+      "Thiết kế backend bảo mật cao để quản lý hồ sơ bệnh án nhạy cảm",
+      "Triển khai hệ thống thông báo đẩy (push notifications) theo thời gian thực"
+    ],
+    "businessImpact": "Chuẩn hóa quy trình đặt lịch cho phòng khám, giảm thiểu đáng kể tình trạng bệnh nhân quên lịch hẹn và nâng cao chất lượng chăm sóc sức khỏe.",
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": []
+  },
+  {
+    "name": "Ứng dụng Đọc sách Toshiba",
+    "description": "Tham gia lập trình và phân tích thiết kế phần mềm đọc sách kỹ thuật số trực thuộc dự án của Toshiba.",
+    "role": "Thực tập sinh Fullstack",
+    "architectureHighlights": [
+      "Phân tích yêu cầu và thiết kế phần mềm bằng StartUML",
+      "Phối hợp với nhóm phát triển để tối ưu hóa luồng hiển thị tài liệu"
+    ],
+    "businessImpact": "Đóng góp vào việc hoàn thiện một sản phẩm phần mềm tiêu dùng đạt tiêu chuẩn khắt khe của Toshiba, đem lại trải nghiệm đọc mượt mà.",
+    "techStack": [
+      "StartUML",
+      "Word",
+      "Excel"
+    ],
+    "links": []
+  },
+  {
+    "name": "Nền tảng Thương mại Điện tử Datasa",
+    "description": "Trang web thương mại điện tử chuyên bán các sản phẩm máy tính và di động, bao gồm trang mua hàng cho người dùng và hệ thống quản trị (admin).",
+    "role": "Kỹ sư Fullstack",
+    "architectureHighlights": [
+      "Xây dựng giỏ hàng và quy trình thanh toán an toàn với ASP.NET MVC",
+      "Thiết kế hệ thống cơ sở dữ liệu quan hệ tối ưu bằng Microsoft SQL"
+    ],
+    "businessImpact": "Mở ra kênh bán hàng trực tuyến mạnh mẽ, giúp doanh nghiệp tăng doanh thu đáng kể và tự động hóa quy trình quản lý kho hàng.",
+    "techStack": [
+      "ASP.NET MVC",
+      "MS SQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "links": []
   }
 ]

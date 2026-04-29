@@ -1,17 +1,17 @@
 [
   {
-    "name": "Cloud Architecture Professional",
-    "issuer": "Cloud Academy",
-    "year": "2024"
+    "name": "Developing Web Application with Spring Framework",
+    "issuer": "FPT Nanoversity HCM",
+    "year": "2017"
   },
   {
-    "name": "Database Performance & Tuning Specialist",
-    "issuer": "Data Engineering Institute",
-    "year": "2023"
+    "name": "Web Developer: MVC 5 (Microsoft Certificate)",
+    "issuer": "Nhat Nghe Centre",
+    "year": "2016"
   },
   {
-    "name": "System Design for Scalable Applications",
-    "issuer": "Architecture Guild",
-    "year": "2022"
+    "name": "Web Developer: C#, ASP.Net, SQL Server (Microsoft Certificate)",
+    "issuer": "Nhat Nghe Centre",
+    "year": "2016"
   }
 ]

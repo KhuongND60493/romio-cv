@@ -1,18 +1,18 @@
 {
   "hero": {
-    "fullName": "Romio Nguyen",
-    "title": "Technical Architect / Fullstack Engineer",
+    "fullName": "Nguyen Duy Khuong",
+    "title": "Technical Architect / Technical Leader",
     "tagline": "Designing scalable systems, building reliable products.",
-    "summary": "Technical Architect with 10+ years across enterprise backend, rich web platforms, mobile delivery, cloud infrastructure, and engineering leadership for multi-team product environments.",
+    "summary": "As a dedicated Technical Architect with experience in building and optimizing software solutions, I am eager to bring my technical expertise and collaborative approach to a forward-thinking organization. My goal is to drive robust, scalable solutions that adapt to future industry trends.",
     "avatarLabel": "RN",
-    "location": "Ho Chi Minh City, Vietnam",
+    "location": "502/13/2 Thong Nhat, Ward 16, Go Vap, HCM",
     "email": "nguyenromio@gmail.com",
-    "phone": "+84 902 637 745",
+    "phone": "0902637745",
     "resumeUrl": "#contact"
   },
   "about": {
-    "headline": "From product discovery to platform scale, I bridge architecture decisions with practical delivery.",
-    "description": "I specialize in designing cloud-ready architectures and leading fullstack delivery across backend services, frontend platforms, mobile applications, databases, observability, and DevOps automation. My focus is aligning system design with business goals, reliability, performance, and team velocity.",
+    "headline": "Over {{years}} years of experience in fullstack development, technical leadership, and system architecture.",
+    "description": "From early e-commerce platforms to enterprise-scale microservices, I have consistently led technical teams to deliver high-performance applications. I specialize in backend architecture (Node.js, .NET Core), frontend/mobile development (React, React Native), and orchestrating complex deployments across diverse technology stacks.",
     "focusAreas": [
       "System design for scalable and resilient platforms",
       "Backend and integration architecture across .NET, Java, PHP, and Node.js",

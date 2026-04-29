@@ -26,10 +26,21 @@ export const EducationSection = ({
         <h3>Education</h3>
         {education.map((item) => (
           <article key={item.degree} className={styles.card}>
-            <h4>{item.degree}</h4>
-            <p>{item.institution}</p>
-            <span>{item.duration}</span>
-            <p>{item.note}</p>
+            <div className={styles.cardHeader}>
+              {item.logoUrl && (
+                <img 
+                  src={item.logoUrl.startsWith('http') ? item.logoUrl : `${import.meta.env.BASE_URL}${item.logoUrl}`} 
+                  alt={item.institution} 
+                  className={styles.logo} 
+                />
+              )}
+              <div>
+                <h4>{item.degree}</h4>
+                <p>{item.institution}</p>
+                {item.duration && <span>{item.duration}</span>}
+              </div>
+            </div>
+            <p className={styles.note}>{item.note}</p>
           </article>
         ))}
       </div>

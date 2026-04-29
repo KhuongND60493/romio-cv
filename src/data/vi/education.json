@@ -1,14 +1,15 @@
 [
   {
-    "degree": "Bachelor of Software Engineering",
-    "institution": "University of Information Technology",
-    "duration": "2010 - 2014",
-    "note": "Focused on software architecture, algorithms, databases, and enterprise application development."
+    "degree": "Thạc sĩ Công nghệ Thông tin (Kế hoạch)",
+    "institution": "Đại học Công nghệ Thông tin, ĐHQG-HCM (UIT)",
+    "duration": "2026 - Dự kiến 2028",
+    "note": "Kế hoạch theo học chương trình Thạc sĩ chuyên ngành Công nghệ Thông tin. Mục tiêu học tập sẽ tập trung chuyên sâu vào các thuật toán nâng cao, hệ thống phân tán và đặc biệt là xử lý dữ liệu lớn (Big Data) nhằm thiết kế và tối ưu hóa các kiến trúc dữ liệu quy mô doanh nghiệp.",
+    "logoUrl": "uit.jpg"
   },
   {
-    "degree": "Master's Candidate in Computer Science",
-    "institution": "International University Program",
-    "duration": "2021 - 2023",
-    "note": "Research direction on distributed systems, cloud architecture, and performance engineering."
+    "degree": "Cử nhân Công nghệ Thông tin (Loại Giỏi)",
+    "institution": "Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)",
+    "note": "Tốt nghiệp loại Giỏi tại Khoa Công nghệ Thông tin - một trong những chương trình đào tạo Khoa học Máy tính danh giá và khắt khe nhất Việt Nam. Chương trình học cung cấp nền tảng lý thuyết vững chắc về Cấu trúc Dữ liệu, Thuật toán Nâng cao và Kiến trúc Hệ thống. Các môn chuyên ngành tập trung vào Phát triển Phần mềm Doanh nghiệp, Cơ sở Dữ liệu Phân tán và Trí tuệ Nhân tạo, rèn luyện tư duy kỹ sư nhạy bén để thiết kế và xây dựng các hệ thống mở rộng, hiệu suất cao.",
+    "logoUrl": "khtn.png"
   }
 ]

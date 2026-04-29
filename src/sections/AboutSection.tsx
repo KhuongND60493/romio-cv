@@ -9,11 +9,16 @@ interface AboutSectionProps {
 
 export const AboutSection = ({ about }: AboutSectionProps) => {
   const { t } = useTranslation();
+  
+  const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - 2012;
+  const dynamicHeadline = about.headline.replace('{{years}}', experienceYears.toString());
+
   return (
   <section id="about" className={styles.section}>
     <SectionHeading
       eyebrow={t('sections.about')}
-      title={about.headline}
+      title={dynamicHeadline}
       description={about.description}
     />
 

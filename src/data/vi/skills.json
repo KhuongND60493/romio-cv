@@ -1,82 +1,138 @@
 {
   "competencies": [
     {
-      "title": "System Architecture",
-      "description": "Designing modular, resilient, and scalable systems aligned with product growth."
+      "title": "Kiến trúc Hệ thống",
+      "description": "Thiết kế hệ thống dạng module, bền bỉ và dễ mở rộng phù hợp với sự phát triển của sản phẩm."
     },
     {
-      "title": "Backend Development",
-      "description": "Building robust services, APIs, integrations, and background processing pipelines."
+      "title": "Phát triển Backend",
+      "description": "Xây dựng các service mạnh mẽ, API, tích hợp và các pipeline xử lý tác vụ ngầm (background)."
     },
     {
-      "title": "Frontend Development",
-      "description": "Creating performant, maintainable, and accessible web interfaces for enterprise users."
+      "title": "Phát triển Frontend",
+      "description": "Tạo giao diện web hiệu suất cao, dễ bảo trì và dễ sử dụng cho khách hàng doanh nghiệp."
     },
     {
-      "title": "Mobile Development",
-      "description": "Delivering mobile-first experiences with React Native and platform-aware best practices."
+      "title": "Phát triển Di động (Mobile)",
+      "description": "Phát triển trải nghiệm mobile-first với React Native và các tiêu chuẩn tốt nhất."
     },
     {
-      "title": "Database Design",
-      "description": "Modeling data, optimizing queries, and balancing transactional and analytical workloads."
+      "title": "Thiết kế Cơ sở Dữ liệu",
+      "description": "Mô hình hóa dữ liệu, tối ưu hóa truy vấn và cân bằng khối lượng công việc phân tích - giao dịch."
     },
     {
-      "title": "API Integration",
-      "description": "Connecting internal and external platforms with clean contracts, security, and observability."
+      "title": "Tích hợp API",
+      "description": "Kết nối các nền tảng nội bộ và bên ngoài với hợp đồng (contract) rõ ràng, bảo mật và khả năng quan sát."
     },
     {
       "title": "DevOps / CI/CD",
-      "description": "Automating delivery pipelines, environment setup, and release confidence."
+      "description": "Tự động hóa pipeline triển khai, thiết lập môi trường và tăng độ tin cậy của bản build."
     },
     {
-      "title": "Performance Optimization",
-      "description": "Improving throughput, response time, and resource efficiency under production load."
+      "title": "Tối ưu hóa Hiệu suất",
+      "description": "Cải thiện thông lượng, thời gian phản hồi và tối ưu tài nguyên dưới tải hệ thống production."
     },
     {
-      "title": "Monitoring / Observability",
-      "description": "Establishing actionable metrics, logs, tracing, and alerting for reliable operations."
+      "title": "Giám sát / Observability",
+      "description": "Thiết lập các chỉ số hữu ích, log, tracing và cảnh báo để vận hành hệ thống đáng tin cậy."
     },
     {
-      "title": "Technical Leadership",
-      "description": "Guiding engineering teams, architecture reviews, mentoring, and delivery planning."
+      "title": "Lãnh đạo Kỹ thuật",
+      "description": "Dẫn dắt các nhóm kỹ thuật, đánh giá kiến trúc, cố vấn (mentoring) và lập kế hoạch triển khai."
     }
   ],
   "techStack": [
     {
       "category": "Backend",
-      "items": [".NET Core", "ASP.NET Core", "Java", "Spring Boot", "PHP", "Laravel", "Node.js"]
+      "items": [
+        ".NET Core",
+        "ASP.NET Core",
+        "Java",
+        "Spring Boot",
+        "PHP",
+        "Laravel",
+        "Node.js"
+      ]
     },
     {
       "category": "Frontend",
-      "items": ["ReactJS", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3"]
+      "items": [
+        "ReactJS",
+        "Vue.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Angular"
+      ]
     },
     {
       "category": "Mobile",
-      "items": ["React Native", "Android", "iOS Basics"]
+      "items": [
+        "React Native",
+        "Android",
+        "iOS Basics"
+      ]
     },
     {
       "category": "Database",
-      "items": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis"]
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "MongoDB",
+        "Redis"
+      ]
     },
     {
       "category": "Messaging",
-      "items": ["Kafka", "RabbitMQ"]
+      "items": [
+        "Kafka",
+        "RabbitMQ"
+      ]
     },
     {
       "category": "DevOps",
-      "items": ["Docker", "Kubernetes", "GitHub Actions", "GitLab CI/CD", "Nginx"]
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Nginx"
+      ]
     },
     {
       "category": "Cloud / Infra",
-      "items": ["AWS", "Azure", "Cloud Networking", "Object Storage", "Load Balancing"]
+      "items": [
+        "AWS",
+        "Azure",
+        "Cloud Networking",
+        "Object Storage",
+        "Load Balancing"
+      ]
     },
     {
       "category": "Monitoring",
-      "items": ["Grafana", "Prometheus", "ELK", "OpenTelemetry"]
+      "items": [
+        "Grafana",
+        "Prometheus",
+        "ELK",
+        "OpenTelemetry"
+      ]
     },
     {
       "category": "Tools",
-      "items": ["Git", "Jira", "Postman", "Swagger", "Cursor", "VS Code"]
+      "items": [
+        "Git",
+        "Jira",
+        "Postman",
+        "Swagger",
+        "Cursor",
+        "VS Code",
+        "Figma",
+        "Photoshop",
+        "XD"
+      ]
     }
   ]
 }

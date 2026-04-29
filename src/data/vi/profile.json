@@ -1,18 +1,18 @@
 {
   "hero": {
-    "fullName": "Romio Nguyen",
-    "title": "Kiến trúc sư hệ thống / Kỹ sư Fullstack",
+    "fullName": "Nguyễn Duy Khương",
+    "title": "Kiến trúc sư Kỹ thuật / Technical Leader",
     "tagline": "Thiết kế hệ thống có khả năng mở rộng, xây dựng sản phẩm đáng tin cậy.",
-    "summary": "Kiến trúc sư hệ thống với hơn 10 năm kinh nghiệm trong các hệ thống doanh nghiệp, nền tảng web phức tạp, di động, hạ tầng đám mây và dẫn dắt đội ngũ kỹ thuật.",
+    "summary": "Là một Kiến trúc sư Kỹ thuật với nhiều kinh nghiệm trong việc xây dựng và tối ưu hóa các giải pháp phần mềm, tôi luôn mong muốn mang chuyên môn kỹ thuật và tinh thần hợp tác của mình đến với các tổ chức tiên phong. Mục tiêu của tôi là thúc đẩy những hệ thống mạnh mẽ, có khả năng mở rộng và thích ứng với xu hướng tương lai của ngành công nghiệp.",
     "avatarLabel": "RN",
-    "location": "Thành phố Hồ Chí Minh, Việt Nam",
+    "location": "502/13/2 Thống Nhất, Phường 16, Gò Vấp, HCM",
     "email": "nguyenromio@gmail.com",
-    "phone": "+84 902 637 745",
+    "phone": "0902637745",
     "resumeUrl": "#contact"
   },
   "about": {
-    "headline": "Từ việc khám phá sản phẩm đến mở rộng nền tảng, tôi kết nối các quyết định kiến trúc với thực tế triển khai.",
-    "description": "Tôi chuyên thiết kế các kiến trúc sẵn sàng cho nền tảng đám mây và dẫn dắt việc phân phối toàn bộ hệ thống từ backend, frontend, ứng dụng di động, cơ sở dữ liệu, khả năng quan sát (observability), và tự động hóa DevOps. Trọng tâm của tôi là kết hợp thiết kế hệ thống với mục tiêu kinh doanh, độ tin cậy, hiệu suất và tốc độ của đội ngũ.",
+    "headline": "Hơn {{years}} năm kinh nghiệm trong phát triển Fullstack, quản lý nhóm kỹ thuật và kiến trúc hệ thống.",
+    "description": "Từ các nền tảng thương mại điện tử sơ khai cho đến các hệ thống microservices quy mô doanh nghiệp, tôi đã liên tục dẫn dắt các nhóm kỹ thuật mang lại những ứng dụng có hiệu suất cao. Tôi chuyên sâu về kiến trúc backend (Node.js, .NET Core), phát triển frontend/mobile (React, React Native) và điều phối việc triển khai phức tạp trên nhiều nền tảng công nghệ đa dạng.",
     "focusAreas": [
       "Thiết kế hệ thống cho các nền tảng mở rộng và có độ bền bỉ cao",
       "Kiến trúc Backend và tích hợp hệ thống qua .NET, Java, PHP, và Node.js",
