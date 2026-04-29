@@ -19,7 +19,7 @@ const resources = {
       },
       footer: {
         builtWith: 'Built with React, TypeScript, and Vite.',
-        rights: '© 2026 Romio Nguyen. All rights reserved.',
+        rights: '© 2026 Romio Nguyen',
       },
       sections: {
         about: 'About',
@@ -50,7 +50,7 @@ const resources = {
       },
       footer: {
         builtWith: 'Được xây dựng với React, TypeScript, và Vite.',
-        rights: '© 2026 Romio Nguyen. Đã đăng ký bản quyền.',
+        rights: '© 2026 Romio Nguyen',
       },
       sections: {
         about: 'Giới thiệu',

@@ -40,14 +40,14 @@
   "links": [
     {
       "label": "Email",
-      "value": "romio.architect@example.com",
-      "href": "mailto:romio.architect@example.com",
+      "value": "nguyenromio@gmail.com",
+      "href": "mailto:nguyenromio@gmail.com",
       "ariaLabel": "Send email to Romio Nguyen"
     },
     {
       "label": "Phone",
-      "value": "+84 901 234 567",
-      "href": "tel:+84901234567",
+      "value": "+84 902 637 745",
+      "href": "tel:+84902637745",
       "ariaLabel": "Call Romio Nguyen"
     },
     {
