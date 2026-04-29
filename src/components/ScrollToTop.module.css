@@ -21,7 +21,7 @@
 
 .scrollBtn:hover {
   background: var(--accent);
-  color: #fff;
+  color: var(--title);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4);
 }

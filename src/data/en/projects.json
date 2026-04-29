@@ -1,14 +1,15 @@
 [
   {
     "name": "Dcorp F&B Enterprise Ecosystem",
-    "description": "A hybrid (On-premise & Cloud Microservices) POS and enterprise management ecosystem serving major F&B chains such as Highland Coffee and Golden Gate.",
+    "description": "A hybrid (On-premise & Cloud Microservices) POS and enterprise management ecosystem serving major F&B chains such as Highland Coffee and Golden Gate, covering order lifecycle, pricing, promotion, loyalty, and centralized operational reporting.",
     "role": "Team Leader / Senior Fullstack Developer",
     "architectureHighlights": [
       "Architected robust backend services in .NET Core and Java to process massive daily transaction volumes.",
       "Engineered reliable Big Data pipelines and synchronized data between offline POS terminals and the cloud.",
-      "Designed highly available infrastructure utilizing Redis and Kafka for high-throughput queuing."
+      "Designed highly available infrastructure utilizing Redis and Kafka for high-throughput queuing.",
+      "Defined cross-service API contracts and event schemas to standardize integration between POS, HQ, and partner systems."
     ],
-    "businessImpact": "Ensured seamless, uninterrupted operations and real-time analytics for nationwide enterprise restaurant chains, directly supporting thousands of daily concurrent users and safeguarding millions in daily transaction revenue. The robust architecture minimized system downtime and significantly accelerated the rollout of new features to franchisees.",
+    "businessImpact": "At Dcorp Vietnam, this platform ensured uninterrupted operations and real-time analytics for nationwide restaurant chains, supporting high daily concurrency and revenue-critical transactions. The architecture reduced downtime risk, shortened release lead time for franchise features, and improved operational visibility for both store-level and head-office decision making.",
     "techStack": [
       ".NET Core",
       "Java",
@@ -19,18 +20,24 @@
       "Redis",
       "Kafka"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Related Experience",
+        "href": "#experience"
+      }
+    ]
   },
   {
     "name": "Go Food and Beverage Ecosystem (GoF&B)",
-    "description": "A comprehensive strategic technical solution for the F&B industry, managing orders, POS, and operations.",
+    "description": "A comprehensive strategic technical solution for the F&B industry, managing orders, POS, kitchen workflows, promotion execution, and multi-branch operations.",
     "role": "Technical Architecture Lead",
     "architectureHighlights": [
       "Led R&D for exploring and applying new technologies",
       "Designed highly scalable backend architecture",
-      "Managed a cross-functional team of 40+ members"
+      "Managed a cross-functional team of 40+ members",
+      "Introduced architecture review and release governance practices across backend, frontend, and mobile streams."
     ],
-    "businessImpact": "Boosted system performance and enhanced reliability for high-volume transactions, leading to a massive increase in order processing speed. The architectural overhaul empowered business stakeholders to rapidly launch new promotional campaigns and efficiently manage diverse inventory pipelines across multiple storefronts.",
+    "businessImpact": "At MEDIASTEP, this ecosystem improved transaction throughput and platform reliability for high-volume F&B operations. The architecture enabled business teams to launch campaigns faster, manage inventory workflows consistently across multiple storefronts, and reduce release risk during high-traffic business periods.",
     "techStack": [
       "Reactjs",
       "React-Native",
@@ -39,35 +46,68 @@
       "Android",
       "iOS"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Architecture Notes",
+        "href": "#architecture"
+      }
+    ]
   },
   {
     "name": "Brighter Path",
-    "description": "An educational teaching system designed to empower and educate ethnic women.",
+    "description": "An educational platform designed to empower ethnic women through structured learning paths, accessible web UX, and progress tracking for community-driven training programs.",
     "role": "Senior Fullstack Developer",
     "architectureHighlights": [
       "Developed a responsive learning portal",
-      "Integrated secure user management and progress tracking"
+      "Integrated secure user management and progress tracking",
+      "Built modular content and enrollment flows to support iterative curriculum expansion."
     ],
-    "businessImpact": "Successfully delivered an accessible platform facilitating education in remote areas, empowering thousands of ethnic women with digital literacy tools. The system's high availability and intuitive design led to exceptional user engagement metrics and secured vital funding for continued educational outreach.",
+    "businessImpact": "At ALTSOURCE VIETNAM, this platform expanded access to digital education for ethnic women in underserved areas. Strong availability and usability improved learner engagement, while structured learning analytics gave stakeholders clearer evidence for scaling and continued program investment.",
     "techStack": [
       "VueX",
       ".NET Core",
       "MS SQL",
       "Azure"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Project Group",
+        "href": "#projects"
+      }
+    ]
+  },
+  {
+    "name": "Trimet Subway Camera Surveillance",
+    "description": "A modernization project for subway camera surveillance publishing and monitoring, focused on stream stability, visibility, and operational responsiveness.",
+    "role": "Senior Fullstack Developer",
+    "architectureHighlights": [
+      "Optimized video streaming and data publishing pipelines",
+      "Enhanced system security and monitoring capabilities",
+      "Refined incident-oriented telemetry and operational dashboards for support teams."
+    ],
+    "businessImpact": "At ALTSOURCE VIETNAM, this project delivered a reliable real-time surveillance workflow for subway operations with stronger monitoring and security controls. Stream and publishing optimizations reduced buffering, improved operational response during peak usage, and increased confidence for transit operations teams.",
+    "techStack": [
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": [
+      {
+        "label": "Related Experience",
+        "href": "#experience"
+      }
+    ]
   },
   {
     "name": "Hanbiro CRM & HR",
-    "description": "Enterprise-level supply chain management and human resources applications (Web/App) for managing timekeeping, salary calculation, and sales.",
+    "description": "Enterprise-level supply chain and HR applications (Web/App) supporting timekeeping, payroll, call workflows, and operational management for growing business units.",
     "role": "Team Leader / Senior Fullstack",
     "architectureHighlights": [
       "Migrated legacy systems to modern SPA architecture",
       "Built a unified GraphQL API layer",
-      "Developed cross-platform mobile apps for HR"
+      "Developed cross-platform mobile apps for HR",
+      "Established reusable UI and API patterns for multiple internal business modules."
     ],
-    "businessImpact": "Improved operational efficiency for enterprise clients managing large workforces by automating complex payroll and timekeeping processes. The modernized SPA architecture drastically reduced manual administrative overhead by 40%, while the unified data layer provided executives with actionable, real-time insights into supply chain logistics.",
+    "businessImpact": "At HANBIRO VIETNAM, this suite improved operational efficiency by automating payroll, timekeeping, and supply-chain workflows for enterprise users. The modernized architecture reduced manual administrative effort, improved visibility for business managers, and enabled faster rollout of additional internal modules.",
     "techStack": [
       "Reactjs",
       "GraphQL",
@@ -75,98 +115,113 @@
       "Laravel",
       "MySQL"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "CRM Context",
+        "href": "#experience"
+      }
+    ]
   },
   {
-    "name": "Trimet Subway Camera Surveillance",
-    "description": "An upgrade and publishing system for subway camera surveillance.",
-    "role": "Senior Fullstack Developer",
+    "name": "Learning Chinese for Japanese",
+    "description": "A mobile learning application helping Japanese users improve Chinese through interactive lessons, structured exercises, and progress-oriented practice journeys.",
+    "role": "Fullstack Developer",
     "architectureHighlights": [
-      "Optimized video streaming and data publishing pipelines",
-      "Enhanced system security and monitoring capabilities"
+      "Developed cross-platform mobile views using React-Native",
+      "Integrated interactive language exercises backed by a .NET Core API",
+      "Contributed to content delivery flow and user progression tracking for repeat learning usage."
     ],
-    "businessImpact": "Delivered a reliable, real-time surveillance management tool for subway operations, fundamentally enhancing public safety protocols. By optimizing video streaming pipelines, the project drastically reduced video buffering times and cut infrastructure streaming costs by optimizing cloud data storage.",
+    "businessImpact": "At FPT SOFTWARE, this app delivered a focused language-learning experience for a niche audience and maintained strong recurring usage through interactive lessons. The project validated mobile-first education delivery for international learners and supported product positioning in a specialized language market.",
     "techStack": [
+      "Angular",
+      "React-Native",
       ".NET Core",
       "MS SQL"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Project Details",
+        "href": "#projects"
+      }
+    ]
+  },
+  {
+    "name": "Medical Information Management",
+    "description": "A healthcare mobile application enabling users to book appointments, manage reminders, and receive follow-up notifications with clinically relevant timing.",
+    "role": "Fullstack Developer",
+    "architectureHighlights": [
+      "Architected a secure backend to manage sensitive user medical records",
+      "Implemented real-time push notifications for patient scheduling",
+      "Supported patient workflow consistency through service-side validation and reminder orchestration."
+    ],
+    "businessImpact": "At FPT SOFTWARE, this product streamlined appointment workflows and prescription reminders for clinic users. It reduced missed bookings, improved patient follow-up consistency, and helped clinics coordinate more predictable daily appointment operations.",
+    "techStack": [
+      "Angular",
+      "React-Native",
+      ".NET Core",
+      "MS SQL"
+    ],
+    "links": [
+      {
+        "label": "Healthcare Context",
+        "href": "#experience"
+      }
+    ]
   },
   {
     "name": "Riolish Mobile App",
-    "description": "An administrative web and mobile application serving the teaching and learning of English for Vietnamese people.",
+    "description": "An integrated admin web and mobile learning platform supporting English teaching operations, learner engagement, and content delivery for Vietnamese users.",
     "role": "Team Leader",
     "architectureHighlights": [
       "Developed a robust API for content delivery",
-      "Built cross-platform mobile learning experiences"
+      "Built cross-platform mobile learning experiences",
+      "Supported role-based administration flows for content, user, and course management."
     ],
-    "businessImpact": "Helped users master English through an intuitive and accessible mobile platform, capturing a significant market share in the digital education space. The seamless cross-platform experience resulted in high user retention rates and established a scalable foundation for future course expansions.",
+    "businessImpact": "At VINHDANH COMPANY, Riolish created a scalable digital learning channel combining admin web and mobile learning flows. The platform improved learner retention, expanded service delivery for Vietnamese users, and enabled more structured operations for education teams.",
     "techStack": [
       "React-Native",
       ".NET Core",
       "ASP.NET MVC"
     ],
-    "links": []
-  },
-  {
-    "name": "Learning Chinese for Japanese",
-    "description": "A mobile application designed to assist Japanese speakers in learning and improving their Chinese language skills.",
-    "role": "Fullstack Developer",
-    "architectureHighlights": [
-      "Developed cross-platform mobile views using React-Native",
-      "Integrated interactive language exercises backed by a .NET Core API"
-    ],
-    "businessImpact": "Delivered a highly engaging educational tool that captured a niche market segment, boasting excellent daily active user retention through its interactive curriculum.",
-    "techStack": [
-      "Angular",
-      "React-Native",
-      ".NET Core",
-      "MS SQL"
-    ],
-    "links": []
-  },
-  {
-    "name": "Medical Information Management",
-    "description": "A healthcare mobile application that allows users to seamlessly book medical appointments and receive prescription reminders.",
-    "role": "Fullstack Developer",
-    "architectureHighlights": [
-      "Architected a secure backend to manage sensitive user medical records",
-      "Implemented real-time push notifications for patient scheduling"
-    ],
-    "businessImpact": "Streamlined the booking workflow for clinics, significantly reducing missed appointments and improving overall patient care compliance.",
-    "techStack": [
-      "Angular",
-      "React-Native",
-      ".NET Core",
-      "MS SQL"
-    ],
-    "links": []
+    "links": [
+      {
+        "label": "Education Product",
+        "href": "#projects"
+      }
+    ]
   },
   {
     "name": "Toshiba's Book Reading App",
-    "description": "Collaborated on the programming and design of a digital book reading software application for Toshiba.",
+    "description": "Collaborated on the analysis and implementation of a digital reading application for Toshiba, focusing on document flow, readability, and stable user interaction.",
     "role": "Internship Fullstack Developer",
     "architectureHighlights": [
       "Contributed to software requirement analysis using StartUML",
-      "Collaborated closely with cross-functional teams to design document rendering flows"
+      "Collaborated closely with cross-functional teams to design document rendering flows",
+      "Supported quality assurance preparation through documentation and requirement alignment activities."
     ],
-    "businessImpact": "Helped deliver a polished, user-friendly reading interface that met Toshiba's stringent quality standards for digital consumer products.",
+    "businessImpact": "At FPT SOFTWARE (internship phase), this project contributed to delivering a stable and user-friendly digital reading experience aligned with Toshiba's product quality expectations. It also provided early exposure to enterprise delivery standards and cross-functional collaboration practices.",
     "techStack": [
       "StartUML",
       "Word",
       "Excel"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Early Career",
+        "href": "#experience"
+      }
+    ]
   },
   {
     "name": "Datasa E-Commerce Platform",
-    "description": "A complete e-commerce platform specializing in computer and mobile products, featuring both consumer storefronts and an administrative management portal.",
+    "description": "A complete e-commerce platform for computer and mobile products, including customer storefront flows and an administrative portal for catalog and operations management.",
     "role": "Fullstack Developer",
     "architectureHighlights": [
       "Developed dynamic product catalogs and secure checkout flows using ASP.NET MVC",
-      "Designed a comprehensive relational database schema in Microsoft SQL"
+      "Designed a comprehensive relational database schema in Microsoft SQL",
+      "Implemented order and product management workflows for day-to-day business operations."
     ],
-    "businessImpact": "Successfully launched an online sales channel that established a robust digital footprint for the business, driving online revenue and simplifying inventory management.",
+    "businessImpact": "At DATASA.NET, this project established an operational e-commerce sales channel with both storefront and admin capabilities. It improved product management efficiency, simplified operational control for admins, and enabled sustainable online revenue growth.",
     "techStack": [
       "ASP.NET MVC",
       "MS SQL",
@@ -174,6 +229,11 @@
       "CSS",
       "JavaScript"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Commerce Project",
+        "href": "#projects"
+      }
+    ]
   }
 ]

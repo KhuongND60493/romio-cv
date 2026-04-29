@@ -27,10 +27,10 @@
 }
 
 [data-theme='light'] {
-  --bg: #f8fafc;
-  --bg-elevated: rgba(255, 255, 255, 0.9);
-  --bg-soft: rgba(241, 245, 249, 0.85);
-  --surface: rgba(0, 0, 0, 0.03);
+  --bg: #d5dae1;
+  --bg-elevated: rgba(226, 231, 238, 0.72);
+  --bg-soft: rgba(207, 214, 224, 0.7);
+  --surface: rgba(52, 65, 85, 0.08);
   --surface-strong: rgba(0, 0, 0, 0.06);
   --border: rgba(220, 38, 38, 0.15);
   --text: #18181b;

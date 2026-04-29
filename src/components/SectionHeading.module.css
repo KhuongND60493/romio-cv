@@ -42,5 +42,5 @@
   left: -4px;
   width: 4px;
   height: 20px;
-  background: #fff;
+  background: var(--title);
 }

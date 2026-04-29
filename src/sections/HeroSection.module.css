@@ -46,7 +46,7 @@
 .title {
   margin-top: 1.5rem;
   font-size: clamp(1.2rem, 3vw, 2rem);
-  color: #fff;
+  color: var(--title);
   font-weight: 300;
   letter-spacing: 0.05em;
   animation: slideInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
@@ -95,7 +95,7 @@
 
 .primary {
   background: transparent;
-  color: #fff;
+  color: var(--title);
   border: 1px solid var(--accent);
   box-shadow: 0 0 15px rgba(220, 38, 38, 0.2), inset 0 0 10px rgba(220, 38, 38, 0.1);
 }

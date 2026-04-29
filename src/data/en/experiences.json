@@ -13,7 +13,10 @@
     ],
     "achievements": [
       "Successfully maintained system stability and fast response times under extreme peak loads for nationwide restaurant chains.",
-      "Streamlined data synchronization between offline terminals and centralized cloud services to support real-time big data analytics."
+      "Streamlined data synchronization between offline terminals and centralized cloud services to support real-time big data analytics.",
+      "Designed reusable integration templates that reduced onboarding time for new enterprise partners.",
+      "Strengthened observability with shared dashboards and operational runbooks, improving incident recovery speed.",
+      "Led the migration of synchronous processing flows to event-driven pipelines with minimal business disruption."
     ],
     "techStack": [
       ".NET Core",
@@ -39,7 +42,10 @@
       "Conducted training sessions to raise team skills and led code reviews."
     ],
     "achievements": [
-      "Successfully implemented new technologies to boost performance and reliability."
+      "Successfully implemented new technologies to boost performance and reliability.",
+      "Improved release quality through technical review governance and cross-functional quality control.",
+      "Raised engineering capability via mentoring, training sessions, and standardized development practices.",
+      "Played a key role in stabilizing large releases for the GoF&B ecosystem."
     ],
     "techStack": [
       "Reactjs",
@@ -63,7 +69,9 @@
     "achievements": [
       "Delivered Brighter Path teaching system for ethnic women.",
       "Successfully delivered the subway camera surveillance system upgrade.",
-      "Built and scaled door production process management."
+      "Built and scaled door production process management.",
+      "Optimized query and data processing performance to keep systems stable under growing workloads.",
+      "Standardized delivery architecture patterns across parallel client projects to improve team efficiency."
     ],
     "techStack": [
       ".NET Core",
@@ -86,7 +94,10 @@
       "Built Hanbiro HR, Groupware, and CRM Supply Chain Management systems."
     ],
     "achievements": [
-      "Built Hanbiro CRM Call, a call management center using Electron and Reactjs."
+      "Built Hanbiro CRM Call, a call management center using Electron and Reactjs.",
+      "Contributed to modernizing legacy modules into a more maintainable and scalable technology stack.",
+      "Delivered multiple core internal systems including HR, Groupware, and CRM Supply Chain modules.",
+      "Maintained predictable delivery across projects with different team sizes and technical complexity."
     ],
     "techStack": [
       "Reactjs",
@@ -111,7 +122,11 @@
       "Built 'Learning Chinese for Japanese' mobile project.",
       "Developed a medical app for booking appointments and reminding prescriptions."
     ],
-    "achievements": [],
+    "achievements": [
+      "Successfully delivered the 'Learning Chinese for Japanese' mobile application within project timelines.",
+      "Built a medical information app that improved appointment booking and medication reminder workflows.",
+      "Collaborated effectively across cross-functional teams to ensure stable mobile releases."
+    ],
     "techStack": [
       "Angular",
       "React-Native",
@@ -131,7 +146,11 @@
     "responsibilities": [
       "Led a team of 10 to serve the teaching and learning of English for Vietnamese people."
     ],
-    "achievements": [],
+    "achievements": [
+      "Led a 10-member team to launch the Riolish product for the English learning market.",
+      "Delivered both admin web platform and companion mobile application for operational use.",
+      "Supported iterative product improvements that expanded user adoption and service quality."
+    ],
     "techStack": [
       "React-Native",
       ".NET Core",
@@ -148,7 +167,11 @@
     "responsibilities": [
       "Collaborator in programming the reading software."
     ],
-    "achievements": [],
+    "achievements": [
+      "Completed internship contributions successfully on Toshiba's reading application project.",
+      "Contributed to core feature implementation of the reading software as part of the engineering team.",
+      "Built a strong foundation in software delivery process and teamwork in an enterprise environment."
+    ],
     "techStack": [
       "Word",
       "Excel",
@@ -164,7 +187,11 @@
     "responsibilities": [
       "Built an e-commerce website for computer and mobile products including purchase and admin pages."
     ],
-    "achievements": [],
+    "achievements": [
+      "Delivered a complete e-commerce website including customer purchase flow and admin management modules.",
+      "Implemented business requirements for computer and mobile product sales workflows.",
+      "Established early fullstack delivery experience through real production project execution."
+    ],
     "techStack": [
       "ASP.NET MVC",
       "Microsoft SQL"

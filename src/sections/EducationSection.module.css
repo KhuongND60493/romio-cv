@@ -33,7 +33,7 @@
   width: 64px;
   height: 64px;
   object-fit: contain;
-  background-color: white;
+  background-color: var(--bg-soft);
   border-radius: 8px;
   padding: 8px;
 }
@@ -53,7 +53,7 @@
 .header h3 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--title);
   margin: 0;
 }
 

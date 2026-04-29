@@ -13,7 +13,10 @@
     "achievements": [
       "Reduced release lead time by 45% with CI/CD standardization and deployment automation.",
       "Improved peak order throughput by 3x through caching, queue-based processing, and query optimization.",
-      "Introduced architecture review process that aligned four squads on shared platform conventions."
+      "Introduced architecture review process that aligned four squads on shared platform conventions.",
+      "Designed reusable integration templates that cut partner onboarding time from weeks to days.",
+      "Improved production incident response with unified dashboards and runbooks, reducing MTTR significantly.",
+      "Led migration of legacy synchronous flows to event-driven pipelines with minimal business disruption."
     ],
     "techStack": ["ASP.NET Core", "ReactJS", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "Grafana"]
   },
@@ -31,7 +34,10 @@
     "achievements": [
       "Launched reusable frontend platform that shortened new client onboarding projects by 30%.",
       "Delivered event-driven synchronization flows that minimized manual reconciliation work.",
-      "Improved application stability with structured logging, alerts, and incident review practices."
+      "Improved application stability with structured logging, alerts, and incident review practices.",
+      "Optimized campaign rule execution and data access patterns, improving response time under peak load.",
+      "Built shared API contracts and integration test suites that reduced cross-team regressions.",
+      "Contributed to release governance and engineering standards adopted by multiple product teams."
     ],
     "techStack": ["Java", "Spring Boot", "Vue.js", "React Native", "RabbitMQ", "MongoDB", "MySQL", "ELK"]
   },
@@ -49,7 +55,10 @@
     "achievements": [
       "Reduced reporting generation time from hours to minutes through batch processing redesign.",
       "Introduced reusable UI patterns that improved consistency and maintainability across projects.",
-      "Supported multiple successful go-lives with strong post-launch reliability."
+      "Supported multiple successful go-lives with strong post-launch reliability.",
+      "Implemented query and indexing improvements that stabilized dashboard performance on growing datasets.",
+      "Introduced CI checks and deployment conventions that improved release confidence for project teams.",
+      "Collaborated with stakeholders to deliver iterative feature rollouts while maintaining system uptime."
     ],
     "techStack": ["PHP", "Laravel", "ReactJS", "SQL Server", "Redis", "Nginx", "GitLab CI/CD"]
   }

@@ -13,7 +13,10 @@
     ],
     "achievements": [
       "Đảm bảo hệ thống vận hành ổn định và giữ nguyên tốc độ phản hồi ngay cả trong những khung giờ cao điểm với lượng tải cực lớn từ các chuỗi nhà hàng toàn quốc.",
-      "Chuẩn hóa luồng đồng bộ dữ liệu giữa máy POS offline và hệ thống đám mây, làm nền tảng vững chắc cho việc phân tích dữ liệu lớn."
+      "Chuẩn hóa luồng đồng bộ dữ liệu giữa máy POS offline và hệ thống đám mây, làm nền tảng vững chắc cho việc phân tích dữ liệu lớn.",
+      "Thiết kế khung tích hợp chuẩn giúp rút ngắn thời gian kết nối hệ thống đối tác mới.",
+      "Nâng cao khả năng giám sát vận hành với dashboard và runbook thống nhất, cải thiện tốc độ xử lý sự cố.",
+      "Dẫn dắt chuyển đổi các luồng xử lý đồng bộ sang kiến trúc event-driven mà không gián đoạn nghiệp vụ."
     ],
     "techStack": [
       ".NET Core",
@@ -39,7 +42,10 @@
       "Thực hiện các buổi đào tạo nâng cao kỹ năng nhóm và dẫn dắt đánh giá mã nguồn (code review)."
     ],
     "achievements": [
-      "Ứng dụng thành công công nghệ mới giúp tăng cường hiệu suất và độ tin cậy."
+      "Ứng dụng thành công công nghệ mới giúp tăng cường hiệu suất và độ tin cậy.",
+      "Nâng chất lượng phát hành thông qua quy trình review kỹ thuật và kiểm soát chất lượng liên phòng ban.",
+      "Xây dựng năng lực đội ngũ thông qua mentoring, đào tạo nội bộ và chuẩn hóa thực hành phát triển.",
+      "Đóng vai trò then chốt trong việc ổn định các đợt release lớn cho hệ sinh thái GoF&B."
     ],
     "techStack": [
       "Reactjs",
@@ -63,7 +69,9 @@
     "achievements": [
       "Xây dựng và bàn giao hệ thống giáo dục Brighter Path cho phụ nữ dân tộc thiểu số.",
       "Triển khai thành công bản nâng cấp hệ thống camera giám sát tàu điện ngầm (Trimet).",
-      "Xây dựng và mở rộng hệ thống quản lý quy trình sản xuất cửa gỗ (Pacific)."
+      "Xây dựng và mở rộng hệ thống quản lý quy trình sản xuất cửa gỗ (Pacific).",
+      "Tối ưu hiệu năng truy vấn và xử lý dữ liệu giúp hệ thống ổn định khi mở rộng người dùng.",
+      "Chuẩn hóa kiến trúc triển khai cho nhiều dự án song song, tăng hiệu quả vận hành team."
     ],
     "techStack": [
       ".NET Core",
@@ -86,7 +94,10 @@
       "Xây dựng các hệ thống Hanbiro HR, Groupware, và quản lý chuỗi cung ứng CRM."
     ],
     "achievements": [
-      "Xây dựng hệ thống Hanbiro CRM Call, trung tâm quản lý cuộc gọi sử dụng Electron và Reactjs."
+      "Xây dựng hệ thống Hanbiro CRM Call, trung tâm quản lý cuộc gọi sử dụng Electron và Reactjs.",
+      "Đóng góp chuyển đổi nền tảng từ công nghệ cũ sang stack hiện đại, cải thiện khả năng bảo trì.",
+      "Bàn giao thành công nhiều hệ thống nội bộ trọng yếu như HR, Groupware và CRM Supply Chain.",
+      "Duy trì tiến độ dự án ổn định với nhiều đội nhóm và quy mô yêu cầu khác nhau."
     ],
     "techStack": [
       "Reactjs",
@@ -111,7 +122,11 @@
       "Xây dựng dự án ứng dụng di động 'Học tiếng Trung cho người Nhật'.",
       "Phát triển ứng dụng y tế hỗ trợ đặt lịch hẹn và nhắc nhở uống thuốc."
     ],
-    "achievements": [],
+    "achievements": [
+      "Hoàn thiện và bàn giao ứng dụng học tiếng Trung cho người Nhật đúng tiến độ và chất lượng.",
+      "Xây dựng ứng dụng y tế giúp người dùng đặt lịch và quản lý nhắc nhở điều trị thuận tiện hơn.",
+      "Phối hợp hiệu quả với team đa vai trò để đảm bảo release ổn định trên nền tảng mobile."
+    ],
     "techStack": [
       "Angular",
       "React-Native",
@@ -131,7 +146,11 @@
     "responsibilities": [
       "Quản lý nhóm 10 thành viên phục vụ mục tiêu số hóa giảng dạy và học tập tiếng Anh cho người Việt."
     ],
-    "achievements": [],
+    "achievements": [
+      "Dẫn dắt đội 10 thành viên triển khai sản phẩm Riolish phục vụ thị trường giáo dục tiếng Anh.",
+      "Xây dựng nền tảng web admin và mobile app đồng bộ cho vận hành và học tập.",
+      "Góp phần mở rộng khả năng phục vụ người dùng thông qua các phiên bản cải tiến liên tục."
+    ],
     "techStack": [
       "React-Native",
       ".NET Core",
@@ -148,7 +167,11 @@
     "responsibilities": [
       "Đóng vai trò lập trình viên trong việc xây dựng phần mềm đọc sách."
     ],
-    "achievements": [],
+    "achievements": [
+      "Hoàn thành tốt vai trò thực tập sinh trong dự án đọc sách Toshiba với tinh thần chủ động cao.",
+      "Đóng góp vào quá trình xây dựng tính năng cốt lõi của phần mềm đọc sách.",
+      "Rèn luyện nền tảng quy trình phát triển phần mềm và phối hợp nhóm trong môi trường doanh nghiệp."
+    ],
     "techStack": [
       "Word",
       "Excel",
@@ -164,7 +187,11 @@
     "responsibilities": [
       "Xây dựng website thương mại điện tử chuyên cung cấp thiết bị máy tính và di động, bao gồm cả trang mua hàng và trang quản trị."
     ],
-    "achievements": [],
+    "achievements": [
+      "Xây dựng thành công website thương mại điện tử với đầy đủ luồng mua hàng và quản trị.",
+      "Đáp ứng yêu cầu nghiệp vụ cho sản phẩm bán hàng thiết bị máy tính và di động.",
+      "Đặt nền tảng kinh nghiệm fullstack thực chiến từ giai đoạn đầu sự nghiệp."
+    ],
     "techStack": [
       "ASP.NET MVC",
       "Microsoft SQL"

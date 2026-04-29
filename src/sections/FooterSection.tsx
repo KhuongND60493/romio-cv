@@ -8,6 +8,7 @@ interface FooterSectionProps {
 
 export const FooterSection = ({ navigationItems }: FooterSectionProps) => {
   const { t } = useTranslation()
+  const currentYear = new Date().getFullYear()
   return (
     <footer className={styles.footer}>
       <div>
@@ -27,7 +28,7 @@ export const FooterSection = ({ navigationItems }: FooterSectionProps) => {
 
       <div className={styles.bottom}>
         <LangToggle />
-        <p className={styles.copy}>{t('footer.rights')}</p>
+        <p className={styles.copy}>{t('footer.rights', { year: currentYear })}</p>
       </div>
     </footer>
   )

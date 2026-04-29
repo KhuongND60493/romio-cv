@@ -15,15 +15,27 @@ import { ScrollToTop } from './components/ScrollToTop'
 import { useTranslation } from 'react-i18next'
 import { getNavigationItems, getPortfolioData } from './utils/portfolioData'
 
+const THEME_STORAGE_KEY = 'romio-cv.theme'
+
+const getInitialTheme = (): 'dark' | 'light' => {
+  if (typeof window === 'undefined') {
+    return 'dark'
+  }
+
+  const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
+  return savedTheme === 'light' ? 'light' : 'dark'
+}
+
 function App() {
   const { t, i18n } = useTranslation()
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+  const [theme, setTheme] = useState<'dark' | 'light'>(getInitialTheme)
 
   const portfolioData = getPortfolioData(i18n.language)
   const navigationItems = getNavigationItems(t)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
+    window.localStorage.setItem(THEME_STORAGE_KEY, theme)
   }, [theme])
 
   return (

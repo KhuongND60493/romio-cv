@@ -22,11 +22,11 @@
 }
 
 .button:hover {
-  color: #fff;
+  color: var(--title);
 }
 
 .button[data-active="true"] {
-  color: #fff;
+  color: var(--title);
   font-weight: 700;
 }
 
