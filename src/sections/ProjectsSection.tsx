@@ -22,36 +22,39 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
       {projects.map((project) => (
         <article key={project.name} className={styles.card}>
           <div className={styles.header}>
-            <div>
-              <h3>{project.name}</h3>
-              <p>{project.role}</p>
-            </div>
-            <div className={styles.links}>
-              {project.links.map((link) => (
-                <a key={link.label} href={link.href}>
-                  {link.label}
-                </a>
-              ))}
-            </div>
+            <h3>{project.name}</h3>
+            <p>{project.role}</p>
           </div>
 
           <p className={styles.description}>{project.description}</p>
 
-          <div className={styles.detail}>
-            <h4>Architecture Highlights</h4>
-            <ul>
-              {project.architectureHighlights.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+          {/* <div className={styles.links}>
+            {project.links.map((link) => (
+              <a key={link.label} href={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </div> */}
+
+          <div className={styles.detailSplit}>
+            <div className={`${styles.detail} ${styles.architectureDetail}`}>
+              <h4>Architecture Highlights</h4>
+              <ul>
+                {project.architectureHighlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={`${styles.detail} ${styles.impactDetail}`}>
+              <h4>Business Impact</h4>
+              <p>{project.businessImpact}</p>
+            </div>
           </div>
 
-          <div className={styles.detail}>
-            <h4>Business Impact</h4>
-            <p>{project.businessImpact}</p>
+          <div className={styles.techTags}>
+            <TagList items={project.techStack} compact />
           </div>
-
-          <TagList items={project.techStack} compact />
         </article>
       ))}
     </div>

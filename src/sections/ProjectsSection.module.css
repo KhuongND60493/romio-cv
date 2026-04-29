@@ -10,7 +10,7 @@
 
 .card {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 400px 1fr;
   gap: 2rem;
   padding: 2rem 0;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
@@ -23,6 +23,7 @@
 }
 
 .header {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -51,11 +52,29 @@
 }
 
 .description {
+  grid-column: 1 / -1;
   color: var(--text-muted);
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
-  max-width: 800px;
+  width: 100%;
+}
+
+.links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.detailSplit {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 1.25rem;
 }
 
 .detail h4 {
@@ -88,11 +107,29 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
+.detail p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.architectureDetail {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(220, 38, 38, 0.28);
+  background: rgba(220, 38, 38, 0.04);
+}
+
+.impactDetail {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.techTags {
+  grid-column: 1 / -1;
+  width: 100%;
+  justify-self: start;
+  text-align: left;
 }
 
 .links a {
@@ -117,5 +154,16 @@
   .card {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .description,
+  .links,
+  .detailSplit,
+  .techTags {
+    grid-column: 1;
+  }
+
+  .detailSplit {
+    grid-template-columns: 1fr;
   }
 }
