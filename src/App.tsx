@@ -11,10 +11,16 @@ import { FooterSection } from './sections/FooterSection'
 import { HeroSection } from './sections/HeroSection'
 import { ProjectsSection } from './sections/ProjectsSection'
 import { TechStackSection } from './sections/TechStackSection'
-import { navigationItems, portfolioData } from './utils/portfolioData'
+import { ScrollToTop } from './components/ScrollToTop'
+import { useTranslation } from 'react-i18next'
+import { getNavigationItems, getPortfolioData } from './utils/portfolioData'
 
 function App() {
+  const { t, i18n } = useTranslation()
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+
+  const portfolioData = getPortfolioData(i18n.language)
+  const navigationItems = getNavigationItems(t)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -52,6 +58,7 @@ function App() {
           <FooterSection navigationItems={navigationItems} />
         </main>
       </div>
+      <ScrollToTop />
     </div>
   )
 }

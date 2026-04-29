@@ -8,9 +8,10 @@
   gap: 1rem;
   padding: 1.5rem;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(220, 38, 38, 0.24);
   background: var(--bg-elevated);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
 }
 
 .field {
@@ -26,11 +27,21 @@
 .field input,
 .field textarea {
   width: 100%;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(220, 38, 38, 0.28);
   border-radius: 14px;
   padding: 0.95rem 1rem;
   background: var(--surface);
   color: var(--text);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(220, 38, 38, 0.58);
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.12);
 }
 
 .field span {
@@ -46,6 +57,12 @@
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: white;
   font-weight: 700;
+  box-shadow: 0 12px 24px rgba(220, 38, 38, 0.34);
+  transition: transform 180ms ease;
+}
+
+.submit:hover {
+  transform: translateY(-2px);
 }
 
 .toast {

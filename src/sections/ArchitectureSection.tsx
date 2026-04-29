@@ -1,5 +1,6 @@
 import { SectionHeading } from '../components/SectionHeading'
 import type { ArchitectureHighlight } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './ArchitectureSection.module.css'
 
 interface ArchitectureSectionProps {
@@ -8,10 +9,12 @@ interface ArchitectureSectionProps {
 
 export const ArchitectureSection = ({
   highlights,
-}: ArchitectureSectionProps) => (
+}: ArchitectureSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="architecture" className={styles.section}>
     <SectionHeading
-      eyebrow="Architecture Highlights"
+      eyebrow={t('sections.architecture')}
       title="Patterns I use to turn complex product requirements into resilient systems."
       description="This section emphasizes technical architecture thinking beyond feature delivery."
     />
@@ -28,4 +31,5 @@ export const ArchitectureSection = ({
       ))}
     </div>
   </section>
-)
+  )
+}

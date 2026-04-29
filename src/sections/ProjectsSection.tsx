@@ -1,16 +1,19 @@
 import { SectionHeading } from '../components/SectionHeading'
 import { TagList } from '../components/TagList'
 import type { ProjectItem } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './ProjectsSection.module.css'
 
 interface ProjectsSectionProps {
   projects: ProjectItem[]
 }
 
-export const ProjectsSection = ({ projects }: ProjectsSectionProps) => (
+export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="projects" className={styles.section}>
     <SectionHeading
-      eyebrow="Projects"
+      eyebrow={t('sections.projects')}
       title="Selected product and platform work with measurable business value."
       description="Representative examples that highlight architecture choices, ownership scope, and product outcomes."
     />
@@ -54,3 +57,5 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => (
     </div>
   </section>
 )
+
+}

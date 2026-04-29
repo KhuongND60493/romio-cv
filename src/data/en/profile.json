@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "fullName": "Romio Nguyen",
+    "title": "Technical Architect / Fullstack Engineer",
+    "tagline": "Designing scalable systems, building reliable products.",
+    "summary": "Technical Architect with 10+ years across enterprise backend, rich web platforms, mobile delivery, cloud infrastructure, and engineering leadership for multi-team product environments.",
+    "avatarLabel": "RN",
+    "location": "Ho Chi Minh City, Vietnam",
+    "email": "nguyenromio@gmail.com",
+    "phone": "+84 902 637 745",
+    "resumeUrl": "#contact"
+  },
+  "about": {
+    "headline": "From product discovery to platform scale, I bridge architecture decisions with practical delivery.",
+    "description": "I specialize in designing cloud-ready architectures and leading fullstack delivery across backend services, frontend platforms, mobile applications, databases, observability, and DevOps automation. My focus is aligning system design with business goals, reliability, performance, and team velocity.",
+    "focusAreas": [
+      "System design for scalable and resilient platforms",
+      "Backend and integration architecture across .NET, Java, PHP, and Node.js",
+      "Frontend and mobile experience delivery with React, Vue, and React Native",
+      "Database optimization, caching, asynchronous processing, and cloud-native operations"
+    ]
+  },
+  "ctas": [
+    {
+      "label": "Download CV",
+      "href": "#contact",
+      "variant": "primary"
+    },
+    {
+      "label": "Contact Me",
+      "href": "#contact",
+      "variant": "secondary"
+    },
+    {
+      "label": "View Projects",
+      "href": "#projects",
+      "variant": "ghost"
+    }
+  ],
+  "links": [
+    {
+      "label": "Email",
+      "value": "romio.architect@example.com",
+      "href": "mailto:romio.architect@example.com",
+      "ariaLabel": "Send email to Romio Nguyen"
+    },
+    {
+      "label": "Phone",
+      "value": "+84 901 234 567",
+      "href": "tel:+84901234567",
+      "ariaLabel": "Call Romio Nguyen"
+    },
+    {
+      "label": "Location",
+      "value": "Ho Chi Minh City, Vietnam",
+      "href": "https://maps.google.com/?q=Ho+Chi+Minh+City",
+      "ariaLabel": "View Romio Nguyen location"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/khuongnd60493",
+      "ariaLabel": "View GitHub profile"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/romio-nguyen",
+      "ariaLabel": "View LinkedIn profile"
+    }
+  ]
+}

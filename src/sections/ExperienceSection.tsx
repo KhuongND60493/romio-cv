@@ -1,6 +1,7 @@
 import { SectionHeading } from '../components/SectionHeading'
 import { TagList } from '../components/TagList'
 import type { ExperienceItem } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './ExperienceSection.module.css'
 
 interface ExperienceSectionProps {
@@ -9,10 +10,12 @@ interface ExperienceSectionProps {
 
 export const ExperienceSection = ({
   experiences,
-}: ExperienceSectionProps) => (
+}: ExperienceSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="experience" className={styles.section}>
     <SectionHeading
-      eyebrow="Experience"
+      eyebrow={t('sections.experience')}
       title="Leading teams and systems from architecture strategy to production operations."
       description="A concise timeline of roles that combine delivery execution with platform thinking."
     />
@@ -51,6 +54,7 @@ export const ExperienceSection = ({
           <TagList items={item.techStack} compact />
         </article>
       ))}
-    </div>
-  </section>
-)
+      </div>
+    </section>
+  )
+}

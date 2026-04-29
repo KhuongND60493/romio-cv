@@ -1,65 +1,121 @@
 .section {
-  display: grid;
-  gap: 1.5rem;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .card {
   display: grid;
-  gap: 1rem;
-  padding: 1.5rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  background: var(--bg-elevated);
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-bottom-color: var(--accent);
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.header h3,
-.header p,
-.detail h4,
-.detail p {
-  margin: 0;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .header h3 {
-  color: var(--title);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 
-.header p,
-.description,
-.detail p,
-.detail li {
+.header p {
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
   color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 800px;
+}
+
+.detail h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.detail li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .links a {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+  background: rgba(220, 38, 38, 0.1);
   color: var(--accent);
 }
 
-.detail ul {
-  margin: 0.5rem 0 0;
-  padding-left: 1.1rem;
-}
-
 @media (max-width: 900px) {
-  .grid {
+  .card {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

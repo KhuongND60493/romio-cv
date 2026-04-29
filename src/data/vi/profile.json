@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "fullName": "Romio Nguyen",
+    "title": "Kiến trúc sư hệ thống / Kỹ sư Fullstack",
+    "tagline": "Thiết kế hệ thống có khả năng mở rộng, xây dựng sản phẩm đáng tin cậy.",
+    "summary": "Kiến trúc sư hệ thống với hơn 10 năm kinh nghiệm trong các hệ thống doanh nghiệp, nền tảng web phức tạp, di động, hạ tầng đám mây và dẫn dắt đội ngũ kỹ thuật.",
+    "avatarLabel": "RN",
+    "location": "Thành phố Hồ Chí Minh, Việt Nam",
+    "email": "nguyenromio@gmail.com",
+    "phone": "+84 902 637 745",
+    "resumeUrl": "#contact"
+  },
+  "about": {
+    "headline": "Từ việc khám phá sản phẩm đến mở rộng nền tảng, tôi kết nối các quyết định kiến trúc với thực tế triển khai.",
+    "description": "Tôi chuyên thiết kế các kiến trúc sẵn sàng cho nền tảng đám mây và dẫn dắt việc phân phối toàn bộ hệ thống từ backend, frontend, ứng dụng di động, cơ sở dữ liệu, khả năng quan sát (observability), và tự động hóa DevOps. Trọng tâm của tôi là kết hợp thiết kế hệ thống với mục tiêu kinh doanh, độ tin cậy, hiệu suất và tốc độ của đội ngũ.",
+    "focusAreas": [
+      "Thiết kế hệ thống cho các nền tảng mở rộng và có độ bền bỉ cao",
+      "Kiến trúc Backend và tích hợp hệ thống qua .NET, Java, PHP, và Node.js",
+      "Triển khai trải nghiệm Frontend và di động với React, Vue, và React Native",
+      "Tối ưu hóa cơ sở dữ liệu, bộ đệm (caching), xử lý bất đồng bộ và vận hành nền tảng đám mây"
+    ]
+  },
+  "ctas": [
+    {
+      "label": "Tải CV",
+      "href": "#contact",
+      "variant": "primary"
+    },
+    {
+      "label": "Liên hệ tôi",
+      "href": "#contact",
+      "variant": "secondary"
+    },
+    {
+      "label": "Xem dự án",
+      "href": "#projects",
+      "variant": "ghost"
+    }
+  ],
+  "links": [
+    {
+      "label": "Email",
+      "value": "romio.architect@example.com",
+      "href": "mailto:romio.architect@example.com",
+      "ariaLabel": "Send email to Romio Nguyen"
+    },
+    {
+      "label": "Phone",
+      "value": "+84 901 234 567",
+      "href": "tel:+84901234567",
+      "ariaLabel": "Call Romio Nguyen"
+    },
+    {
+      "label": "Location",
+      "value": "Ho Chi Minh City, Vietnam",
+      "href": "https://maps.google.com/?q=Ho+Chi+Minh+City",
+      "ariaLabel": "View Romio Nguyen location"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/khuongnd60493",
+      "ariaLabel": "View GitHub profile"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/romio-nguyen",
+      "ariaLabel": "View LinkedIn profile"
+    }
+  ]
+}

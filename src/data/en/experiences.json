@@ -1,0 +1,56 @@
+[
+  {
+    "company": "Nova Retail Solutions",
+    "role": "Technical Architect",
+    "duration": "2022 - Present",
+    "location": "Ho Chi Minh City / Remote",
+    "summary": "Leading architecture for a multi-tenant commerce platform serving regional retail and distribution operations.",
+    "responsibilities": [
+      "Defined service boundaries, API standards, and event contracts across order, pricing, loyalty, and reporting domains.",
+      "Partnered with product and engineering managers to break architectural roadmap into delivery milestones.",
+      "Standardized observability, deployment strategy, and performance guardrails across microservices."
+    ],
+    "achievements": [
+      "Reduced release lead time by 45% with CI/CD standardization and deployment automation.",
+      "Improved peak order throughput by 3x through caching, queue-based processing, and query optimization.",
+      "Introduced architecture review process that aligned four squads on shared platform conventions."
+    ],
+    "techStack": ["ASP.NET Core", "ReactJS", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "Grafana"]
+  },
+  {
+    "company": "Bright Loyalty Tech",
+    "role": "Senior Fullstack Engineer",
+    "duration": "2019 - 2022",
+    "location": "Singapore / Remote",
+    "summary": "Built and evolved CRM and loyalty products for enterprise clients with both customer-facing and admin experiences.",
+    "responsibilities": [
+      "Developed backend services, frontend modules, and mobile integrations for campaign and reward orchestration.",
+      "Collaborated with solution architects to design integration patterns for POS, ERP, and payment gateways.",
+      "Mentored developers on code quality, domain modeling, and cross-functional delivery."
+    ],
+    "achievements": [
+      "Launched reusable frontend platform that shortened new client onboarding projects by 30%.",
+      "Delivered event-driven synchronization flows that minimized manual reconciliation work.",
+      "Improved application stability with structured logging, alerts, and incident review practices."
+    ],
+    "techStack": ["Java", "Spring Boot", "Vue.js", "React Native", "RabbitMQ", "MongoDB", "MySQL", "ELK"]
+  },
+  {
+    "company": "Blue Ocean Digital",
+    "role": "Fullstack Engineer",
+    "duration": "2016 - 2019",
+    "location": "Ho Chi Minh City, Vietnam",
+    "summary": "Delivered web and mobile products for logistics, inventory, and field operations across SMEs and enterprise clients.",
+    "responsibilities": [
+      "Implemented business workflows spanning dashboards, inventory movement, and field reporting.",
+      "Built APIs and admin interfaces while collaborating closely with QA and stakeholders.",
+      "Contributed to deployment setup, production troubleshooting, and optimization efforts."
+    ],
+    "achievements": [
+      "Reduced reporting generation time from hours to minutes through batch processing redesign.",
+      "Introduced reusable UI patterns that improved consistency and maintainability across projects.",
+      "Supported multiple successful go-lives with strong post-launch reliability."
+    ],
+    "techStack": ["PHP", "Laravel", "ReactJS", "SQL Server", "Redis", "Nginx", "GitLab CI/CD"]
+  }
+]

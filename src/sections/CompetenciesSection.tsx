@@ -1,5 +1,6 @@
 import { SectionHeading } from '../components/SectionHeading'
 import type { Competency } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './CompetenciesSection.module.css'
 
 interface CompetenciesSectionProps {
@@ -8,10 +9,12 @@ interface CompetenciesSectionProps {
 
 export const CompetenciesSection = ({
   competencies,
-}: CompetenciesSectionProps) => (
+}: CompetenciesSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="skills" className={styles.section}>
     <SectionHeading
-      eyebrow="Core Competencies"
+      eyebrow={t('sections.competencies')}
       title="A fullstack architecture mindset across product, platform, and delivery."
       description="Each competency combines system thinking with practical implementation experience."
     />
@@ -26,3 +29,4 @@ export const CompetenciesSection = ({
     </div>
   </section>
 )
+}

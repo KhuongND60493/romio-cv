@@ -1,5 +1,6 @@
 import { SectionHeading } from '../components/SectionHeading'
 import type { CertificationItem, EducationItem } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './EducationSection.module.css'
 
 interface EducationSectionProps {
@@ -10,10 +11,12 @@ interface EducationSectionProps {
 export const EducationSection = ({
   education,
   certifications,
-}: EducationSectionProps) => (
+}: EducationSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="education" className={styles.section}>
     <SectionHeading
-      eyebrow="Education & Certifications"
+      eyebrow={t('sections.education')}
       title="Academic foundation combined with continuous architecture-focused learning."
       description="A mix of formal education and practical certifications that reinforce system-level thinking."
     />
@@ -41,6 +44,7 @@ export const EducationSection = ({
           </article>
         ))}
       </div>
-    </div>
-  </section>
-)
+      </div>
+    </section>
+  )
+}

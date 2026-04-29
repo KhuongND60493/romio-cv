@@ -1,44 +1,66 @@
 .section {
+  padding: 4rem 0;
+}
+
+.content {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 1rem;
-  padding: 2rem 0;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 
 .info {
-  display: grid;
-  gap: 1rem;
-}
-
-.card {
-  display: grid;
-  gap: 0.85rem;
-  padding: 1.5rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  background: var(--bg-elevated);
-}
-
-.linkRow {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  padding: 1rem;
-  border-radius: 16px;
-  background: var(--surface);
+  gap: 2rem;
 }
 
-.linkRow span {
+.info p {
   color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
-.linkRow strong {
-  color: var(--title);
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactList li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.contactList li:hover {
+  border-color: var(--accent);
+  background: rgba(220, 38, 38, 0.02);
+}
+
+.contactList span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contactList a {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
-  .section {
+  .content {
     grid-template-columns: 1fr;
   }
 }

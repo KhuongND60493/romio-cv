@@ -1,17 +1,20 @@
 import { ContactForm } from '../components/ContactForm'
 import { SectionHeading } from '../components/SectionHeading'
 import type { Profile } from '../types/cv'
+import { useTranslation } from 'react-i18next'
 import styles from './ContactSection.module.css'
 
 interface ContactSectionProps {
   profile: Profile
 }
 
-export const ContactSection = ({ profile }: ContactSectionProps) => (
+export const ContactSection = ({ profile }: ContactSectionProps) => {
+  const { t } = useTranslation();
+  return (
   <section id="contact" className={styles.section}>
     <div className={styles.info}>
       <SectionHeading
-        eyebrow="Contact"
+        eyebrow={t('sections.contact')}
         title="Let’s design and ship reliable products together."
         description="Open to architecture discussions, consulting opportunities, and senior fullstack engagements."
       />
@@ -40,3 +43,5 @@ export const ContactSection = ({ profile }: ContactSectionProps) => (
     <ContactForm />
   </section>
 )
+
+}

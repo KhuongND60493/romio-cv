@@ -1,5 +1,6 @@
 import type { SocialLink } from '../types/cv'
 import { ThemeToggle } from './ThemeToggle'
+import { LangToggle } from './LangToggle'
 import styles from './Header.module.css'
 
 interface HeaderProps {
@@ -16,27 +17,19 @@ export const Header = ({
   onToggleTheme,
 }: HeaderProps) => (
   <header className={styles.header}>
-    <div className={styles.inner}>
-      <a className={styles.brand} href="#hero" aria-label="Go to hero section">
-        <span className={styles.brandMark}>RN</span>
-        <span className={styles.brandText}>
-          <strong>Romio Nguyen</strong>
-          <span>Technical Architect</span>
-        </span>
+    <div className={styles.container}>
+      <a className={styles.logo} href="#hero" aria-label="Go to hero section">
+        ROMIO<span>_NGUYEN</span>
       </a>
 
-      <nav aria-label="Primary">
-        <ul className={styles.navList}>
-          {navigationItems.map((item) => (
-            <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
+      <nav className={styles.nav} aria-label="Primary">
+        {navigationItems.map((item) => (
+          <a key={item.href} href={item.href}>{item.label}</a>
+        ))}
       </nav>
 
       <div className={styles.actions}>
-        <div className={styles.socials}>
+        <div className={styles.social}>
           {socialLinks.map((link) => (
             <a
               key={link.label}
@@ -49,7 +42,11 @@ export const Header = ({
             </a>
           ))}
         </div>
+        <LangToggle />
         <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+        <button className={styles.mobileMenuBtn} aria-label="Menu">
+          ☰
+        </button>
       </div>
     </div>
   </header>
