@@ -1,50 +1,118 @@
-# React + TypeScript + Vite
+# Romio CV / Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, data-driven CV/portfolio website for a Technical Architect / Fullstack Engineer. The site is built with Vite, React, TypeScript, CSS Modules, Vitest, and React Testing Library, and is ready to deploy on GitHub Pages.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite
+- React
+- TypeScript with strict mode
+- CSS Modules
+- Vitest
+- React Testing Library
+- JSON-driven content in `src/data`
+- GitHub Pages deployment via GitHub Actions
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Professional dark-first UI with light/dark toggle
+- Sticky navigation with smooth scrolling
+- Fully data-driven CV content loaded from JSON
+- Independent sections for hero, about, skills, experience, projects, architecture, education, contact, and footer
+- Responsive layout for desktop, tablet, and mobile
+- Client-side contact form validation with success toast
+- Basic automated tests for critical UI sections
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```text
+src/
+  components/      Reusable UI building blocks
+  data/            JSON content for the portfolio
+  sections/        Page-level sections
+  styles/          Global theme tokens
+  test/            Test setup and helpers
+  types/           TypeScript models
+  utils/           Data loading and validation helpers
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Available Scripts
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run test
+npm run test:ui
+npm run lint
 ```
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL shown by Vite in your browser.
+
+## Run Tests
+
+```bash
+npm run test
+```
+
+If you want the interactive Vitest UI:
+
+```bash
+npm run test:ui
+```
+
+## Update CV Content
+
+All visible portfolio content is loaded from JSON files under `src/data`.
+
+- `src/data/profile.json`
+- `src/data/skills.json`
+- `src/data/experiences.json`
+- `src/data/projects.json`
+- `src/data/education.json`
+- `src/data/certifications.json`
+- `src/data/architectureHighlights.json`
+
+To customize the portfolio:
+
+1. Replace the fake sample data in those JSON files.
+2. Update links, summaries, titles, and tech stacks as needed.
+3. If you add new fields, also update the related types in `src/types/cv.ts`.
+
+## GitHub Pages Deployment
+
+The project is configured for GitHub Pages with:
+
+- `base` set in `vite.config.ts`
+- GitHub Actions workflow at `.github/workflows/deploy.yml`
+
+### Important
+
+If your repository name is not `romio-cv`, update the `base` value in `vite.config.ts`.
+
+Example:
+
+```ts
+base: '/your-repo-name/'
+```
+
+### Deploy Steps
+
+1. Push the project to GitHub.
+2. Ensure the default branch is `main`, or update the workflow if needed.
+3. In GitHub repository settings, enable Pages and use the GitHub Actions source.
+4. Push to `main` to trigger the deployment workflow.
+
+## Quality Notes
+
+- TypeScript strict mode is enabled.
+- Content is not hard-coded in UI components.
+- Accessibility basics are included: labels, aria-labels, semantic headings, and form labels.
+- The build, lint, and test scripts are intended to pass before deployment.

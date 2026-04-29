@@ -1,34 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react'
+import styles from './App.module.css'
+import { Header } from './components/Header'
+import { AboutSection } from './sections/AboutSection'
+import { ArchitectureSection } from './sections/ArchitectureSection'
+import { CompetenciesSection } from './sections/CompetenciesSection'
+import { ContactSection } from './sections/ContactSection'
+import { EducationSection } from './sections/EducationSection'
+import { ExperienceSection } from './sections/ExperienceSection'
+import { FooterSection } from './sections/FooterSection'
+import { HeroSection } from './sections/HeroSection'
+import { ProjectsSection } from './sections/ProjectsSection'
+import { TechStackSection } from './sections/TechStackSection'
+import { navigationItems, portfolioData } from './utils/portfolioData'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={styles.app}>
+      <div className={styles.backdrop} aria-hidden="true" />
+
+      <div className={styles.content}>
+        <Header
+          navigationItems={navigationItems}
+          socialLinks={portfolioData.profile.socialLinks}
+          theme={theme}
+          onToggleTheme={() =>
+            setTheme((current) => (current === 'dark' ? 'light' : 'dark'))
+          }
+        />
+
+        <main className={styles.main}>
+          <HeroSection profile={portfolioData.profile} />
+          <div className={styles.sectionGrid}>
+            <AboutSection about={portfolioData.profile.about} />
+            <CompetenciesSection competencies={portfolioData.competencies} />
+            <TechStackSection techStack={portfolioData.techStack} />
+            <ExperienceSection experiences={portfolioData.experiences} />
+            <ProjectsSection projects={portfolioData.projects} />
+            <ArchitectureSection highlights={portfolioData.architectureHighlights} />
+            <EducationSection
+              education={portfolioData.education}
+              certifications={portfolioData.certifications}
+            />
+            <ContactSection profile={portfolioData.profile} />
+          </div>
+          <FooterSection navigationItems={navigationItems} />
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

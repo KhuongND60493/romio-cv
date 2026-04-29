@@ -1,0 +1,25 @@
+.heading {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 760px;
+}
+
+.heading h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  color: var(--title);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 0;
+  color: var(--text-muted);
+}

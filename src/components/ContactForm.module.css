@@ -1,0 +1,67 @@
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field label {
+  color: var(--title);
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.field span {
+  color: #ff9b9b;
+  font-size: 0.9rem;
+}
+
+.submit {
+  justify-self: start;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  font-weight: 700;
+}
+
+.toast {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(110, 231, 183, 0.35);
+  background: rgba(110, 231, 183, 0.12);
+  color: var(--success);
+}
+
+.toast[data-visible='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
