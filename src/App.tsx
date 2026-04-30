@@ -26,12 +26,24 @@ function App() {
     const navigationItems = getNavigationItems(t);
 
     return (
-        <Box position={'relative'} backgroundColor={'bg'} minHeight={'100vh'} overflowX={'clip'}>
-            <Box position={'fixed'} inset={0} pointerEvents={'none'} zIndex={0} background={`
-                radial-gradient(circle at 50% 0%, ${theme.colors.glowPrimary}, transparent 40%),
-                radial-gradient(circle at 100% 50%, ${theme.colors.glowSecondary}, transparent 50%),
-                radial-gradient(circle at 0% 100%, ${theme.colors.glowTertiary}, transparent 40%)
-                `}/>
+        <Box
+            position="relative"
+            backgroundColor="bg"
+            style={{minHeight: '100vh', overflowX: 'clip'} as any}
+        >
+            <Box
+                pointerEvents="none"
+                zIndex={0}
+                style={{
+                    position: 'fixed',
+                    inset: 0,
+                    background: `
+                        radial-gradient(circle at 50% 0%, ${theme.colors.glowPrimary}, transparent 40%),
+                        radial-gradient(circle at 100% 50%, ${theme.colors.glowSecondary}, transparent 50%),
+                        radial-gradient(circle at 0% 100%, ${theme.colors.glowTertiary}, transparent 40%)
+                    `,
+                } as any}
+            />
 
             <Box position={'relative'} zIndex={1}>
                 <Header
@@ -42,13 +54,12 @@ function App() {
                 />
 
                 <Box
-                    as="main"
                     width="100%"
-                    style={{width: 'min(var(--max-width), calc(100% - 4rem))', marginInline: 'auto'}}
+                    style={{width: 'min(var(--max-width), calc(100% - 4rem))', marginInline: 'auto'} as any}
                     paddingBottom="xl"
                 >
                     <HeroSection profile={portfolioData.profile}/>
-                    <Box flexDirection="column" style={{gap: '6rem'}}>
+                    <Box flexDirection="column" style={{gap: '6rem'} as any}>
                         <SectionWrapper>
                             <AboutSection about={portfolioData.profile.about}/>
                         </SectionWrapper>
@@ -98,7 +109,7 @@ const SectionWrapper = ({children}: {
             width="100%"
             height={1}
             opacity={0.5}
-            style={{background: 'linear-gradient(90deg, var(--accent) 0%, transparent 100%)'}}
+            style={{background: 'linear-gradient(90deg, var(--accent) 0%, transparent 100%)'} as any}
         />
         {children}
     </Box>

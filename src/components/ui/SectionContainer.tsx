@@ -28,7 +28,7 @@ export const SectionContainer = ({
           opacity={0.5}
           style={{
             background: `linear-gradient(90deg, ${theme.colors.accent} 0%, transparent 100%)`,
-          }}
+          } as any}
         />
       )}
       {children}

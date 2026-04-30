@@ -8,9 +8,10 @@ interface SectionCardProps extends BoxProps {
 
 export const SectionCard = ({ children, hoverable = true, ...props }: SectionCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const InteractiveBox = Box as any;
 
   return (
-    <Box
+    <InteractiveBox
       onMouseEnter={() => hoverable && setIsHovered(true)}
       onMouseLeave={() => hoverable && setIsHovered(false)}
       position="relative"
@@ -21,7 +22,7 @@ export const SectionCard = ({ children, hoverable = true, ...props }: SectionCar
       flexDirection={{ phone: 'column', tablet: 'row' }}
       gap={{ phone: 'm', tablet: 'l' }}
       alignItems="flex-start"
-      style={{ transition: 'all 0.3s ease' }}
+      style={{ transition: 'all 0.3s ease' } as any}
       {...props}
     >
       {hoverable && (
@@ -32,10 +33,10 @@ export const SectionCard = ({ children, hoverable = true, ...props }: SectionCar
           width={4}
           height={isHovered ? '100%' : 0}
           backgroundColor="accent"
-          style={{ transition: 'height 0.3s ease' }}
+          style={{ transition: 'height 0.3s ease' } as any}
         />
       )}
       {children}
-    </Box>
+    </InteractiveBox>
   );
 };
