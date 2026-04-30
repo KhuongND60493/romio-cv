@@ -6,11 +6,13 @@
     "projects": "Dự án",
     "architecture": "Kiến trúc",
     "education": "Học vấn",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "cv": "CV"
   },
   "hero": {
     "systemStatus": "Trạng thái hệ thống: Trực tuyến // Portfolio v2.0",
     "downloadCv": "Tải CV",
+    "viewCv": "Xem CV",
     "cvModalTitle": "Chọn ngôn ngữ CV",
     "cvModalDescription": "Vui lòng chọn phiên bản ngôn ngữ bạn muốn tải.",
     "cvModalEn": "CV tiếng Anh",

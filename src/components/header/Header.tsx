@@ -3,6 +3,8 @@ import { ThemeToggle } from '@/components/theme-toggle/ThemeToggle'
 import { LangToggle } from '@/components/lang-toggle/LangToggle'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { FaGithub, FaLinkedinIn, FaGlobe } from 'react-icons/fa'
 import styles from './Header.module.css'
 
 interface HeaderProps {
@@ -18,12 +20,25 @@ export const Header = ({
   theme,
   onToggleTheme,
 }: HeaderProps) => {
+  const getSocialIcon = (link: SocialLink) => {
+    const href = link.href.toLowerCase()
+    if (href.includes('github.com')) {
+      return <FaGithub aria-hidden="true" focusable="false" />
+    }
+    if (href.includes('linkedin.com')) {
+      return <FaLinkedinIn aria-hidden="true" focusable="false" />
+    }
+    return <FaGlobe aria-hidden="true" focusable="false" />
+  }
+
+  const { t } = useTranslation()
   const sectionIds = useMemo(
     () => navigationItems.map((item) => item.href.replace('#', '')),
     [navigationItems],
   )
   const activeId = useScrollSpy(sectionIds, 150)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCvPopoverOpen, setIsCvPopoverOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -35,6 +50,7 @@ export const Header = ({
       const target = event.target
       if (target instanceof Node && !headerRef.current.contains(target)) {
         setIsMenuOpen(false)
+        setIsCvPopoverOpen(false)
       }
     }
 
@@ -49,7 +65,35 @@ export const Header = ({
 
   const handleLinkClick = () => {
     setIsMenuOpen(false)
+    setIsCvPopoverOpen(false)
   }
+
+  const openCvDownloadPicker = () => {
+    window.dispatchEvent(new CustomEvent('open-cv-modal'))
+    setIsCvPopoverOpen(false)
+    setIsMenuOpen(false)
+  }
+
+  const openCvViewer = () => {
+    window.dispatchEvent(new CustomEvent('open-cv-viewer'))
+    setIsCvPopoverOpen(false)
+    setIsMenuOpen(false)
+  }
+
+  useEffect(() => {
+    const nextId = activeId || (window.scrollY < 120 ? 'hero' : '')
+    if (!nextId) {
+      return
+    }
+
+    const nextHash = `#${nextId}`
+    if (window.location.hash === nextHash) {
+      return
+    }
+
+    const nextUrl = `${window.location.pathname}${window.location.search}${nextHash}`
+    window.history.replaceState(null, '', nextUrl)
+  }, [activeId])
 
   return (
     <header className={styles.header} ref={headerRef}>
@@ -77,6 +121,28 @@ export const Header = ({
               {item.label}
             </a>
           ))}
+          <div className={styles.cvMenu}>
+            <button
+              type="button"
+              className={styles.cvMenuTrigger}
+              onClick={() => setIsCvPopoverOpen((prev) => !prev)}
+              aria-expanded={isCvPopoverOpen}
+              aria-haspopup="menu"
+              aria-controls="cv-popover-menu"
+            >
+              {t('nav.cv')}
+            </button>
+            {isCvPopoverOpen && (
+              <div id="cv-popover-menu" className={styles.cvPopover} role="menu">
+                <button type="button" role="menuitem" onClick={openCvDownloadPicker}>
+                  {t('hero.downloadCv')}
+                </button>
+                <button type="button" role="menuitem" onClick={openCvViewer}>
+                  {t('hero.viewCv')}
+                </button>
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className={styles.actions}>
@@ -88,8 +154,9 @@ export const Header = ({
                 target="_blank"
                 rel="noreferrer"
                 aria-label={link.ariaLabel}
+                title={link.ariaLabel}
               >
-                {link.label}
+                {getSocialIcon(link)}
               </a>
             ))}
           </div>

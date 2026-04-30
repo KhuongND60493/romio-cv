@@ -1,0 +1,16 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  background: rgba(5, 5, 10, 0.55);
+  backdrop-filter: blur(10px) saturate(125%);
+  -webkit-backdrop-filter: blur(10px) saturate(125%);
+}
+
+.modalContent {
+  position: fixed;
+  inset: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}

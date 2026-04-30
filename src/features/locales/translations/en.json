@@ -6,11 +6,13 @@
     "projects": "Projects",
     "architecture": "Architecture",
     "education": "Education",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cv": "CV"
   },
   "hero": {
     "systemStatus": "System Status: Online // Portfolio v2.0",
     "downloadCv": "Download CV",
+    "viewCv": "View CV",
     "cvModalTitle": "Choose CV language",
     "cvModalDescription": "Select the language version you want to download.",
     "cvModalEn": "English CV",
