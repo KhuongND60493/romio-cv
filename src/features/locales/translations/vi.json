@@ -29,5 +29,9 @@
   "skills": {
     "competenciesTitle": "Tư duy kiến trúc toàn diện trên mọi khía cạnh: sản phẩm, nền tảng và triển khai.",
     "competenciesDescription": "Mỗi năng lực đều kết hợp tư duy hệ thống với kinh nghiệm thực tiễn trong việc triển khai."
+  },
+  "architecture": {
+    "title": "Những mẫu thiết kế tôi sử dụng để chuyển các yêu cầu sản phẩm phức tạp thành hệ thống bền vững.",
+    "description": "Phần này nhấn mạnh tư duy kiến trúc kỹ thuật vượt ra ngoài phạm vi triển khai tính năng."
   }
 }

@@ -66,7 +66,7 @@ To customize the portfolio:
 
 1. Replace the fake sample data in those JSON files.
 2. Update links, summaries, titles, and tech stacks as needed.
-3. If you add new fields, also update the related types in `src/types/cv.ts`.
+3. If you add new fields, also update the related types in `src/types/types.ts`.
 
 ## GitHub Pages Deployment
 

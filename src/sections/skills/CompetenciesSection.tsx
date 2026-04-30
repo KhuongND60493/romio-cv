@@ -1,5 +1,5 @@
 import { SectionHeading } from '@/components/section-heading/SectionHeading'
-import type { Competency } from '@/types/cv'
+import type { Competency } from '@/features/data/types.ts'
 import { useTranslation } from 'react-i18next'
 import styles from './CompetenciesSection.module.css'
 

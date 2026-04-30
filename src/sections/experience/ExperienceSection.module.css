@@ -35,7 +35,6 @@
 }
 
 .meta {
-  font-family: 'Space Grotesk', sans-serif;
   color: var(--accent);
   font-size: 0.9rem;
   letter-spacing: 0.1em;
@@ -46,15 +45,14 @@
 }
 
 .card h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
+  font-size: 1.55rem;
   color: var(--title);
   margin: 0 0 0.5rem;
   letter-spacing: -0.02em;
 }
 
 .card h4 {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   margin: 0 0 1.5rem;
   font-weight: 400;
@@ -63,7 +61,7 @@
 .card p {
   color: var(--text);
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 800px;
 }
 
@@ -76,7 +74,6 @@
 }
 
 .columns h5 {
-  font-family: 'Space Grotesk', sans-serif;
   color: var(--title);
   margin: 0 0 1rem;
   font-size: 1rem;
@@ -103,7 +100,6 @@
   position: absolute;
   left: 0;
   color: var(--accent);
-  font-family: 'Space Grotesk', sans-serif;
   font-weight: bold;
 }
 

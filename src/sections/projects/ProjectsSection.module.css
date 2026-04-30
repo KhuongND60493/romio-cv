@@ -30,8 +30,7 @@
 }
 
 .header h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
+  font-size: 1.55rem;
   color: var(--title);
   margin: 0;
   letter-spacing: -0.02em;
@@ -54,7 +53,7 @@
 .description {
   grid-column: 1 / -1;
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
   width: 100%;
@@ -78,7 +77,6 @@
 }
 
 .detail h4 {
-  font-family: 'Space Grotesk', sans-serif;
   color: var(--title);
   margin: 0 0 0.5rem;
   font-size: 1rem;
@@ -104,7 +102,6 @@
   position: absolute;
   left: 0;
   color: var(--accent);
-  font-family: 'Space Grotesk', sans-serif;
 }
 
 .detail p {
@@ -133,7 +130,6 @@
 }
 
 .links a {
-  font-family: 'Space Grotesk', sans-serif;
   color: var(--title);
   font-size: 0.85rem;
   font-weight: 600;

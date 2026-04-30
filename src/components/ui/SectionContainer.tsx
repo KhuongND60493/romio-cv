@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, BoxProps } from './Box';
-import { useTheme } from '@shopify/restyle';
-import { ThemeType } from '@/features/theme';
 
 interface SectionContainerProps extends BoxProps {
   children: React.ReactNode;
@@ -14,7 +12,6 @@ export const SectionContainer = ({
   hasArchitecturalLine = true,
   ...props
 }: SectionContainerProps) => {
-  const theme = useTheme<ThemeType>();
 
   return (
     <Box position="relative" pt="xl" {...props}>
@@ -26,9 +23,6 @@ export const SectionContainer = ({
           width="100%"
           height={1}
           opacity={0.5}
-          style={{
-            background: `linear-gradient(90deg, ${theme.colors.accent} 0%, transparent 100%)`,
-          } as any}
         />
       )}
       {children}

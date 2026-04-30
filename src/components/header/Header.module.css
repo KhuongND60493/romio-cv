@@ -23,7 +23,6 @@
 }
 
 .logo {
-  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--title);
@@ -41,7 +40,6 @@
 }
 
 .nav a {
-  font-family: 'Space Grotesk', sans-serif;
   color: var(--text-muted);
   font-size: 0.8rem;
   font-weight: 600;

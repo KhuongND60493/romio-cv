@@ -1,6 +1,5 @@
 import {Header} from '@/components/header/Header'
-import {AboutSection} from '@/sections/about/AboutSection'
-import {ArchitectureSection} from '@/sections/architecture/ArchitectureSection'
+import {AboutSection, ArchitectureSection} from '@/sections'
 import {CompetenciesSection} from '@/sections/skills/CompetenciesSection'
 import {ContactSection} from '@/sections/contact/ContactSection'
 import {EducationSection} from '@/sections/education/EducationSection'
@@ -16,7 +15,6 @@ import {ThemeType, useAppTheme} from '@/features/theme'
 import {Box} from "@/components/ui";
 import {useTheme} from "@shopify/restyle";
 import type {ReactNode} from 'react'
-
 
 function App() {
     const {t, i18n} = useTranslation()

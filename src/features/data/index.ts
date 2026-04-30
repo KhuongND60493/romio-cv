@@ -9,7 +9,7 @@ import type {
   ProjectItem,
   SkillCategory,
   SkillsData,
-} from '@/types/cv.ts'
+} from '@/features/data/types.ts'
 
 // EN
 import enArchitectureHighlights from '@/features/data/en/architectureHighlights.json'

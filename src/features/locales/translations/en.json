@@ -29,5 +29,9 @@
   "skills": {
     "competenciesTitle": "A fullstack architecture mindset across product, platform, and delivery.",
     "competenciesDescription": "Each competency combines system thinking with practical implementation experience."
+  },
+  "architecture": {
+    "title": "Patterns I use to turn complex product requirements into resilient systems.",
+    "description": "This section emphasizes technical architecture thinking beyond feature delivery."
   }
 }

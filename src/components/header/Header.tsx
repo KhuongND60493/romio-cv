@@ -1,4 +1,4 @@
-import type { SocialLink } from '@/types/cv'
+import type { SocialLink } from '@/features/data/types.ts'
 import { ThemeToggle } from '@/components/theme-toggle/ThemeToggle'
 import { LangToggle } from '@/components/lang-toggle/LangToggle'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
