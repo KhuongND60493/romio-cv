@@ -1,14 +1,12 @@
-import { existsSync } from 'node:fs'
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { spawnSync } from 'node:child_process'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const projectRoot = path.resolve(__dirname, '..')
 const publicDir = path.join(projectRoot, 'public')
-const dataDir = path.join(projectRoot, 'src', 'data')
+const dataDir = path.join(projectRoot, 'src', 'features', 'data')
 
 const escapeLatex = (value) =>
   String(value)
@@ -186,31 +184,6 @@ const resolveTemplatePreamble = async () => {
   return splitIndex > -1 ? content.slice(0, splitIndex).trimEnd() : content.trimEnd()
 }
 
-const hasCommand = (cmd) => {
-  const result = spawnSync('sh', ['-lc', `command -v ${cmd}`], {
-    stdio: 'ignore',
-  })
-  return result.status === 0
-}
-
-const compileTexToPdf = (texPath) => {
-  const compiler = hasCommand('xelatex')
-    ? 'xelatex'
-    : hasCommand('pdflatex')
-      ? 'pdflatex'
-      : null
-
-  if (!compiler) {
-    return false
-  }
-
-  const fileName = path.basename(texPath)
-  const cwd = path.dirname(texPath)
-  const command = `${compiler} -interaction=nonstopmode -halt-on-error "${fileName}"`
-  const run = spawnSync('sh', ['-lc', command], { cwd, stdio: 'inherit' })
-  return run.status === 0
-}
-
 const exportForLanguage = async (lang, preamble) => {
   const data = await loadLocalizedPortfolio(lang)
   const texFileName = `[${lang}]_nguyen_duy_khuong_cv.tex`
@@ -218,22 +191,29 @@ const exportForLanguage = async (lang, preamble) => {
   const texContent = `${preamble}\n${buildResumeBody(lang, data)}`
 
   await writeFile(texPath, texContent, 'utf-8')
-  return compileTexToPdf(texPath)
+  return texPath
+}
+
+const clearGeneratedTexFiles = async () => {
+  const texFiles = [
+    path.join(publicDir, '[en]_nguyen_duy_khuong_cv.tex'),
+    path.join(publicDir, '[vi]_nguyen_duy_khuong_cv.tex'),
+  ]
+
+  await Promise.all(texFiles.map((filePath) => rm(filePath, { force: true })))
 }
 
 const main = async () => {
   await mkdir(publicDir, { recursive: true })
+  await clearGeneratedTexFiles()
   const preamble = await resolveTemplatePreamble()
 
-  const enCompiled = await exportForLanguage('en', preamble)
-  const viCompiled = await exportForLanguage('vi', preamble)
+  const enTexPath = await exportForLanguage('en', preamble)
+  const viTexPath = await exportForLanguage('vi', preamble)
 
-  if (!enCompiled || !viCompiled) {
-    console.warn(
-      '\nLaTeX compiler not found (or compilation failed). Generated .tex files are ready in public/.',
-    )
-    console.warn('Please install MacTeX/BasicTeX, then run: npm run export:cv\n')
-  }
+  console.log('Generated TeX files:')
+  console.log(`- ${path.relative(projectRoot, enTexPath)}`)
+  console.log(`- ${path.relative(projectRoot, viTexPath)}`)
 }
 
 main().catch((error) => {

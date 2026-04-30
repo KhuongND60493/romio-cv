@@ -1,0 +1,306 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage[english,vietnamese]{babel}
+\else
+  \usepackage{fontspec}
+  \usepackage{polyglossia}
+  \setdefaultlanguage{english}
+  \setotherlanguage{vietnamese}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{TeX Gyre Termes}
+\fi
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nguyen Duy Khuong} \\ \vspace{1pt}
+    \small 0902637745 $|$ nguyenromio@gmail.com $|$ github.com/khuongnd60493 $|$ www.linkedin.com/in/romio-nguyen
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Information Technology (Planned)}{2026 - Expected 2028}
+      {University of Information Technology, VNU-HCM (UIT)}{}
+      \resumeItemListStart
+        \resumeItem{Planning to pursue a Master's degree in Information Technology. The rigorous program will focus on advanced algorithms, distributed systems, and particularly on Big Data processing to architect and scale enterprise data solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bachelor of Information Technology (Honors)}{}
+      {University of Science, VNU-HCM (HCMUS)}{}
+      \resumeItemListStart
+        \resumeItem{Graduated with Honors from the Faculty of Information Technology, one of the most prestigious computer science programs in Vietnam. The rigorous curriculum provided a deep theoretical foundation in Data Structures, Advanced Algorithms, and Systems Architecture. Specialized coursework included Enterprise Software Development, Distributed Databases, and Artificial Intelligence, cultivating a strong engineering mindset for building scalable, high-performance applications.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \resumeItem{VSTEP B2 (Level 4) - Van Lang University (2026)}
+        \resumeItem{Developing Web Application with Spring Framework - FPT Nanoversity HCM (2017)}
+        \resumeItem{Web Developer: MVC 5 (Microsoft Certificate) - Nhat Nghe Centre (2016)}
+        \resumeItem{Web Developer: C\#, ASP.Net, SQL Server (Microsoft Certificate) - Nhat Nghe Centre (2016)}
+  }}
+\end{itemize}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Leader / Senior Fullstack Developer}{05/2025 - Current}
+      {Dcorp Vietnam}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Architect robust backend services using .NET Core and Java, capable of handling massive daily transaction volumes and high-throughput POS requests.}
+        \resumeItem{Oversee the fullstack development of supplementary web portals and mobile applications to provide a seamless operational experience.}
+        \resumeItem{Solve complex Big Data challenges, optimizing databases and query performance to process and aggregate large-scale enterprise data efficiently.}
+        \resumeItem{Bridge on-premise POS deployments with scalable cloud-native microservices, ensuring continuous data synchronization and high availability.}
+        \resumeItem{Successfully maintained system stability and fast response times under extreme peak loads for nationwide restaurant chains.}
+        \resumeItem{Streamlined data synchronization between offline terminals and centralized cloud services to support real-time big data analytics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Architecture / Technical Leader}{03/2023 - 04/2025}
+      {MEDIASTEP}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Developed strategic technical solutions for F\&B, aligning with Product Owner and client needs.}
+        \resumeItem{Led R\&D team of 6 to explore and apply new technologies.}
+        \resumeItem{Managed a cross-functional team of >40 engineers to hit critical milestones and ensured high-quality, smooth releases.}
+        \resumeItem{Conducted training sessions to raise team skills and led code reviews.}
+        \resumeItem{Successfully implemented new technologies to boost performance and reliability.}
+        \resumeItem{Improved release quality through technical review governance and cross-functional quality control.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Fullstack Developer / Leader}{10/2021 - 03/2023}
+      {ALTSOURCE VIETNAM}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Acted as Team Leader and Senior Fullstack Developer across multiple client projects (Brighter Path, My Fertility Health, Arcadia Drilling, Trimet, Pacific Architectural Wood Products).}
+        \resumeItem{Designed and implemented fullstack solutions using .NET Core, and React/Vue.}
+        \resumeItem{Delivered Brighter Path teaching system for ethnic women.}
+        \resumeItem{Successfully delivered the subway camera surveillance system upgrade.}
+        \resumeItem{Built and scaled door production process management.}
+        \resumeItem{Optimized query and data processing performance to keep systems stable under growing workloads.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Fullstack Developer / Team Leader}{09/2018 - 10/2021}
+      {HANBIRO VIETNAM}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Led development teams ranging from 2 to 7 members across multiple projects.}
+        \resumeItem{Managed the migration of company website from Java (jsp-servlet) to Vuex.}
+        \resumeItem{Built Hanbiro HR, Groupware, and CRM Supply Chain Management systems.}
+        \resumeItem{Built Hanbiro CRM Call, a call management center using Electron and Reactjs.}
+        \resumeItem{Contributed to modernizing legacy modules into a more maintainable and scalable technology stack.}
+        \resumeItem{Delivered multiple core internal systems including HR, Groupware, and CRM Supply Chain modules.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Middle Fullstack Developer}{01/2018 - 09/2018}
+      {FPT SOFTWARE}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Built 'Learning Chinese for Japanese' mobile project.}
+        \resumeItem{Developed a medical app for booking appointments and reminding prescriptions.}
+        \resumeItem{Successfully delivered the 'Learning Chinese for Japanese' mobile application within project timelines.}
+        \resumeItem{Built a medical information app that improved appointment booking and medication reminder workflows.}
+        \resumeItem{Collaborated effectively across cross-functional teams to ensure stable mobile releases.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Middle Fullstack Developer / Team Leader}{02/2015 - 12/2017}
+      {VINHDANH COMPANY}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Led a team of 10 to serve the teaching and learning of English for Vietnamese people.}
+        \resumeItem{Led a 10-member team to launch the Riolish product for the English learning market.}
+        \resumeItem{Delivered both admin web platform and companion mobile application for operational use.}
+        \resumeItem{Supported iterative product improvements that expanded user adoption and service quality.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Internship Fullstack Developer}{02/2014 - 02/2015}
+      {FPT SOFTWARE}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Collaborator in programming the reading software.}
+        \resumeItem{Completed internship contributions successfully on Toshiba's reading application project.}
+        \resumeItem{Contributed to core feature implementation of the reading software as part of the engineering team.}
+        \resumeItem{Built a strong foundation in software delivery process and teamwork in an enterprise environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fullstack Developer}{03/2012 - 02/2014}
+      {DATASA.NET}{Ho Chi Minh City}
+      \resumeItemListStart
+        \resumeItem{Built an e-commerce website for computer and mobile products including purchase and admin pages.}
+        \resumeItem{Delivered a complete e-commerce website including customer purchase flow and admin management modules.}
+        \resumeItem{Implemented business requirements for computer and mobile product sales workflows.}
+        \resumeItem{Established early fullstack delivery experience through real production project execution.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Dcorp F\&B Enterprise Ecosystem} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{A hybrid (On-premise \& Cloud Microservices) POS and enterprise management ecosystem serving major F\&B chains such as Highland Coffee and Golden Gate, covering order lifecycle, pricing, promotion, loyalty, and centralized operational reporting.}
+            \resumeItem{Architected robust backend services in .NET Core and Java to process massive daily transaction volumes.}
+            \resumeItem{Engineered reliable Big Data pipelines and synchronized data between offline POS terminals and the cloud.}
+            \resumeItem{Designed highly available infrastructure utilizing Redis and Kafka for high-throughput queuing.}
+            \resumeItem{At Dcorp Vietnam, this platform ensured uninterrupted operations and real-time analytics for nationwide restaurant chains, supporting high daily concurrency and revenue-critical transactions. The architecture reduced downtime risk, shortened release lead time for franchise features, and improved operational visibility for both store-level and head-office decision making.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Go Food and Beverage Ecosystem (GoF\&B)} $|$ \emph{Technical Architecture Lead}}{}
+          \resumeItemListStart
+            \resumeItem{A comprehensive strategic technical solution for the F\&B industry, managing orders, POS, kitchen workflows, promotion execution, and multi-branch operations.}
+            \resumeItem{Led R\&D for exploring and applying new technologies}
+            \resumeItem{Designed highly scalable backend architecture}
+            \resumeItem{Managed a cross-functional team of 40+ members}
+            \resumeItem{At MEDIASTEP, this ecosystem improved transaction throughput and platform reliability for high-volume F\&B operations. The architecture enabled business teams to launch campaigns faster, manage inventory workflows consistently across multiple storefronts, and reduce release risk during high-traffic business periods.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Brighter Path} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{An educational platform designed to empower ethnic women through structured learning paths, accessible web UX, and progress tracking for community-driven training programs.}
+            \resumeItem{Developed a responsive learning portal}
+            \resumeItem{Integrated secure user management and progress tracking}
+            \resumeItem{Built modular content and enrollment flows to support iterative curriculum expansion.}
+            \resumeItem{At ALTSOURCE VIETNAM, this platform expanded access to digital education for ethnic women in underserved areas. Strong availability and usability improved learner engagement, while structured learning analytics gave stakeholders clearer evidence for scaling and continued program investment.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Trimet Subway Camera Surveillance} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{A modernization project for subway camera surveillance publishing and monitoring, focused on stream stability, visibility, and operational responsiveness.}
+            \resumeItem{Optimized video streaming and data publishing pipelines}
+            \resumeItem{Enhanced system security and monitoring capabilities}
+            \resumeItem{Refined incident-oriented telemetry and operational dashboards for support teams.}
+            \resumeItem{At ALTSOURCE VIETNAM, this project delivered a reliable real-time surveillance workflow for subway operations with stronger monitoring and security controls. Stream and publishing optimizations reduced buffering, improved operational response during peak usage, and increased confidence for transit operations teams.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hanbiro CRM \& HR} $|$ \emph{Team Leader / Senior Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Enterprise-level supply chain and HR applications (Web/App) supporting timekeeping, payroll, call workflows, and operational management for growing business units.}
+            \resumeItem{Migrated legacy systems to modern SPA architecture}
+            \resumeItem{Built a unified GraphQL API layer}
+            \resumeItem{Developed cross-platform mobile apps for HR}
+            \resumeItem{At HANBIRO VIETNAM, this suite improved operational efficiency by automating payroll, timekeeping, and supply-chain workflows for enterprise users. The modernized architecture reduced manual administrative effort, improved visibility for business managers, and enabled faster rollout of additional internal modules.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Learning Chinese for Japanese} $|$ \emph{Fullstack Developer}}{}
+          \resumeItemListStart
+            \resumeItem{A mobile learning application helping Japanese users improve Chinese through interactive lessons, structured exercises, and progress-oriented practice journeys.}
+            \resumeItem{Developed cross-platform mobile views using React-Native}
+            \resumeItem{Integrated interactive language exercises backed by a .NET Core API}
+            \resumeItem{Contributed to content delivery flow and user progression tracking for repeat learning usage.}
+            \resumeItem{At FPT SOFTWARE, this app delivered a focused language-learning experience for a niche audience and maintained strong recurring usage through interactive lessons. The project validated mobile-first education delivery for international learners and supported product positioning in a specialized language market.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend}{: .NET Core, ASP.NET Core, Java, Spring Boot, PHP, Laravel, Node.js} \\
+     \textbf{Frontend}{: ReactJS, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Angular} \\
+     \textbf{Mobile}{: React Native, Android, iOS Basics} \\
+     \textbf{Database}{: MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MongoDB, Redis} \\
+     \textbf{Messaging}{: Kafka, RabbitMQ} \\
+     \textbf{Monitoring}{: Grafana, Prometheus, OpenTelemetry}
+    }}
+ \end{itemize}
+
+\end{document}

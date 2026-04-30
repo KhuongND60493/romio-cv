@@ -8,7 +8,7 @@ A premium, data-driven CV/portfolio website for a Technical Architect / Fullstac
 - React
 - TypeScript with strict mode
 - CSS Modules
-- JSON-driven content in `src/data`
+- JSON-driven content in `src/features/data`
 - GitHub Pages deployment via GitHub Actions
 
 ## Features
@@ -39,6 +39,7 @@ npm run dev
 npm run build
 npm run preview
 npm run lint
+npm run export:cv
 ```
 
 ## Run Locally
@@ -50,23 +51,27 @@ npm run dev
 
 Open the local URL shown by Vite in your browser.
 
-## Update CV Content
+## Export CV (TeX -> PDF)
 
-All visible portfolio content is loaded from JSON files under `src/data`.
+`npm run export:cv` now generates only 2 TeX files:
 
-- `src/data/profile.json`
-- `src/data/skills.json`
-- `src/data/experiences.json`
-- `src/data/projects.json`
-- `src/data/education.json`
-- `src/data/certifications.json`
-- `src/data/architectureHighlights.json`
+- `public/[en]_nguyen_duy_khuong_cv.tex`
+- `public/[vi]_nguyen_duy_khuong_cv.tex`
 
-To customize the portfolio:
+### Generate PDF with Overleaf
 
-1. Replace the fake sample data in those JSON files.
-2. Update links, summaries, titles, and tech stacks as needed.
-3. If you add new fields, also update the related types in `src/types/types.ts`.
+1. Run:
+
+```bash
+npm run export:cv
+```
+
+2. Open [Overleaf](https://www.overleaf.com/).
+3. Create a new blank project and upload one of the generated `.tex` files.
+4. Compile in Overleaf and download the PDF.
+5. Create `public/cv/` if it does not exist, then copy the downloaded PDF there with one of these exact names:
+   - `en_khuongnd_cv.pdf`
+   - `vi_khuongnd_cv.pdf`
 
 ## GitHub Pages Deployment
 

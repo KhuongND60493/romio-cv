@@ -11,7 +11,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "export:cv": "node scripts/export-cv-pdf.mjs",
+    "gen:cv": "node scripts/export-cv-pdf.mjs",
     "predeploy": "npm run build",
     "upload": "gh-pages -d dist",
     "docker": "docker build -t romio-cv-ci-check ."

@@ -10,7 +10,12 @@
   },
   "hero": {
     "systemStatus": "System Status: Online // Portfolio v2.0",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "cvModalTitle": "Choose CV language",
+    "cvModalDescription": "Select the language version you want to download.",
+    "cvModalEn": "English CV",
+    "cvModalVi": "Vietnamese CV",
+    "cvModalCancel": "Cancel"
   },
   "footer": {
     "builtWith": "Built with Github-Pages, React, TypeScript, and Vite.",

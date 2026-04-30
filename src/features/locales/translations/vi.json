@@ -10,7 +10,12 @@
   },
   "hero": {
     "systemStatus": "Trạng thái hệ thống: Trực tuyến // Portfolio v2.0",
-    "downloadCv": "Tải CV"
+    "downloadCv": "Tải CV",
+    "cvModalTitle": "Chọn ngôn ngữ CV",
+    "cvModalDescription": "Vui lòng chọn phiên bản ngôn ngữ bạn muốn tải.",
+    "cvModalEn": "CV tiếng Anh",
+    "cvModalVi": "CV tiếng Việt",
+    "cvModalCancel": "Đóng"
   },
   "footer": {
     "builtWith": "Được xây dựng với Github-Pages, React, TypeScript, và Vite.",
