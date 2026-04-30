@@ -37,7 +37,8 @@
       "items": [
         "MySQL",
         "PostgreSQL",
-        "SQL Server",
+        "Microsoft SQL Server",
+        "SQLite",
         "MongoDB",
         "Redis"
       ]
@@ -54,7 +55,6 @@
       "items": [
         "Grafana",
         "Prometheus",
-        "ELK",
         "OpenTelemetry"
       ]
     },

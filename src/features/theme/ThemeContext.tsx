@@ -38,6 +38,10 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   const currentTheme = themeMode === 'light' ? lightTheme : darkTheme
 
+  useEffect(() => {
+    document.body.style.fontFamily = currentTheme.textVariants.defaults.fontFamily
+  }, [currentTheme])
+
   return (
     <ThemeContext.Provider value={{ themeMode, toggleTheme }}>
       <RestyleThemeProvider theme={currentTheme}>

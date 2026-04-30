@@ -41,7 +41,6 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
-    font-family: ${({ theme }) => theme.textVariants.defaults.fontFamily};
     background-color: var(--bg);
     
     background-image: ${({ themeMode }) =>
