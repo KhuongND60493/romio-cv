@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "export:cv": "node scripts/export-cv-pdf.mjs",
     "predeploy": "npm run build",
-    "upload": "gh-pages -d dist"
+    "upload": "gh-pages -d dist",
+    "docker": "docker build -t romio-cv-ci-check ."
   },
   "dependencies": {
     "@shopify/restyle": "^2.4.5",
