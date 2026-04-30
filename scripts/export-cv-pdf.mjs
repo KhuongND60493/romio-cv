@@ -81,6 +81,8 @@ const buildResumeBody = (lang, data) => {
     hero.email,
     ...(data.profile.socialLinks || []).map((item) => item.href.replace('https://', '')),
   ]
+  const heroTitle = hero.title ? escapeLatex(hero.title) : ''
+  const heroSummary = hero.summary ? escapeLatex(hero.summary) : ''
 
   const educationBlocks = data.education
     .map(
@@ -114,7 +116,6 @@ const buildResumeBody = (lang, data) => {
     .join('\n\n')
 
   const projectBlocks = data.projects
-    .slice(0, 6)
     .map((item) => {
       const arch = item.architectureHighlights
         .slice(0, 3)
@@ -141,8 +142,11 @@ const buildResumeBody = (lang, data) => {
 
 \\begin{center}
     \\textbf{\\Huge \\scshape ${escapeLatex(hero.fullName)}} \\\\ \\vspace{1pt}
+    ${heroTitle ? `\\small ${heroTitle} \\\\ \\vspace{2pt}` : ''}
     \\small ${contacts.map((text) => escapeLatex(text)).join(' $|$ ')}
 \\end{center}
+
+${heroSummary ? `\\vspace{4pt}\n\\small ${heroSummary}` : ''}
 
 \\section{${sectionLabel(lang, 'education')}}
   \\resumeSubHeadingListStart
