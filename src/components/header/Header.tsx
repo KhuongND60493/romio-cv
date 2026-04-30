@@ -1,7 +1,7 @@
-import type { SocialLink } from '../../types/cv'
-import { ThemeToggle } from '../theme-toggle/ThemeToggle'
-import { LangToggle } from '../lang-toggle/LangToggle'
-import { useScrollSpy } from '../../hooks/useScrollSpy'
+import type { SocialLink } from '@/types/cv'
+import { ThemeToggle } from '@/components/theme-toggle/ThemeToggle'
+import { LangToggle } from '@/components/lang-toggle/LangToggle'
+import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import styles from './Header.module.css'
 

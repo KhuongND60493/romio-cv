@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import enTranslation from './data/en/i18n.json'
-import viTranslation from './data/vi/i18n.json'
+import enTranslation from '@/features/locales/translations/en.json'
+import viTranslation from '@/features/locales/translations/vi.json'
 
 const LANGUAGE_STORAGE_KEY = 'romio-cv.language'
 const DEFAULT_LANGUAGE = 'vi'

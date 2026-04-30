@@ -9,27 +9,27 @@ import type {
   ProjectItem,
   SkillCategory,
   SkillsData,
-} from '../types/cv'
+} from '@/types/cv.ts'
 
 // EN
-import enArchitectureHighlights from '../data/en/architectureHighlights.json'
-import enCertifications from '../data/en/certifications.json'
-import enEducation from '../data/en/education.json'
-import enExperiences from '../data/en/experiences.json'
-import enProfile from '../data/en/profile.json'
-import enProjects from '../data/en/projects.json'
-import enSkills from '../data/en/skills.json'
-import baseProfileCommon from '../data/common/base_profile.json'
-import baseSkillsCommon from '../data/common/base_skills.json'
+import enArchitectureHighlights from '@/features/data/en/architectureHighlights.json'
+import enCertifications from '@/features/data/en/certifications.json'
+import enEducation from '@/features/data/en/education.json'
+import enExperiences from '@/features/data/en/experiences.json'
+import enProfile from '@/features/data/en/profile.json'
+import enProjects from '@/features/data/en/projects.json'
+import enSkills from '@/features/data/en/skills.json'
+import baseProfileCommon from '@/features/data/common/base_profile.json'
+import baseSkillsCommon from '@/features/data/common/base_skills.json'
 
 // VI
-import viArchitectureHighlights from '../data/vi/architectureHighlights.json'
-import viCertifications from '../data/vi/certifications.json'
-import viEducation from '../data/vi/education.json'
-import viExperiences from '../data/vi/experiences.json'
-import viProfile from '../data/vi/profile.json'
-import viProjects from '../data/vi/projects.json'
-import viSkills from '../data/vi/skills.json'
+import viArchitectureHighlights from '@/features/data/vi/architectureHighlights.json'
+import viCertifications from '@/features/data/vi/certifications.json'
+import viEducation from '@/features/data/vi/education.json'
+import viExperiences from '@/features/data/vi/experiences.json'
+import viProfile from '@/features/data/vi/profile.json'
+import viProjects from '@/features/data/vi/projects.json'
+import viSkills from '@/features/data/vi/skills.json'
 
 const ensureArray = <T>(value: T[], label: string): T[] => {
   if (!Array.isArray(value)) {

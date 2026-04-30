@@ -1,5 +1,5 @@
-import type { AboutProfile } from '../../types/cv'
-import { SectionHeading } from '../../components/section-heading/SectionHeading'
+import type { AboutProfile } from '@/types/cv'
+import { SectionHeading } from '@/components/section-heading/SectionHeading'
 import { useTranslation } from 'react-i18next'
 import styles from './AboutSection.module.css'
 

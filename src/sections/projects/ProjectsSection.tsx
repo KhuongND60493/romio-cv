@@ -1,6 +1,6 @@
-import { SectionHeading } from '../../components/section-heading/SectionHeading'
-import { TagList } from '../../components/tag-list/TagList'
-import type { ProjectItem } from '../../types/cv'
+import { SectionHeading } from '@/components/section-heading/SectionHeading'
+import { TagList } from '@/components/tag-list/TagList'
+import type { ProjectItem } from '@/types/cv'
 import { useTranslation } from 'react-i18next'
 import styles from './ProjectsSection.module.css'
 

@@ -1,5 +1,5 @@
 import { useMemo, useState, type ChangeEvent, type FormEvent } from 'react'
-import { validateContactForm } from '../../utils/validation'
+import { validateContactForm } from '@/utils/validation'
 import styles from './ContactForm.module.css'
 
 const initialValues = {

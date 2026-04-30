@@ -1,4 +1,4 @@
-import type { Profile } from '../../types/cv'
+import type { Profile } from '@/types/cv'
 import { useTranslation } from 'react-i18next'
 import styles from './HeroSection.module.css'
 
