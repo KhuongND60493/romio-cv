@@ -37,6 +37,52 @@
     "competenciesTitle": "A fullstack architecture mindset across product, platform, and delivery.",
     "competenciesDescription": "Each competency combines system thinking with practical implementation experience."
   },
+  "techStack": {
+    "title": "Platforms and tools powering reliable digital products.",
+    "description": "Organized by discipline to show practical depth across backend, frontend, mobile, data, and operations."
+  },
+  "experience": {
+    "title": "Leading teams and systems from architecture strategy to production operations.",
+    "description": "A concise timeline of roles that combine delivery execution with platform thinking."
+  },
+  "projects": {
+    "title": "Selected product and platform work with measurable business value.",
+    "description": "Representative examples that highlight architecture choices, ownership scope, and product outcomes.",
+    "architectureHighlights": "Architecture Highlights",
+    "businessImpact": "Business Impact"
+  },
+  "education": {
+    "title": "Academic foundation combined with continuous architecture-focused learning.",
+    "description": "A mix of formal education and practical certifications that reinforce system-level thinking.",
+    "educationLabel": "Education",
+    "certificationsLabel": "Certifications"
+  },
+  "contact": {
+    "title": "Let's design and ship reliable products together.",
+    "description": "Open to architecture discussions, consulting opportunities, and senior fullstack engagements.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about the role, project, or product challenge."
+      },
+      "submit": "Send Inquiry",
+      "success": "Thanks, your message has been queued for follow-up.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please describe your project or opportunity."
+      }
+    }
+  },
   "architecture": {
     "title": "Patterns I use to turn complex product requirements into resilient systems.",
     "description": "This section emphasizes technical architecture thinking beyond feature delivery."

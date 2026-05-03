@@ -17,15 +17,15 @@ export const EducationSection = ({
     <section id="education" className={styles.section}>
       <SectionHeading
         eyebrow={t('sections.education')}
-        title="Academic foundation combined with continuous architecture-focused learning."
-        description="A mix of formal education and practical certifications that reinforce system-level thinking."
+        title={t('education.title')}
+        description={t('education.description')}
       />
 
       <div className={styles.grid}>
         <div className={styles.column}>
-          <h3>Education</h3>
+          <h3>{t('education.educationLabel')}</h3>
           {education.map((item) => (
-            <article key={item.degree} className={styles.card}>
+            <article key={item.degree} className={styles.card} data-cursor="interactive">
               <div className={styles.cardHeader}>
                 {item.logoUrl && (
                   <img
@@ -50,9 +50,13 @@ export const EducationSection = ({
         </div>
 
         <div className={styles.column}>
-          <h3>Certifications</h3>
+          <h3>{t('education.certificationsLabel')}</h3>
           {certifications.map((item) => (
-            <article key={item.name} className={`${styles.card} ${styles.certCard}`}>
+            <article
+              key={item.name}
+              className={`${styles.card} ${styles.certCard}`}
+              data-cursor="interactive"
+            >
               <div className={styles.cardHeader}>
                 {item.logoUrl ? (
                   <img

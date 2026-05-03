@@ -14,8 +14,8 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
     <section id="projects" className={styles.section}>
       <SectionHeading
         eyebrow={t('sections.projects')}
-        title="Selected product and platform work with measurable business value."
-        description="Representative examples that highlight architecture choices, ownership scope, and product outcomes."
+        title={t('projects.title')}
+        description={t('projects.description')}
       />
 
       <div className={styles.grid}>
@@ -30,7 +30,7 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
 
             <div className={styles.detailSplit}>
               <div className={`${styles.detail} ${styles.architectureDetail}`}>
-                <h4>Architecture Highlights</h4>
+                <h4>{t('projects.architectureHighlights')}</h4>
                 <ul>
                   {project.architectureHighlights.map((item) => (
                     <li key={item}>{item}</li>
@@ -39,7 +39,7 @@ export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
               </div>
 
               <div className={`${styles.detail} ${styles.impactDetail}`}>
-                <h4>Business Impact</h4>
+                <h4>{t('projects.businessImpact')}</h4>
                 <p>{project.businessImpact}</p>
               </div>
             </div>

@@ -14,15 +14,15 @@ export const TechStackSection = ({ techStack }: TechStackSectionProps) => {
     <section className={styles.section}>
       <SectionHeading
         eyebrow={t('sections.techStack')}
-        title="Tools and platforms used to deliver modern digital systems."
-        description="Grouped by discipline to reflect breadth across backend, frontend, mobile, infrastructure, and operations."
+        title={t('techStack.title')}
+        description={t('techStack.description')}
       />
 
       <div className={styles.grid}>
         {techStack.map((group) => (
           <article key={group.category} className={styles.card}>
             <h3>{group.category}</h3>
-            <TagList items={group.items} compact />
+            <TagList items={group.items} compact iconOnly />
           </article>
         ))}
       </div>

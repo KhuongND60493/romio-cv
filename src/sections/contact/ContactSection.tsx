@@ -12,13 +12,12 @@ export const ContactSection = ({ profile }: ContactSectionProps) => {
   const { t } = useTranslation()
   return (
     <section id="contact" className={styles.section}>
-      <div className={styles.info}>
-        <SectionHeading
-          eyebrow={t('sections.contact')}
-          title="Let’s design and ship reliable products together."
-          description="Open to architecture discussions, consulting opportunities, and senior fullstack engagements."
-        />
-
+      <SectionHeading
+        eyebrow={t('sections.contact')}
+        title={t('contact.title')}
+        description={t('contact.description')}
+      />
+      <div className={styles.content}>
         <div className={styles.card}>
           {[...profile.links, ...profile.socialLinks].map((item) => (
             <a
@@ -38,9 +37,8 @@ export const ContactSection = ({ profile }: ContactSectionProps) => {
             </a>
           ))}
         </div>
+        <ContactForm />
       </div>
-
-      <ContactForm />
     </section>
   )
 }

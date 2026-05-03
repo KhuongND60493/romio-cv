@@ -39,3 +39,42 @@
     0 10px 24px rgba(220, 38, 38, 0.35);
 }
 
+.iconTag {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.72rem;
+}
+
+.techIcon {
+  font-size: 1.1rem;
+}
+
+.iconTag::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.55rem);
+  transform: translateX(-50%) translateY(4px);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 0.72rem;
+  line-height: 1;
+  color: var(--title);
+  background: var(--bg-elevated);
+  border: 1px solid rgba(220, 38, 38, 0.36);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  z-index: 20;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.iconTag:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+

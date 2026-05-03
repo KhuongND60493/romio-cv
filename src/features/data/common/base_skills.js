@@ -59,6 +59,24 @@ export default {
       ]
     },
     {
+      "category": "Product / Collaboration",
+      "items": [
+        "Agile Delivery",
+        "Cross-functional Coordination",
+        "Requirement Clarification",
+        "Release Planning"
+      ]
+    },
+    {
+      "category": "Architecture / Delivery",
+      "items": [
+        "Git",
+        "Jira",
+        "Postman",
+        "Swagger"
+      ]
+    },
+    {
       "category": "Tools",
       "items": [
         "Git",

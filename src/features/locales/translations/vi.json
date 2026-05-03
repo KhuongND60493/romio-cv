@@ -37,6 +37,52 @@
     "competenciesTitle": "Tư duy kiến trúc toàn diện trên mọi khía cạnh: sản phẩm, nền tảng và triển khai.",
     "competenciesDescription": "Mỗi năng lực đều kết hợp tư duy hệ thống với kinh nghiệm thực tiễn trong việc triển khai."
   },
+  "techStack": {
+    "title": "Nền tảng và công cụ đứng sau các sản phẩm số ổn định, có khả năng mở rộng.",
+    "description": "Được nhóm theo từng mảng để thể hiện chiều sâu triển khai thực tế từ backend, frontend, mobile đến dữ liệu và vận hành."
+  },
+  "experience": {
+    "title": "Dẫn dắt đội ngũ và hệ thống từ chiến lược kiến trúc đến vận hành thực tế.",
+    "description": "Lộ trình vai trò kết hợp giữa năng lực delivery, quản lý kỹ thuật và tư duy nền tảng."
+  },
+  "projects": {
+    "title": "Các dự án tiêu biểu với tác động rõ ràng đến hiệu quả kinh doanh.",
+    "description": "Những ví dụ đại diện thể hiện lựa chọn kiến trúc, phạm vi ownership và kết quả sản phẩm.",
+    "architectureHighlights": "Điểm nhấn Kiến trúc",
+    "businessImpact": "Tác động Kinh doanh"
+  },
+  "education": {
+    "title": "Nền tảng học thuật kết hợp với quá trình học tập chuyên sâu kiến trúc liên tục.",
+    "description": "Sự kết hợp giữa học vấn chính quy và chứng chỉ thực tiễn nhằm củng cố tư duy hệ thống.",
+    "educationLabel": "Học vấn",
+    "certificationsLabel": "Chứng chỉ"
+  },
+  "contact": {
+    "title": "Cùng nhau thiết kế và triển khai những sản phẩm ổn định, có khả năng mở rộng.",
+    "description": "Sẵn sàng trao đổi về kiến trúc hệ thống, tư vấn kỹ thuật và các cơ hội senior fullstack.",
+    "form": {
+      "name": {
+        "label": "Họ và tên",
+        "placeholder": "Tên của bạn"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "ban@example.com"
+      },
+      "message": {
+        "label": "Nội dung",
+        "placeholder": "Hãy chia sẻ về vị trí, dự án hoặc bài toán sản phẩm bạn đang cần."
+      },
+      "submit": "Gửi liên hệ",
+      "success": "Cảm ơn bạn, mình đã nhận được nội dung và sẽ phản hồi sớm.",
+      "errors": {
+        "nameRequired": "Vui lòng nhập họ và tên.",
+        "emailRequired": "Vui lòng nhập email.",
+        "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+        "messageRequired": "Vui lòng mô tả dự án hoặc cơ hội hợp tác."
+      }
+    }
+  },
   "architecture": {
     "title": "Những mẫu thiết kế tôi sử dụng để chuyển các yêu cầu sản phẩm phức tạp thành hệ thống bền vững.",
     "description": "Phần này nhấn mạnh tư duy kiến trúc kỹ thuật vượt ra ngoài phạm vi triển khai tính năng."

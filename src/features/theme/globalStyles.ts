@@ -94,6 +94,11 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     [data-cursor='interactive'] {
       cursor: none !important;
     }
+
+    [role='dialog'],
+    [role='dialog'] * {
+      cursor: auto !important;
+    }
   }
 
   img {
@@ -105,22 +110,8 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     min-height: 100vh;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    section {
-      animation: section-rise 420ms ease both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 30%;
-    }
-  }
-
-  @keyframes section-rise {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  section {
+    opacity: 1;
+    transform: none;
   }
 `

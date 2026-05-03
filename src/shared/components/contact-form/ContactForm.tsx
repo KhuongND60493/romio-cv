@@ -1,5 +1,6 @@
 import { useMemo, useState, type ChangeEvent, type FormEvent } from 'react'
 import { validateContactForm } from '@/utils/validation'
+import { useTranslation } from 'react-i18next'
 import styles from './ContactForm.module.css'
 
 const initialValues = {
@@ -9,11 +10,21 @@ const initialValues = {
 }
 
 export const ContactForm = () => {
+  const { t } = useTranslation()
   const [values, setValues] = useState(initialValues)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [showErrors, setShowErrors] = useState(false)
 
-  const errors = useMemo(() => validateContactForm(values), [values])
+  const errors = useMemo(
+    () =>
+      validateContactForm(values, {
+        nameRequired: t('contact.form.errors.nameRequired'),
+        emailRequired: t('contact.form.errors.emailRequired'),
+        emailInvalid: t('contact.form.errors.emailInvalid'),
+        messageRequired: t('contact.form.errors.messageRequired'),
+      }),
+    [t, values],
+  )
 
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -39,45 +50,45 @@ export const ContactForm = () => {
     <div className={styles.wrapper}>
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
         <div className={styles.field}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">{t('contact.form.name.label')}</label>
           <input
             id="name"
             name="name"
             value={values.name}
             onChange={handleChange}
-            placeholder="Your name"
+            placeholder={t('contact.form.name.placeholder')}
           />
           {showErrors && errors.name ? <span>{errors.name}</span> : null}
         </div>
 
         <div className={styles.field}>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{t('contact.form.email.label')}</label>
           <input
             id="email"
             name="email"
             type="email"
             value={values.email}
             onChange={handleChange}
-            placeholder="you@example.com"
+            placeholder={t('contact.form.email.placeholder')}
           />
           {showErrors && errors.email ? <span>{errors.email}</span> : null}
         </div>
 
         <div className={styles.field}>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">{t('contact.form.message.label')}</label>
           <textarea
             id="message"
             name="message"
             rows={5}
             value={values.message}
             onChange={handleChange}
-            placeholder="Tell me about the role, project, or product challenge."
+            placeholder={t('contact.form.message.placeholder')}
           />
           {showErrors && errors.message ? <span>{errors.message}</span> : null}
         </div>
 
         <button className={styles.submit} type="submit">
-          Send Inquiry
+          {t('contact.form.submit')}
         </button>
       </form>
 
@@ -87,7 +98,7 @@ export const ContactForm = () => {
         className={styles.toast}
         data-visible={isSubmitted}
       >
-        Thanks, your message has been queued for follow-up.
+        {t('contact.form.success')}
       </div>
     </div>
   )

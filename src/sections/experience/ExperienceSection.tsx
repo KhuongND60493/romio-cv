@@ -16,8 +16,8 @@ export const ExperienceSection = ({
     <section id="experience" className={styles.section}>
       <SectionHeading
         eyebrow={t('sections.experience')}
-        title="Leading teams and systems from architecture strategy to production operations."
-        description="A concise timeline of roles that combine delivery execution with platform thinking."
+        title={t('experience.title')}
+        description={t('experience.description')}
       />
 
       <div className={styles.timeline}>
