@@ -1,8 +1,30 @@
 import {SectionHeading} from '@/shared/components/section-heading/SectionHeading';
 import {Box, SectionContainer, Text} from '@/shared/components/ui';
 import type {ArchitectureHighlight} from '@/features/data/types';
+import type { ComponentType } from 'react';
 import {useState} from 'react';
 import {useTranslation} from 'react-i18next';
+import {
+    FaBoxesStacked,
+    FaChartLine,
+    FaDatabase,
+    FaGaugeHigh,
+    FaLayerGroup,
+    FaNetworkWired,
+    FaShuffle,
+    FaTimeline,
+} from 'react-icons/fa6';
+
+const architectureIconMap: Record<string, ComponentType> = {
+    MS: FaBoxesStacked,
+    EV: FaShuffle,
+    GW: FaNetworkWired,
+    DB: FaDatabase,
+    BJ: FaTimeline,
+    CA: FaLayerGroup,
+    OB: FaChartLine,
+    SR: FaGaugeHigh,
+};
 
 export const ArchitectureSection = ({
                                         highlights,
@@ -13,13 +35,16 @@ export const ArchitectureSection = ({
     return (
         <SectionContainer id="architecture">
             <SectionHeading
-                eyebrow={t('sections.architecture')}
+                eyebrow={`🏗️ ${t('sections.architecture')}`}
                 title={t('architecture.title')}
                 description={t('architecture.description')}
             />
 
-            <Box display={'grid'} style={{gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'} as any} gap={'2rem'}>
+            <Box display={'grid'} style={{gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'} as any} gap={'2rem'}>
                 {highlights.map((item, i) => (
+                    (() => {
+                        const Icon = architectureIconMap[item.icon] ?? FaLayerGroup
+                        return (
                     <Box
                         key={`architect_${i}`}
                         position="relative"
@@ -59,34 +84,22 @@ export const ArchitectureSection = ({
                                 alignItems="center"
                                 justifyContent="center"
                                 style={{
-                                    width: '3.25rem',
-                                    height: '3.25rem',
-                                    minWidth: '3.25rem',
-                                    minHeight: '3.25rem',
-                                    maxWidth: '3.25rem',
-                                    maxHeight: '3.25rem',
                                     flexShrink: 0,
-                                    background:
-                                        'radial-gradient(circle at 30% 30%, rgba(220, 38, 38, 0.22), rgba(220, 38, 38, 0.08))',
                                     color: 'var(--accent)',
-                                    borderRadius: '50%',
-                                    fontSize: '1.1rem',
-                                    border: '1px dashed var(--accent)',
-                                    boxShadow:
-                                        hoveredCard === item.title
-                                            ? '0 12px 24px rgba(220, 38, 38, 0.22)'
-                                            : '0 8px 20px rgba(220, 38, 38, 0.16)',
-                                    transform: hoveredCard === item.title ? 'translateY(-2px) scale(1.03)' : 'none',
-                                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                                    fontSize: hoveredCard === item.title ? '2rem' : '1.85rem',
+                                    transform: hoveredCard === item.title ? 'translateY(-1px)' : 'none',
+                                    transition: 'transform 0.25s ease, font-size 0.25s ease',
                                     lineHeight: 1,
                                 } as any}
                             >
-                                {item.icon}
+                                <Icon />
                             </Box>
-                            <Text variant={'h3'}>{item.title}</Text>
+                            <Text variant={'h4'}>{item.title}</Text>
                         </Box>
                         <Text>{item.description}</Text>
                     </Box>
+                        )
+                    })()
                 ))}
             </Box>
         </SectionContainer>
