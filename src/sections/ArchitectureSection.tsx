@@ -1,5 +1,5 @@
-import {SectionHeading} from '@/components/section-heading/SectionHeading';
-import {Box, SectionContainer, Text} from '@/components/ui';
+import {SectionHeading} from '@/shared/components/section-heading/SectionHeading';
+import {Box, SectionContainer, Text} from '@/shared/components/ui';
 import type {ArchitectureHighlight} from '@/features/data/types';
 import {useState} from 'react';
 import {useTranslation} from 'react-i18next';
@@ -92,3 +92,4 @@ export const ArchitectureSection = ({
         </SectionContainer>
     )
 }
+

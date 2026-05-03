@@ -1,6 +1,6 @@
 import type { SocialLink } from '@/features/data/types.ts'
-import { ThemeToggle } from '@/components/theme-toggle/ThemeToggle'
-import { LangToggle } from '@/components/lang-toggle/LangToggle'
+import { ThemeToggle } from '@/shared/components/theme-toggle/ThemeToggle'
+import { LangToggle } from '@/shared/components/lang-toggle/LangToggle'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -177,4 +177,5 @@ export const Header = ({
     </header>
   )
 }
+
 

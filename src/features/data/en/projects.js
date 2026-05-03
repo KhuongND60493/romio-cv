@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "Dcorp F&B Enterprise Ecosystem",
     "description": "A hybrid (On-premise & Cloud Microservices) POS and enterprise management ecosystem serving major F&B chains such as Highland Coffee and Golden Gate, covering order lifecycle, pricing, promotion, loyalty, and centralized operational reporting.",

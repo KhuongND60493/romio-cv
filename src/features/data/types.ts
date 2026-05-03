@@ -17,6 +17,7 @@ export interface CtaLink {
 export interface HeroProfile {
   fullName: string
   title: string
+  title_cv: string[]
   tagline: string
   summary: string
   avatarLabel: string
@@ -38,6 +39,7 @@ export interface Profile {
   ctas: CtaLink[]
   links: ContactLink[]
   socialLinks: SocialLink[]
+  title_cv: string[]
 }
 
 export interface Competency {

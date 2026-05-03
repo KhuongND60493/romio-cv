@@ -1,7 +1,7 @@
 import type {AboutProfile} from '@/features/data/types.ts'
-import {SectionHeading} from '@/components/section-heading/SectionHeading'
+import {SectionHeading} from '@/shared/components/section-heading/SectionHeading'
 import {useTranslation} from 'react-i18next'
-import {Box, Text, SectionContainer, SectionCard} from '@/components/ui'
+import {Box, Text, SectionContainer, SectionCard} from '@/shared/components/ui'
 
 export const AboutSection = ({about}: {
     about: AboutProfile
@@ -41,3 +41,4 @@ export const AboutSection = ({about}: {
         </SectionContainer>
     )
 }
+

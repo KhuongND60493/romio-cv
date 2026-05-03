@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "VSTEP B2 (Bậc 4)",
     "issuer": "Đại học Văn Lang",

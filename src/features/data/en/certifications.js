@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "VSTEP B2 (Level 4)",
     "issuer": "Van Lang University",

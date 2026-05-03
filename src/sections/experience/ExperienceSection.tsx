@@ -1,5 +1,5 @@
-import { SectionHeading } from '@/components/section-heading/SectionHeading'
-import { TagList } from '@/components/tag-list/TagList'
+import { SectionHeading } from '@/shared/components/section-heading/SectionHeading'
+import { TagList } from '@/shared/components/tag-list/TagList'
 import type { ExperienceItem } from '@/features/data/types.ts'
 import { useTranslation } from 'react-i18next'
 import styles from './ExperienceSection.module.css'
@@ -58,3 +58,4 @@ export const ExperienceSection = ({
     </section>
   )
 }
+

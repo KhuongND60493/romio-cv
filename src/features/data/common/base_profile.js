@@ -1,4 +1,4 @@
-{
+export default {
   "links": [
     {
       "label": "Email",
@@ -20,11 +20,11 @@
     }
   ],
   "socialLinks": [
-    {
-      "label": "GitHub",
-      "href": "https://github.com/khuongnd60493",
-      "ariaLabel": "View GitHub profile"
-    },
+    // {
+    //   "label": "GitHub",
+    //   "href": "https://github.com/khuongnd60493",
+    //   "ariaLabel": "View GitHub profile"
+    // },
     {
       "label": "LinkedIn",
       "href": "https://www.linkedin.com/in/romio-nguyen",

@@ -1,4 +1,4 @@
-import {Header} from '@/components/header/Header'
+import {Header} from '@/shared/components/header/Header'
 import {AboutSection, ArchitectureSection} from '@/sections'
 import {CompetenciesSection} from '@/sections/skills/CompetenciesSection'
 import {ContactSection} from '@/sections/contact/ContactSection'
@@ -8,11 +8,11 @@ import {FooterSection} from '@/sections/footer/FooterSection'
 import {HeroSection} from '@/sections/hero/HeroSection'
 import {ProjectsSection} from '@/sections/projects/ProjectsSection'
 import {TechStackSection} from '@/sections/tech-stack/TechStackSection'
-import {ScrollToTop} from '@/components/scroll-to-top/ScrollToTop'
+import {ScrollToTop} from '@/shared/components/scroll-to-top/ScrollToTop'
 import {useTranslation} from 'react-i18next'
 import {getNavigationItems, getPortfolioData} from '@/features/data'
 import {ThemeType, useAppTheme} from '@/features/theme'
-import {Box} from "@/components/ui";
+import {Box} from "@/shared/components/ui";
 import {useTheme} from "@shopify/restyle";
 import type {ReactNode} from 'react'
 
@@ -56,7 +56,7 @@ function App() {
                     style={{width: 'min(var(--max-width), calc(100% - 4rem))', marginInline: 'auto'} as any}
                     paddingBottom="xl"
                 >
-                    <HeroSection profile={portfolioData.profile}/>
+                    <HeroSection profile={portfolioData.profile} />
                     <Box flexDirection="column" style={{gap: '6rem'} as any}>
                         <SectionWrapper>
                             <AboutSection about={portfolioData.profile.about}/>
@@ -112,3 +112,4 @@ const SectionWrapper = ({children}: {
         {children}
     </Box>
 )
+

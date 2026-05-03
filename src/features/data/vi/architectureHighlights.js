@@ -1,4 +1,4 @@
-[
+export default [
   {
     "title": "Kiến trúc Microservices",
     "description": "Phân chia domain thành các service có thể triển khai độc lập, có trách nhiệm rõ ràng.",

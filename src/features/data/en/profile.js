@@ -1,7 +1,12 @@
-{
+export default {
   "hero": {
     "fullName": "Nguyen Duy Khuong",
     "title": "Technical Architect / Technical Leader",
+    "title_cv": [
+      "Technical Architect",
+      "Technical Leader",
+      "Principal Fullstack Engineer"
+    ],
     "tagline": "Designing scalable systems, building reliable products.",
     "summary": "As a dedicated Technical Architect with experience in building and optimizing software solutions, I am eager to bring my technical expertise and collaborative approach to a forward-thinking organization. My goal is to drive robust, scalable solutions that adapt to future industry trends.",
     "avatarLabel": "RN",

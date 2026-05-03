@@ -1,4 +1,4 @@
-[
+export default [
   {
     "title": "Microservices Architecture",
     "description": "Decompose domains into independently deployable services with clear ownership and contracts.",

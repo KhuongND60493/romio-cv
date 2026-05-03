@@ -1,4 +1,4 @@
-[
+export default [
   {
     "company": "Dcorp Vietnam",
     "role": "Team Leader / Senior Fullstack Developer",

@@ -1,4 +1,4 @@
-{
+export default {
   "competencies": [
     {
       "title": "Kiến trúc Hệ thống",

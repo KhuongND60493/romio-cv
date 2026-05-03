@@ -1,4 +1,4 @@
-[
+export default [
   {
     "degree": "Master of Information Technology (Planned)",
     "institution": "University of Information Technology, VNU-HCM (UIT)",

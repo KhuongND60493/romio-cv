@@ -1,4 +1,4 @@
-{
+export default {
   "techStack": [
     {
       "category": "Backend",

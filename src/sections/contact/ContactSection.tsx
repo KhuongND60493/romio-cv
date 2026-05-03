@@ -1,5 +1,5 @@
-import { ContactForm } from '@/components/contact-form/ContactForm'
-import { SectionHeading } from '@/components/section-heading/SectionHeading'
+import { ContactForm } from '@/shared/components/contact-form/ContactForm'
+import { SectionHeading } from '@/shared/components/section-heading/SectionHeading'
 import type { Profile } from '@/features/data/types.ts'
 import { useTranslation } from 'react-i18next'
 import styles from './ContactSection.module.css'
@@ -44,3 +44,4 @@ export const ContactSection = ({ profile }: ContactSectionProps) => {
     </section>
   )
 }
+

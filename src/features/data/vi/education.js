@@ -1,4 +1,4 @@
-[
+export default [
   {
     "degree": "Thạc sĩ Công nghệ Thông tin (Kế hoạch)",
     "institution": "Đại học Công nghệ Thông tin, ĐHQG-HCM (UIT)",

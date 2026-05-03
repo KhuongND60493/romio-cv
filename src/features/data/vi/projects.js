@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "Hệ sinh thái Quản lý Doanh nghiệp Dcorp F&B",
     "description": "Hệ sinh thái quản lý nhà hàng và POS theo mô hình lai (On-premise & Cloud Microservices) phục vụ các chuỗi F&B lớn như Highland Coffee, Golden Gate; bao phủ vòng đời đơn hàng, định giá, khuyến mãi, loyalty và báo cáo vận hành tập trung.",

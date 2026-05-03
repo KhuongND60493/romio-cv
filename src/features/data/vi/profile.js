@@ -1,7 +1,12 @@
-{
+export default {
   "hero": {
     "fullName": "Nguyễn Duy Khương",
     "title": "Technical Architect / Technical Leader",
+    "title_cv": [
+      "Technical Architect",
+      "Technical Leader",
+      "Principal Fullstack Engineer"
+    ],
     "tagline": "Thiết kế hệ thống có khả năng mở rộng, xây dựng sản phẩm đáng tin cậy.",
     "summary": "Là một Kiến trúc sư Kỹ thuật với nhiều kinh nghiệm trong việc xây dựng và tối ưu hóa các giải pháp phần mềm, tôi luôn mong muốn mang chuyên môn kỹ thuật và tinh thần hợp tác của mình đến với các tổ chức tiên phong. Mục tiêu của tôi là thúc đẩy những hệ thống mạnh mẽ, có khả năng mở rộng và thích ứng với xu hướng tương lai của ngành công nghiệp.",
     "avatarLabel": "RN",

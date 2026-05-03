@@ -1,6 +1,6 @@
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -21,22 +21,22 @@ const escapeLatex = (value) =>
     .replace(/~/g, '\\textasciitilde{}')
     .replace(/\^/g, '\\textasciicircum{}')
 
-const readJson = async (filePath) => {
-  const content = await readFile(filePath, 'utf-8')
-  return JSON.parse(content)
+const loadDataModule = async (...segments) => {
+  const filePath = path.join(dataDir, ...segments)
+  const fileUrl = pathToFileURL(filePath).href
+  const mod = await import(fileUrl)
+  return mod.default
 }
 
 const loadLocalizedPortfolio = async (lang) => {
-  const profile = await readJson(path.join(dataDir, lang, 'profile.json'))
-  const experiences = await readJson(path.join(dataDir, lang, 'experiences.json'))
-  const projects = await readJson(path.join(dataDir, lang, 'projects.json'))
-  const education = await readJson(path.join(dataDir, lang, 'education.json'))
-  const certifications = await readJson(
-    path.join(dataDir, lang, 'certifications.json'),
-  )
-  const skills = await readJson(path.join(dataDir, lang, 'skills.json'))
-  const baseProfile = await readJson(path.join(dataDir, 'common', 'base_profile.json'))
-  const baseSkills = await readJson(path.join(dataDir, 'common', 'base_skills.json'))
+  const profile = await loadDataModule(lang, 'profile.js')
+  const experiences = await loadDataModule(lang, 'experiences.js')
+  const projects = await loadDataModule(lang, 'projects.js')
+  const education = await loadDataModule(lang, 'education.js')
+  const certifications = await loadDataModule(lang, 'certifications.js')
+  const skills = await loadDataModule(lang, 'skills.js')
+  const baseProfile = await loadDataModule('common', 'base_profile.js')
+  const baseSkills = await loadDataModule('common', 'base_skills.js')
 
   return {
     profile: {

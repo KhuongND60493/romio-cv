@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { LangToggle } from '@/components/lang-toggle/LangToggle'
+import { LangToggle } from '@/shared/components/lang-toggle/LangToggle'
 import styles from './FooterSection.module.css'
 
 interface FooterSectionProps {
@@ -33,3 +33,4 @@ export const FooterSection = ({ navigationItems }: FooterSectionProps) => {
     </footer>
   )
 }
+

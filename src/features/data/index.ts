@@ -12,24 +12,24 @@ import type {
 } from '@/features/data/types.ts'
 
 // EN
-import enArchitectureHighlights from '@/features/data/en/architectureHighlights.json'
-import enCertifications from '@/features/data/en/certifications.json'
-import enEducation from '@/features/data/en/education.json'
-import enExperiences from '@/features/data/en/experiences.json'
-import enProfile from '@/features/data/en/profile.json'
-import enProjects from '@/features/data/en/projects.json'
-import enSkills from '@/features/data/en/skills.json'
-import baseProfileCommon from '@/features/data/common/base_profile.json'
-import baseSkillsCommon from '@/features/data/common/base_skills.json'
+import enArchitectureHighlights from '@/features/data/en/architectureHighlights.js'
+import enCertifications from '@/features/data/en/certifications.js'
+import enEducation from '@/features/data/en/education.js'
+import enExperiences from '@/features/data/en/experiences.js'
+import enProfile from '@/features/data/en/profile.js'
+import enProjects from '@/features/data/en/projects.js'
+import enSkills from '@/features/data/en/skills.js'
+import baseProfileCommon from '@/features/data/common/base_profile.js'
+import baseSkillsCommon from '@/features/data/common/base_skills.js'
 
 // VI
-import viArchitectureHighlights from '@/features/data/vi/architectureHighlights.json'
-import viCertifications from '@/features/data/vi/certifications.json'
-import viEducation from '@/features/data/vi/education.json'
-import viExperiences from '@/features/data/vi/experiences.json'
-import viProfile from '@/features/data/vi/profile.json'
-import viProjects from '@/features/data/vi/projects.json'
-import viSkills from '@/features/data/vi/skills.json'
+import viArchitectureHighlights from '@/features/data/vi/architectureHighlights.js'
+import viCertifications from '@/features/data/vi/certifications.js'
+import viEducation from '@/features/data/vi/education.js'
+import viExperiences from '@/features/data/vi/experiences.js'
+import viProfile from '@/features/data/vi/profile.js'
+import viProjects from '@/features/data/vi/projects.js'
+import viSkills from '@/features/data/vi/skills.js'
 
 const ensureArray = <T>(value: T[], label: string): T[] => {
   if (!Array.isArray(value)) {

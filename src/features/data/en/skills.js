@@ -1,4 +1,4 @@
-{
+export default {
   "competencies": [
     {
       "title": "System Architecture",
