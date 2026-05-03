@@ -1,10 +1,40 @@
 import { SectionHeading } from '@/shared/components/section-heading/SectionHeading'
 import type { Competency } from '@/features/data/types.ts'
+import type { ComponentType } from 'react'
 import { useTranslation } from 'react-i18next'
+import {
+  FaArrowsToCircle,
+  FaChartLine,
+  FaCodeBranch,
+  FaDatabase,
+  FaGaugeHigh,
+  FaLayerGroup,
+  FaMobileScreen,
+  FaNetworkWired,
+  FaPeopleGroup,
+  FaPuzzlePiece,
+  FaScrewdriverWrench,
+  FaServer,
+} from 'react-icons/fa6'
 import styles from './CompetenciesSection.module.css'
 
 interface CompetenciesSectionProps {
   competencies: Competency[]
+}
+
+const competencyIconMap: Record<string, ComponentType<{ className?: string }>> = {
+  layer: FaLayerGroup,
+  server: FaServer,
+  code: FaCodeBranch,
+  mobile: FaMobileScreen,
+  database: FaDatabase,
+  network: FaNetworkWired,
+  modernize: FaScrewdriverWrench,
+  performance: FaGaugeHigh,
+  monitor: FaChartLine,
+  leadership: FaPeopleGroup,
+  delivery: FaArrowsToCircle,
+  data: FaPuzzlePiece,
 }
 
 export const CompetenciesSection = ({
@@ -20,12 +50,18 @@ export const CompetenciesSection = ({
     />
 
     <div className={styles.grid}>
-      {competencies.map((item) => (
-        <article key={item.title} className={styles.card}>
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
-        </article>
-      ))}
+      {competencies.map((item) => {
+        const Icon = competencyIconMap[item.icon] ?? FaPuzzlePiece
+        return (
+          <article key={item.title} className={styles.card} data-cursor="interactive">
+            <span className={styles.iconWrapper} aria-hidden="true">
+              <Icon className={styles.icon} />
+            </span>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>
+        )
+      })}
     </div>
   </section>
 )

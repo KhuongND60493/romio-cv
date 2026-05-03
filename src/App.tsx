@@ -9,6 +9,7 @@ import {HeroSection} from '@/sections/hero/HeroSection'
 import {ProjectsSection} from '@/sections/projects/ProjectsSection'
 import {TechStackSection} from '@/sections/tech-stack/TechStackSection'
 import {ScrollToTop} from '@/shared/components/scroll-to-top/ScrollToTop'
+import { CustomCursor } from '@/shared/components/custom-cursor/CustomCursor'
 import {useTranslation} from 'react-i18next'
 import {getNavigationItems, getPortfolioData} from '@/features/data'
 import {ThemeType, useAppTheme} from '@/features/theme'
@@ -89,6 +90,7 @@ function App() {
                     <FooterSection navigationItems={navigationItems}/>
                 </Box>
             </Box>
+            <CustomCursor />
             <ScrollToTop/>
         </Box>
     )

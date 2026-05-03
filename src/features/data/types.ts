@@ -45,6 +45,7 @@ export interface Profile {
 export interface Competency {
   title: string
   description: string
+  icon: string
 }
 
 export interface SkillCategory {

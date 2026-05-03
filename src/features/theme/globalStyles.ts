@@ -83,6 +83,19 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     cursor: pointer;
   }
 
+  @media (hover: hover) and (pointer: fine) {
+    body,
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    [role='button'],
+    [data-cursor='interactive'] {
+      cursor: none !important;
+    }
+  }
+
   img {
     max-width: 100%;
     display: block;
