@@ -41,24 +41,21 @@ export const ArchitectureSection = ({
                 description={t('architecture.description')}
             />
 
-            <Box className={styles.grid}>
+            <div className={styles.grid}>
                 {highlights.map((item, i) => {
                     const Icon = architectureIconMap[item.icon] ?? FaLayerGroup
                     return (
-                        <Box
+                        <div
                             key={`architect_${i}`}
-                            position="relative"
                             className={styles.card}
                             style={{
                                 background: hoveredCard === item.title ? 'rgba(220, 38, 38, 0.02)' : 'transparent',
                                 borderColor:
                                     hoveredCard === item.title ? 'rgba(220, 38, 38, 0.2)' : 'rgba(255, 255, 255, 0.1)',
                                 transition: 'all 0.3s ease',
-                            } as any}
-                            {...({
-                                onMouseEnter: () => setHoveredCard(item.title),
-                                onMouseLeave: () => setHoveredCard(null),
-                            } as any)}
+                            }}
+                            onMouseEnter={() => setHoveredCard(item.title)}
+                            onMouseLeave={() => setHoveredCard(null)}
                         >
                             <Box
                                 position="absolute"
@@ -97,10 +94,10 @@ export const ArchitectureSection = ({
                             <Text fontSize={{phone: 14, tablet: 16}} lineHeight={{phone: 22, tablet: 24}}>
                                 {item.description}
                             </Text>
-                        </Box>
+                        </div>
                     )
                 })}
-            </Box>
+            </div>
         </SectionContainer>
     )
 }

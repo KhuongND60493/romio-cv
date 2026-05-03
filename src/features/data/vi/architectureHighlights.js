@@ -38,5 +38,10 @@ export default [
     "title": "Độ Tin Cậy & Mở Rộng",
     "description": "Thiết kế hệ thống có thể hoạt động ổn định và phục hồi trong môi trường tăng trưởng.",
     "icon": "SR"
+  },
+  {
+    "title": "Bảo Mật Theo Thiết Kế",
+    "description": "Tích hợp xác thực, phân quyền, quản lý secrets và kiểm soát rủi ro ngay từ giai đoạn thiết kế kiến trúc.",
+    "icon": "GW"
   }
 ]

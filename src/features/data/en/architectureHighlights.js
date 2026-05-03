@@ -38,5 +38,10 @@ export default [
     "title": "Scalability & Reliability",
     "description": "Engineer for graceful degradation, recovery, and predictable performance under growth.",
     "icon": "SR"
+  },
+  {
+    "title": "Security by Design",
+    "description": "Embed authentication, authorization, secrets handling, and threat controls early in architecture decisions.",
+    "icon": "GW"
   }
 ]
