@@ -5,7 +5,6 @@ import {
   FaAws,
   FaCss3Alt,
   FaDatabase,
-  FaDocker,
   FaFigma,
   FaGitAlt,
   FaHtml5,
