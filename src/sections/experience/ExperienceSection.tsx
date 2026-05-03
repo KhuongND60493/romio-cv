@@ -33,7 +33,7 @@ export const ExperienceSection = ({
 
             <div className={styles.columns}>
               <div>
-                <h5>Responsibilities</h5>
+                <h5>{t('experience.responsibilities')}</h5>
                 <ul>
                   {item.responsibilities.map((responsibility) => (
                     <li key={responsibility}>{responsibility}</li>
@@ -42,7 +42,7 @@ export const ExperienceSection = ({
               </div>
 
               <div>
-                <h5>Achievements</h5>
+                <h5>{t('experience.achievements')}</h5>
                 <ul>
                   {item.achievements.map((achievement) => (
                     <li key={achievement}>{achievement}</li>

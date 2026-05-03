@@ -57,7 +57,7 @@ export const CompetenciesSection = ({
             <span className={styles.iconWrapper} aria-hidden="true">
               <Icon className={styles.icon} />
             </span>
-            <h3>{item.title}</h3>
+            <h4>{item.title}</h4>
             <p>{item.description}</p>
           </article>
         )

@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Dẫn dắt đội ngũ và hệ thống từ chiến lược kiến trúc đến vận hành thực tế.",
-    "description": "Lộ trình vai trò kết hợp giữa năng lực delivery, quản lý kỹ thuật và tư duy nền tảng."
+    "description": "Lộ trình vai trò kết hợp giữa năng lực delivery, quản lý kỹ thuật và tư duy nền tảng.",
+    "responsibilities": "Trách nhiệm",
+    "achievements": "Thành tựu"
   },
   "projects": {
     "title": "Các dự án tiêu biểu với tác động rõ ràng đến hiệu quả kinh doanh.",

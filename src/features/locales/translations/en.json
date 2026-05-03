@@ -43,7 +43,9 @@
   },
   "experience": {
     "title": "Leading teams and systems from architecture strategy to production operations.",
-    "description": "A concise timeline of roles that combine delivery execution with platform thinking."
+    "description": "A concise timeline of roles that combine delivery execution with platform thinking.",
+    "responsibilities": "Responsibilities",
+    "achievements": "Achievements"
   },
   "projects": {
     "title": "Selected product and platform work with measurable business value.",
