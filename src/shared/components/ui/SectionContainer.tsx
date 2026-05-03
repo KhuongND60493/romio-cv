@@ -14,7 +14,7 @@ export const SectionContainer = ({
 }: SectionContainerProps) => {
 
   return (
-    <Box position="relative" pt="xl" {...props}>
+    <Box position="relative" pt={{ phone: 'm', tablet: 'xl' }} {...props}>
       {hasArchitecturalLine && (
         <Box
           position="absolute"

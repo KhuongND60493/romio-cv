@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 0;
+  padding: var(--section-y) 0;
 }
 
 .grid {
@@ -29,4 +29,21 @@
   margin: 0;
   padding-bottom: 1rem;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.05rem;
+    padding-bottom: 0.75rem;
+  }
 }

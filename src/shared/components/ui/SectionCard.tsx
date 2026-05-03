@@ -18,7 +18,7 @@ export const SectionCard = ({ children, hoverable = true, ...props }: SectionCar
       backgroundColor={isHovered ? 'surfaceStrong' : 'surface'}
       borderWidth={1}
       borderColor="surfaceStrong"
-      padding={{ phone: 'm', tablet: 'l' }}
+      padding={{ phone: 's', tablet: 'l' }}
       flexDirection={{ phone: 'column', tablet: 'row' }}
       gap={{ phone: 'm', tablet: 'l' }}
       alignItems="flex-start"

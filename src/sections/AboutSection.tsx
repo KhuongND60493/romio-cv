@@ -20,19 +20,24 @@ export const AboutSection = ({about}: {
                 description={about.description}
             />
 
-            <Box flexDirection="column" gap="l">
+            <Box flexDirection="column" gap={{phone: 'm', tablet: 'l'}}>
                 {about.focusAreas.map((item, index) => (
                     <SectionCard key={item}>
                         <Text
                             variant="heading"
                             color="accent"
                             fontWeight="bold"
-                            fontSize={20}
+                            fontSize={{phone: 17, tablet: 20}}
                             lineHeight={1}
                         >
                             {String(index + 1).padStart(2, '0')}
                         </Text>
-                        <Text color="text" fontSize={16} lineHeight={1.75} margin="none">
+                        <Text
+                            color="text"
+                            fontSize={{phone: 14, tablet: 16}}
+                            lineHeight={{phone: 24, tablet: 28}}
+                            margin="none"
+                        >
                             {item}
                         </Text>
                     </SectionCard>

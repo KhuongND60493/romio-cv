@@ -16,10 +16,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(var(--max-width), calc(100% - 4rem));
+  width: min(var(--max-width), calc(100% - 2 * var(--page-gutter)));
   margin: 0 auto;
   height: 4rem;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 3.5rem;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
 }
 
 .logo {

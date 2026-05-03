@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: var(--section-heading-mb);
   position: relative;
   padding-left: 1.5rem;
   border-left: 4px solid var(--accent);
@@ -45,5 +45,28 @@
   width: 4px;
   height: 20px;
   background: var(--title);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    gap: 0.35rem;
+    padding-left: 1rem;
+  }
+
+  .heading h2 {
+    font-size: clamp(1.35rem, 6.5vw, 1.85rem);
+    line-height: 1.15;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+  }
+
+  .description {
+    margin: 0.65rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
 }
 

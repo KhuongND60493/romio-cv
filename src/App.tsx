@@ -54,11 +54,14 @@ function App() {
 
                 <Box
                     width="100%"
-                    style={{width: 'min(var(--max-width), calc(100% - 4rem))', marginInline: 'auto'} as any}
-                    paddingBottom="xl"
+                    style={{
+                        width: 'min(var(--max-width), calc(100% - 2 * var(--page-gutter)))',
+                        marginInline: 'auto',
+                    } as any}
+                    paddingBottom={{phone: 'l', tablet: 'xl'}}
                 >
                     <HeroSection profile={portfolioData.profile} />
-                    <Box flexDirection="column" style={{gap: '6rem'} as any}>
+                    <Box flexDirection="column" style={{gap: 'var(--section-stack-gap)'} as any}>
                         <SectionWrapper>
                             <AboutSection about={portfolioData.profile.about}/>
                         </SectionWrapper>
@@ -101,7 +104,7 @@ export default App
 const SectionWrapper = ({children}: {
     children: ReactNode
 }) => (
-    <Box position="relative" pt="l">
+    <Box position="relative" pt={{phone: 'm', tablet: 'l'}}>
         <Box
             position="absolute"
             top={0}

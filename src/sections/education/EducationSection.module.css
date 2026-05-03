@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 0;
+  padding: var(--section-y) 0;
 }
 
 .grid {
@@ -115,4 +115,45 @@
 
 .meta a:hover {
   color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .cardHeader {
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 52px;
+    height: 52px;
+    padding: 6px;
+  }
+
+  .header h3 {
+    font-size: 1.08rem;
+  }
+
+  .header p {
+    font-size: 0.78rem;
+  }
+
+  .detail p,
+  .note {
+    font-size: 0.9rem;
+  }
+
+  .yearBadge {
+    top: 0.65rem;
+    right: 0.65rem;
+    font-size: 0.68rem;
+    padding: 0.28rem 0.55rem;
+  }
 }

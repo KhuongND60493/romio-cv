@@ -26,6 +26,33 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     --radius-md: ${({ theme }) => theme.borderRadii.md}px;
     
     --max-width: 1200px;
+    --page-gutter: 2rem;
+    --section-stack-gap: 6rem;
+    --section-y: 4rem;
+    --section-heading-mb: 2rem;
+    --footer-margin-top: 6rem;
+    --footer-py: 4rem;
+    --timeline-gap: 4rem;
+    --timeline-pl: 2rem;
+    --timeline-ml: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --page-gutter: 1rem;
+      --section-stack-gap: 2.75rem;
+      --section-y: 2.25rem;
+      --section-heading-mb: 1.25rem;
+      --footer-margin-top: 3rem;
+      --footer-py: 2.5rem;
+      --timeline-gap: 2rem;
+      --timeline-pl: 1.2rem;
+      --timeline-ml: 0.65rem;
+    }
+
+    html {
+      font-size: 93.75%;
+    }
   }
 
   /* Reset & Base Styles */
@@ -60,6 +87,12 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType; themeMode: 'lig
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      background-size: 28px 28px;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {

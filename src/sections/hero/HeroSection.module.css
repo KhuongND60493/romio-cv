@@ -399,7 +399,54 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem 0;
+    min-height: unset;
+    padding: 2.5rem 0 3rem;
+  }
+
+  .kicker {
+    font-size: 0.82rem;
+    letter-spacing: 0.22em;
+    margin-bottom: 0.65rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .copy h1 {
+    font-size: clamp(1.65rem, 9vw, 2.4rem);
+    line-height: 1.02;
+  }
+
+  .title {
+    margin-top: 1rem;
+    font-size: clamp(0.92rem, 3.8vw, 1.15rem);
+    min-height: 1.45em;
+  }
+
+  .tagline {
+    margin-top: 1rem;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    max-width: none;
+  }
+
+  .ctaGroup {
+    gap: 0.85rem;
+    margin-top: 1.75rem;
+  }
+
+  .cvActionPair {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .primary,
+  .secondary,
+  .ghost {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.78rem;
+    text-align: center;
+    justify-content: center;
   }
 
   .hudElement {
@@ -410,6 +457,14 @@
 
   .hudElement2 {
     display: none;
+  }
+
+  .modal {
+    padding: 1.15rem;
+  }
+
+  .modal h3 {
+    font-size: 1.02rem;
   }
 
   .viewerHeader {

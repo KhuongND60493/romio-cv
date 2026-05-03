@@ -1,14 +1,14 @@
 .section {
-  padding: 4rem 0;
+  padding: var(--section-y) 0;
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: var(--timeline-gap);
   border-left: 1px solid rgba(220, 38, 38, 0.3);
-  padding-left: 2rem;
-  margin-left: 1rem;
+  padding-left: var(--timeline-pl);
+  margin-left: var(--timeline-ml);
 }
 
 .card {
@@ -107,5 +107,36 @@
 @media (max-width: 768px) {
   .columns {
     grid-template-columns: 1fr;
+    gap: 1.35rem;
+    padding-top: 1.1rem;
+  }
+
+  .meta {
+    font-size: 0.78rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card h4 {
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-size: 0.92rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .columns h5 {
+    font-size: 0.88rem;
+  }
+
+  .columns li {
+    font-size: 0.88rem;
+    margin-bottom: 0.55rem;
   }
 }

@@ -84,3 +84,40 @@
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 0.75rem;
+  }
+
+  .form {
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .field {
+    gap: 0.35rem;
+  }
+
+  .field input,
+  .field textarea {
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+    font-size: 0.92rem;
+  }
+
+  .field span {
+    font-size: 0.82rem;
+  }
+
+  .submit {
+    padding: 0.75rem 1.15rem;
+    font-size: 0.82rem;
+  }
+
+  .toast {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.88rem;
+  }
+}
+

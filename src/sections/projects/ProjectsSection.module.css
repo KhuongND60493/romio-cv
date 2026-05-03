@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 0;
+  padding: var(--section-y) 0;
 }
 
 .grid {
@@ -161,5 +161,55 @@
 
   .detailSplit {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 1.25rem 0;
+    gap: 1.1rem;
+  }
+
+  .header h3 {
+    font-size: 1.15rem;
+  }
+
+  .header p {
+    font-size: 0.78rem;
+  }
+
+  .description {
+    font-size: 0.92rem;
+  }
+
+  .detail {
+    gap: 1.1rem;
+  }
+
+  .detail h4 {
+    font-size: 0.88rem;
+  }
+
+  .detail li,
+  .detail p {
+    font-size: 0.88rem;
+  }
+
+  .architectureDetail,
+  .impactDetail {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .links {
+    gap: 0.65rem;
+  }
+
+  .links a {
+    font-size: 0.72rem;
+    padding: 0.42rem 0.75rem;
   }
 }
